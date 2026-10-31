@@ -31,7 +31,7 @@ NSE holidays are detected automatically: no trades and no messages.
 ## Setup
 
 1. Put these files in a GitHub repo (Claude can do this for you if GitHub is connected to Claude). Any repo works, private or public.
-2. Repo **Settings → Actions → General → Workflow permissions → Read and write** → Save.
+2. *(Only if a run fails with a push/permission error)* Repo **Settings → Actions → General → Workflow permissions → Read and write** → Save.
 3. **Messages:** add secrets in **Settings → Secrets and variables → Actions → New repository secret**:
    - **WhatsApp (CallMeBot, free):** open https://www.callmebot.com/blog/free-api-whatsapp-messages/ on your phone and save the bot number shown there (it has been +34 644 71 81 99, but it changes). Send it the WhatsApp message `I allow callmebot to send me messages` and you'll get an API key back. Add the secrets `WHATSAPP_PHONE` = your number with country code and no + (e.g. `919876543210`), and `WHATSAPP_APIKEY` = the key.
      *Note:* CallMeBot is a free hobby service. WhatsApp sometimes blocks it, and it has started charging some users. If messages stop arriving, use Telegram.

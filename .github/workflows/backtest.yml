@@ -6,6 +6,9 @@ on:
       years:
         description: "Years of history to test"
         default: "2"
+  push:
+    branches: [main]
+    paths: ["bot/**", "requirements.txt"]   # re-test whenever the strategy changes
   schedule:
     # Refresh the backtest every Sunday 9:17 AM IST
     - cron: "47 3 * * 0"

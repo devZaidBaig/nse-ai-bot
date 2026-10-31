@@ -36,13 +36,28 @@ def backtest(close, volume, bench, panel, years):
     return s, pf.equity
 
 
+ROBUSTNESS = [
+    (f"{n} [{y}y]", {**o, "_years": y}) for y in (1, 2, 4) for n, o in [
+        ("B. Monthly AI, 8% trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21)),
+        ("D. Monthly AI, no stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.99)),
+        ("G. Monthly AI, 20% safety stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.20)),
+    ]
+]
+
+
 def main(argv=None):
+    global VARIANTS
     ap = argparse.ArgumentParser()
     ap.add_argument("--years", type=float, default=3.0)
+    ap.add_argument("--set", default="robustness", choices=["main", "robustness"])
     a = ap.parse_args(argv)
+    if a.set == "robustness":
+        VARIANTS = ROBUSTNESS
     close, volume, bench = data.load_prices()
     panels, results = {}, []
     for name, over in VARIANTS:
+        years = over.get("_years", a.years)
+        over = {k: v for k, v in over.items() if not k.startswith("_")}
         saved = {k: getattr(config, k) for k in over}
         for k, v in over.items():
             setattr(config, k, v)
@@ -50,7 +65,7 @@ def main(argv=None):
             h = config.HORIZON_DAYS
             if h not in panels:
                 panels[h] = features.build(close, volume, bench)
-            s, eq = backtest(close, volume, bench, panels[h], a.years)
+            s, eq = backtest(close, volume, bench, panels[h], years)
             results.append({"name": name, "settings": over, "stats": s,
                             "equity": [{"date": e["date"], "equity": e["equity"], "benchmark": e["benchmark"]} for e in eq[::5]]})
             print(f"{name}: {s['total_return_pct']:+.1f}% (NIFTY {s['nifty_return_pct']:+.1f}%), "
@@ -67,7 +82,7 @@ def main(argv=None):
         s = r["stats"]
         rows.append(f"| {r['name']} | {s['total_return_pct']:+.1f}% | {s['nifty_return_pct']:+.1f}% | {s['cagr_pct']}% | "
                     f"{s['sharpe']} | {s['max_drawdown_pct']}% | {s['trades']} | {s['win_rate_pct']} | {s['fees_pct_of_capital']}% |")
-    md = f"# Strategy experiments ({results[0]['stats']['start']} → {results[0]['stats']['end']})\n\n" + "\n".join(rows) + "\n"
+    md = f"# Strategy experiments (each row ends {results[0]['stats']['end']})\n\n" + "\n".join(rows) + "\n"
     (config.STATE_DIR / "research.md").write_text(md)
     print(md)
     notify.send("🔬 Strategy experiments finished:\n" + "\n".join(

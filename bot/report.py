@@ -1,0 +1,77 @@
+"""Builds docs/index.html — a self-contained dashboard (served free by GitHub Pages)."""
+import json
+
+from . import config
+
+TEMPLATE = r"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NSE AI Paper Bot</title>
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1d1d1b;--mute:#6b6a65;--line:#e4e2db;--up:#1a7f4b;--down:#b3261e;--a:#2952cc;--b:#a3a199}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1f1f1d;--ink:#eceae4;--mute:#9b998f;--line:#33322e;--up:#4cc38a;--down:#ff6b5e;--a:#7d9bff;--b:#6b6a65}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1040px;margin:0 auto;padding:28px 18px 60px}h1{font-size:24px;margin:0}h2{font-size:16px;margin:30px 0 10px}
+.sub{color:var(--mute);margin:4px 0 20px}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.k{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}.k b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+.k span{color:var(--mute);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14px}th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}th{color:var(--mute);font-weight:500}.up{color:var(--up)}.down{color:var(--down)}
+.legend{display:flex;gap:16px;color:var(--mute);font-size:13px;margin-bottom:6px}.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px}
+.note{color:var(--mute);font-size:13px;margin-top:30px}
+</style></head><body><main>
+<h1>NSE AI Paper-Trading Bot</h1>
+<p class="sub" id="sub"></p>
+<div class="kpis" id="kpis"></div>
+<h2>Paper portfolio vs NIFTY 50</h2><div class="card"><div class="legend"><span><i style="background:var(--a)"></i>Bot</span><span><i style="background:var(--b)"></i>NIFTY 50 (same ₹ start)</span></div><div id="live"></div></div>
+<h2>Holdings</h2><div class="card"><table id="hold"></table></div>
+<h2>Recent trades</h2><div class="card"><table id="trades"></table></div>
+<h2>Today's news sentiment (FinBERT)</h2><div class="card"><table id="news"></table></div>
+<h2>Backtest (historical walk-forward, dummy money)</h2><div class="kpis" id="bkpis"></div>
+<div class="card" style="margin-top:12px"><div class="legend"><span><i style="background:var(--a)"></i>Bot</span><span><i style="background:var(--b)"></i>NIFTY 50</span></div><div id="bt"></div></div>
+<p class="note">Paper trading only — no real orders are placed. Past/backtest performance does not guarantee future results. Not investment advice.</p>
+</main><script>
+const D=__DATA__;
+const inr=v=>(v<0?'-':'')+'₹'+Math.abs(Math.round(v)).toLocaleString('en-IN');
+const pct=v=>(v>0?'+':'')+v.toFixed(2)+'%';
+const cls=v=>v>0?'up':v<0?'down':'';
+function kpi(el,items){document.getElementById(el).innerHTML=items.map(([l,v,c])=>`<div class="k"><span>${l}</span><b class="${c||''}">${v}</b></div>`).join('')}
+function chart(el,eq){const box=document.getElementById(el);if(!eq||eq.length<2){box.innerHTML='<p class="sub">Not enough data yet — check back after a few trading days.</p>';return}
+ const W=1000,H=300,P=44,b0=eq[0].benchmark,e0=eq[0].equity;
+ const a=eq.map(e=>e.equity),b=eq.map(e=>e.benchmark/b0*e0),all=a.concat(b),mn=Math.min(...all),mx=Math.max(...all);
+ const x=i=>P+i*(W-P-10)/(eq.length-1),y=v=>H-24-(v-mn)/(mx-mn||1)*(H-40);
+ const path=s=>s.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1)).join('');
+ let g='';for(let k=0;k<=4;k++){const v=mn+(mx-mn)*k/4;g+=`<line x1="${P}" x2="${W-10}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${P-6}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--mute)">${mx>=1e5?(v/1e5).toFixed(1)+'L':'₹'+Math.round(v).toLocaleString('en-IN')}</text>`}
+ const lab=[0,Math.floor(eq.length/2),eq.length-1].map(i=>`<text x="${x(i)}" y="${H-6}" text-anchor="middle" font-size="11" fill="var(--mute)">${eq[i].date}</text>`).join('');
+ box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img">${g}${lab}<path d="${path(b)}" fill="none" stroke="var(--b)" stroke-width="2"/><path d="${path(a)}" fill="none" stroke="var(--a)" stroke-width="2.5"/></svg>`}
+const pf=D.portfolio,eq=pf.equity||[],px=(D.prices||{}).prices||{},start=D.capital;
+const last=eq.length?eq[eq.length-1]:{equity:start,cash:start,benchmark:0};
+const nifty=eq.length>1?(last.benchmark/eq[0].benchmark-1)*100:0,ret=(last.equity/start-1)*100;
+document.getElementById('sub').textContent=eq.length?`Paper trading since ${eq[0].date} · last update ${last.date}`:'Waiting for the first scheduled run.';
+kpi('kpis',[['Equity',inr(last.equity)],['Return since start',pct(ret),cls(ret)],['NIFTY over same period',pct(nifty),cls(nifty)],['Cash',inr(last.cash)],['Open positions',Object.keys(pf.positions||{}).length],['Trades',(pf.trades||[]).length]]);
+chart('live',eq);
+const H=Object.entries(pf.positions||{});
+document.getElementById('hold').innerHTML='<tr><th>Stock</th><th>Shares</th><th>Avg cost</th><th>Last</th><th>Value</th><th>P&L</th><th>Since</th></tr>'+(H.length?H.map(([t,p])=>{const l=px[t]||p.entry_price,r=(l/p.entry_price-1)*100;return `<tr><td>${t}</td><td>${p.shares}</td><td>${inr(p.entry_price)}</td><td>${inr(l)}</td><td>${inr(l*p.shares)}</td><td class="${cls(r)}">${pct(r)}</td><td>${p.entry_date}</td></tr>`}).join(''):'<tr><td colspan="7">No positions</td></tr>');
+const T=(pf.trades||[]).slice(-25).reverse();
+document.getElementById('trades').innerHTML='<tr><th>Date</th><th>Side</th><th>Stock</th><th>Shares</th><th>Price</th><th>P&L</th><th>Reason</th></tr>'+(T.length?T.map(t=>`<tr><td>${t.date}</td><td>${t.side}</td><td>${t.ticker}</td><td>${t.shares}</td><td>${inr(t.price)}</td><td class="${cls(t.pnl)}">${t.side==='SELL'?inr(t.pnl):'—'}</td><td>${t.reason}</td></tr>`).join(''):'<tr><td colspan="7">No trades yet</td></tr>');
+const N=(D.news||[]).filter(n=>n.count>0);const NN=N.slice(0,6).concat(N.length>6?N.slice(-6).reverse():[]);
+document.getElementById('news').innerHTML='<tr><th>Stock</th><th>Sentiment</th><th>Headlines</th><th style="text-align:left">Strongest headline</th></tr>'+(NN.length?NN.map(n=>`<tr><td>${n.ticker}</td><td class="${cls(n.sentiment)}">${n.sentiment>0?'+':''}${n.sentiment.toFixed(2)}</td><td>${n.count}</td><td style="text-align:left;white-space:normal">${(n.headline||'').replace(/</g,'&lt;')}</td></tr>`).join(''):'<tr><td colspan="4">No news collected yet</td></tr>');
+const B=D.backtest;if(B){const s=B.stats;kpi('bkpis',[['Period',s.start+' → '+s.end],['Bot return',pct(s.total_return_pct),cls(s.total_return_pct)],['NIFTY return',pct(s.nifty_return_pct),cls(s.nifty_return_pct)],['Bot CAGR / NIFTY CAGR',s.cagr_pct+'% / '+s.nifty_cagr_pct+'%'],['Sharpe',s.sharpe],['Max drawdown (bot / NIFTY)',s.max_drawdown_pct+'% / '+s.nifty_max_drawdown_pct+'%'],['Win rate',s.win_rate_pct==null?'—':s.win_rate_pct+'%'],['Fees paid',inr(s.total_fees)]]);chart('bt',B.equity)}else{document.getElementById('bkpis').innerHTML='<p class="sub">Run the Backtest workflow to fill this in.</p>'}
+</script></body></html>"""
+
+
+def _read(name):
+    p = config.STATE_DIR / name
+    return json.loads(p.read_text()) if p.exists() else None
+
+
+def build():
+    d = {
+        "capital": config.STARTING_CAPITAL,
+        "portfolio": _read("portfolio.json") or {"positions": {}, "trades": [], "equity": []},
+        "prices": _read("last_prices.json"),
+        "backtest": _read("backtest.json"),
+        "news": _read("news_today.json"),
+    }
+    config.DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    html = TEMPLATE.replace("__DATA__", json.dumps(d).replace("</", "<\\/"))
+    (config.DOCS_DIR / "index.html").write_text(html)

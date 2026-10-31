@@ -1,10 +1,13 @@
-# Strategy experiments (2023-10-30 → 2026-10-30)
+# Strategy experiments (each row ends 2026-10-30)
 
 | Variant | Return | NIFTY | CAGR | Sharpe | Max DD | Trades | Win % | Fees (% of capital) |
 |---|---|---|---|---|---|---|---|---|
-| A. Weekly AI, 5-day target (original) | +15.8% | +20.4% | 5.01% | 0.35 | -22.24% | 532 | 53.6 | 54.5% |
-| B. Monthly AI, 1-month target | +43.5% | +20.4% | 12.78% | 0.75 | -24.36% | 234 | 45.9 | 25.3% |
-| C. Monthly AI, 1-month, wider hold buffer | +40.0% | +20.4% | 11.87% | 0.72 | -24.95% | 216 | 48.7 | 22.1% |
-| D. Monthly AI, 1-month, no trailing stop | +110.4% | +20.4% | 28.13% | 1.22 | -21.88% | 174 | 61.7 | 21.2% |
-| E. Monthly plain momentum (no AI) | +20.3% | +20.4% | 6.36% | 0.41 | -30.11% | 155 | 49.1 | 16.8% |
-| F. Same as B but ₹1,00,000 account | +48.7% | +20.4% | 14.13% | 0.78 | -28.12% | 229 | 43.4 | 13.8% |
+| B. Monthly AI, 8% trailing stop [1y] | -16.2% | -10.9% | -16.18% | -0.99 | -22.36% | 94 | 37.5 | 8.1% |
+| D. Monthly AI, no stop [1y] | +7.0% | -10.9% | 6.95% | 0.43 | -21.81% | 66 | 54.5 | 6.0% |
+| G. Monthly AI, 20% safety stop [1y] | -16.1% | -10.9% | -16.14% | -0.88 | -22.97% | 73 | 45.8 | 6.1% |
+| B. Monthly AI, 8% trailing stop [2y] | -17.1% | -5.3% | -8.93% | -0.44 | -21.88% | 165 | 42.4 | 14.7% |
+| D. Monthly AI, no stop [2y] | +23.5% | -5.3% | 11.15% | 0.62 | -21.7% | 108 | 62.2 | 10.3% |
+| G. Monthly AI, 20% safety stop [2y] | -7.0% | -5.3% | -3.58% | -0.09 | -22.84% | 117 | 52.5 | 10.5% |
+| B. Monthly AI, 8% trailing stop [4y] | +48.6% | +28.0% | 10.42% | 0.65 | -26.35% | 298 | 49.1 | 32.5% |
+| D. Monthly AI, no stop [4y] | +155.4% | +28.0% | 26.43% | 1.24 | -22.55% | 207 | 56.0 | 28.5% |
+| G. Monthly AI, 20% safety stop [4y] | +131.7% | +28.0% | 23.39% | 1.15 | -26.41% | 212 | 55.3 | 27.7% |

@@ -9,7 +9,8 @@ def is_rebalance_day(pf, date: pd.Timestamp) -> bool:
     if pf.last_rebalance is None:
         return True
     days = (date - pd.Timestamp(pf.last_rebalance)).days
-    return days >= 7 or (date.weekday() == config.REBALANCE_WEEKDAY and days >= 3)
+    n = config.REBALANCE_DAYS
+    return days >= n + 3 or (date.weekday() == config.REBALANCE_WEEKDAY and days >= max(n - 3, 3))
 
 
 def risk_on(bench: pd.Series, date) -> bool:
@@ -25,12 +26,16 @@ def step(pf, panel, close, bench, date, ctx: dict, retrain_every_days=0, news=No
     info = {"date": str(date.date()), "rebalanced": False, "stops": stops}
 
     if is_rebalance_day(pf, date):
-        last_fit = ctx.get("fit_date")
-        if ctx.get("model") is None or last_fit is None or (date - last_fit).days >= retrain_every_days:
-            ctx["model"] = Ranker().fit(panel, date)
-            ctx["fit_date"] = date
         rows = panel.xs(date, level="date", drop_level=False).dropna(subset=["ret_63", "vol_21"])
-        raw = ctx["model"].score(rows)
+        if config.MODEL == "momentum":
+            raw = pd.Series(rows["rank_mom_12_1"].to_numpy(), index=rows.index.get_level_values("ticker")).fillna(0)
+            ctx["model"] = type("M", (), {"trained_on": "plain momentum"})()
+        else:
+            last_fit = ctx.get("fit_date")
+            if ctx.get("model") is None or last_fit is None or (date - last_fit).days >= retrain_every_days:
+                ctx["model"] = Ranker().fit(panel, date)
+                ctx["fit_date"] = date
+            raw = ctx["model"].score(rows)
         scores, veto = apply_news(raw, news)
         on = risk_on(bench, date)
         targets = target_weights(scores, on, held=set(pf.positions), prices=prices,

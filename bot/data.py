@@ -38,7 +38,22 @@ def _yahoo():
     volume.index = close.index
     bench.index = pd.to_datetime(bench.index).tz_localize(None)
     close = close.ffill(limit=3)
+    close, volume = _cut_corporate_actions(close, volume)
     return close, volume, bench
+
+
+def _cut_corporate_actions(close, volume, gap=0.30):
+    """A >30% one-day jump in a NIFTY 50 stock is almost always an unadjusted demerger/split,
+    not a real move. Drop the history before it so the model doesn't learn from a fake crash."""
+    r = close.pct_change(fill_method=None).abs()
+    for t in close.columns:
+        hits = r.index[r[t] > gap]
+        if len(hits):
+            cut = hits[-1]
+            print(f"[data] {t}: {r.loc[cut, t]:.0%} jump on {cut.date()} (likely corporate action) — using data after it")
+            close.loc[:cut - pd.Timedelta(days=1), t] = np.nan
+            volume.loc[:cut - pd.Timedelta(days=1), t] = np.nan
+    return close, volume
 
 
 def _synthetic(n_days=1800, seed=None):

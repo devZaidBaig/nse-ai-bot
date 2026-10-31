@@ -24,7 +24,9 @@ HISTORY_YEARS = 6                   # price history to download
 
 # ---- Strategy ----
 TOP_N = 3                           # number of stocks to hold (small account → few, affordable picks)
-REBALANCE_WEEKDAY = 4               # 0=Mon ... 4=Fri; full re-rank & rebalance on this day
+REBALANCE_WEEKDAY = 4               # 0=Mon ... 4=Fri; re-rank & rebalance on this weekday
+REBALANCE_DAYS = 7                  # how often to rebalance (7 = weekly, 28 = every 4 weeks)
+MODEL = "ml"                        # "ml" = AI ranker, "momentum" = plain 12-1 momentum (baseline)
 HORIZON_DAYS = 5                    # model predicts the next 5-day return
 TRAIN_YEARS = 3                     # rolling training window
 STOP_LOSS = 0.08                    # trailing stop: exit if price falls 8% below its peak since we bought

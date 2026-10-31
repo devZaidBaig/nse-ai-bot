@@ -44,9 +44,15 @@ An 8% trailing stop then *hurt* in every period tested, because it sold on norma
 1. Put these files in a GitHub repo (Claude can do this for you if GitHub is connected to Claude). Any repo works, private or public.
 2. *(Only if a run fails with a push/permission error)* Repo **Settings → Actions → General → Workflow permissions → Read and write** → Save.
 3. **Messages:** add secrets in **Settings → Secrets and variables → Actions → New repository secret**:
-   - **WhatsApp (CallMeBot, free):** open https://www.callmebot.com/blog/free-api-whatsapp-messages/ on your phone and save the bot number shown there (it has been +34 644 71 81 99, but it changes). Send it the WhatsApp message `I allow callmebot to send me messages` and you'll get an API key back. Add the secrets `WHATSAPP_PHONE` = your number with country code and no + (e.g. `919876543210`), and `WHATSAPP_APIKEY` = the key.
-     *Note:* CallMeBot is a free hobby service. WhatsApp sometimes blocks it, and it has started charging some users. If messages stop arriving, use Telegram.
-   - **Telegram (free and very reliable):** message **@BotFather** → `/newbot` → copy the token. Send your new bot any message, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` to find your chat id. Add the secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
+   - **WhatsApp (official Meta WhatsApp Cloud API, ≈₹0.12 per message, about ₹4/month):**
+     1. Go to **developers.facebook.com** → log in with Facebook → **My Apps → Create app** → use case **"Connect with customers through WhatsApp"** (type *Business*). Create or choose a business portfolio when asked.
+     2. In the app open **WhatsApp → API Setup**. Meta gives you a free **test phone number**. Under **"To"**, add **your own WhatsApp number** and confirm the code Meta sends you. Copy the **Phone number ID** shown on this page.
+     3. **Create the message template:** go to **WhatsApp Manager** (business.facebook.com → WhatsApp accounts → Message templates) → **Create template** → Category **Utility** → name `trading_update`, language **English** → Body: `Your paper-trading bot update: {{1}}` → sample value: `Value ₹10,050, no trades today` → Submit. Approval usually takes minutes.
+     4. **Permanent token:** in **business.facebook.com → Settings → Users → System users** → Add (role Admin) → **Assign assets** → your app (full control) and your WhatsApp account → **Generate new token** for the app with permissions `whatsapp_business_messaging` and `whatsapp_business_management`, expiry **Never**. Copy it. (The temporary token on the API Setup page expires after 24h, so don't use that one.)
+     5. **Add a payment method** in WhatsApp Manager → Payment settings, because Meta bills per message. Expect about ₹3–4 a month for this bot.
+     6. Add GitHub secrets: `WA_TOKEN` (the permanent token), `WA_PHONE_NUMBER_ID`, and `WA_TO` (your number with country code, digits only, e.g. `919876543210`). If you used a different template name or language, also add `WA_TEMPLATE` / `WA_TEMPLATE_LANG` (e.g. `en_US`).
+     Messages arrive on one line with " | " between items, because WhatsApp templates can't contain line breaks.
+   - **Telegram (free, 5 minutes, recommended even if you set up WhatsApp):** message **@BotFather** → `/newbot` → copy the token. Send your new bot any message, then open `https://api.telegram.org/bot<TOKEN>/getUpdates` to find your chat id. Add the secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
    - You can set up both. The bot sends to every channel that has secrets.
 4. **Test messages:** **Actions → Trade → Run workflow → mode: test-message**.
 5. **Train it on history:** **Actions → Backtest → Run workflow** (about 3 min).

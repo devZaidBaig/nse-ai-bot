@@ -29,8 +29,11 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
-  WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+  WA_TOKEN: ${{ secrets.WA_TOKEN }}
+  WA_PHONE_NUMBER_ID: ${{ secrets.WA_PHONE_NUMBER_ID }}
+  WA_TO: ${{ secrets.WA_TO }}
+  WA_TEMPLATE: ${{ secrets.WA_TEMPLATE }}
+  WA_TEMPLATE_LANG: ${{ secrets.WA_TEMPLATE_LANG }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 

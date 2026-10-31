@@ -2,3236 +2,3006 @@
  "stats": {
   "start": "2024-10-30",
   "end": "2026-10-30",
-  "total_return_pct": -18.61,
+  "total_return_pct": -13.28,
   "nifty_return_pct": -5.29,
-  "cagr_pct": -9.79,
+  "cagr_pct": -6.88,
   "nifty_cagr_pct": -2.68,
-  "sharpe": -0.42,
-  "max_drawdown_pct": -24.12,
+  "sharpe": -0.26,
+  "max_drawdown_pct": -23.43,
   "nifty_max_drawdown_pct": -15.56,
-  "trades": 381,
-  "closed_trades": 134,
-  "win_rate_pct": 50.0,
-  "total_fees": 3344.1
+  "trades": 395,
+  "closed_trades": 137,
+  "win_rate_pct": 54.0,
+  "total_fees": 3495.62
  },
  "equity": [
   {
    "date": "2024-10-30",
-   "equity": 9985.78,
-   "cash": 1620.93,
+   "equity": 9983.37,
+   "cash": 199.24,
    "benchmark": 24340.85
   },
   {
    "date": "2024-10-31",
-   "equity": 10031.8,
-   "cash": 1620.93,
+   "equity": 10028.54,
+   "cash": 199.24,
    "benchmark": 24205.35
   },
   {
    "date": "2024-11-01",
-   "equity": 10143.86,
-   "cash": 1620.93,
+   "equity": 10144.63,
+   "cash": 199.24,
    "benchmark": 24304.35
   },
   {
    "date": "2024-11-04",
-   "equity": 10079.76,
-   "cash": 1620.93,
+   "equity": 10089.17,
+   "cash": 199.24,
    "benchmark": 23995.35
   },
   {
    "date": "2024-11-05",
-   "equity": 10103.82,
-   "cash": 1620.93,
+   "equity": 10167.06,
+   "cash": 199.24,
    "benchmark": 24213.3
   },
   {
    "date": "2024-11-06",
-   "equity": 10184.89,
-   "cash": 1620.93,
+   "equity": 10166.41,
+   "cash": 199.24,
    "benchmark": 24484.05
   },
   {
    "date": "2024-11-07",
-   "equity": 10038.88,
-   "cash": 1620.93,
+   "equity": 10028.13,
+   "cash": 199.24,
    "benchmark": 24199.35
   },
   {
    "date": "2024-11-08",
-   "equity": 10126.6,
-   "cash": 1456.62,
+   "equity": 10086.58,
+   "cash": 550.05,
    "benchmark": 24148.2
   },
   {
    "date": "2024-11-11",
-   "equity": 10060.69,
-   "cash": 1456.62,
+   "equity": 10222.24,
+   "cash": 550.05,
    "benchmark": 24141.3
   },
   {
    "date": "2024-11-12",
-   "equity": 10061.84,
-   "cash": 1456.62,
+   "equity": 10131.55,
+   "cash": 550.05,
    "benchmark": 23883.45
   },
   {
    "date": "2024-11-13",
-   "equity": 9964.17,
-   "cash": 1456.62,
+   "equity": 9998.75,
+   "cash": 550.05,
    "benchmark": 23559.05
   },
   {
    "date": "2024-11-14",
-   "equity": 9999.92,
-   "cash": 1456.62,
+   "equity": 10043.34,
+   "cash": 550.05,
    "benchmark": 23532.7
   },
   {
    "date": "2024-11-18",
-   "equity": 9933.02,
-   "cash": 1456.62,
+   "equity": 10029.73,
+   "cash": 550.05,
    "benchmark": 23453.8
   },
   {
    "date": "2024-11-19",
-   "equity": 9882.65,
-   "cash": 1456.62,
+   "equity": 9949.88,
+   "cash": 550.05,
    "benchmark": 23518.5
   },
   {
    "date": "2024-11-21",
-   "equity": 9829.19,
-   "cash": 1456.62,
+   "equity": 9937.77,
+   "cash": 3476.33,
    "benchmark": 23349.9
   },
   {
    "date": "2024-11-22",
-   "equity": 10028.85,
-   "cash": 1203.87,
+   "equity": 10125.23,
+   "cash": 756.13,
    "benchmark": 23907.25
   },
   {
    "date": "2024-11-25",
-   "equity": 10083.9,
-   "cash": 1203.87,
+   "equity": 10308.28,
+   "cash": 756.13,
    "benchmark": 24221.9
   },
   {
    "date": "2024-11-26",
-   "equity": 9900.82,
-   "cash": 1203.87,
+   "equity": 10114.44,
+   "cash": 756.13,
    "benchmark": 24194.5
   },
   {
    "date": "2024-11-27",
-   "equity": 10124.82,
-   "cash": 1203.87,
+   "equity": 10565.44,
+   "cash": 756.13,
    "benchmark": 24274.9
   },
   {
    "date": "2024-11-28",
-   "equity": 10100.44,
-   "cash": 1203.87,
+   "equity": 10441.91,
+   "cash": 756.13,
    "benchmark": 23914.15
   },
   {
    "date": "2024-11-29",
-   "equity": 10296.55,
-   "cash": 1233.6,
+   "equity": 10572.16,
+   "cash": 1707.32,
    "benchmark": 24131.1
   },
   {
    "date": "2024-12-02",
-   "equity": 10306.71,
-   "cash": 1233.6,
+   "equity": 10611.32,
+   "cash": 1707.32,
    "benchmark": 24276.05
   },
   {
    "date": "2024-12-03",
-   "equity": 10405.08,
-   "cash": 1233.6,
+   "equity": 10922.67,
+   "cash": 1707.32,
    "benchmark": 24457.15
   },
   {
    "date": "2024-12-04",
-   "equity": 10359.97,
-   "cash": 1233.6,
+   "equity": 10869.68,
+   "cash": 1707.32,
    "benchmark": 24467.45
   },
   {
    "date": "2024-12-05",
-   "equity": 10362.08,
-   "cash": 1233.6,
+   "equity": 10878.39,
+   "cash": 1707.32,
    "benchmark": 24708.4
   },
   {
    "date": "2024-12-06",
-   "equity": 10316.97,
-   "cash": 1145.37,
+   "equity": 10790.98,
+   "cash": 1619.38,
    "benchmark": 24677.8
   },
   {
    "date": "2024-12-09",
-   "equity": 10272.44,
-   "cash": 1145.37,
+   "equity": 10746.44,
+   "cash": 1619.38,
    "benchmark": 24619.0
   },
   {
    "date": "2024-12-10",
-   "equity": 10224.06,
-   "cash": 1145.37,
+   "equity": 10698.06,
+   "cash": 1619.38,
    "benchmark": 24610.05
   },
   {
    "date": "2024-12-11",
-   "equity": 10220.77,
-   "cash": 1145.37,
+   "equity": 10694.78,
+   "cash": 1619.38,
    "benchmark": 24641.8
   },
   {
    "date": "2024-12-12",
-   "equity": 10100.9,
-   "cash": 1145.37,
+   "equity": 10574.91,
+   "cash": 1619.38,
    "benchmark": 24548.7
   },
   {
    "date": "2024-12-13",
-   "equity": 10140.87,
-   "cash": 1145.37,
+   "equity": 10614.88,
+   "cash": 1619.38,
    "benchmark": 24768.3
   },
   {
    "date": "2024-12-16",
-   "equity": 10107.79,
-   "cash": 1145.37,
+   "equity": 10581.8,
+   "cash": 1619.38,
    "benchmark": 24668.25
   },
   {
    "date": "2024-12-17",
-   "equity": 9970.2,
-   "cash": 1145.37,
+   "equity": 10444.2,
+   "cash": 1619.38,
    "benchmark": 24336.0
   },
   {
    "date": "2024-12-18",
-   "equity": 9960.17,
-   "cash": 1145.37,
+   "equity": 10434.18,
+   "cash": 1619.38,
    "benchmark": 24198.85
   },
   {
    "date": "2024-12-19",
-   "equity": 9855.53,
-   "cash": 1145.37,
+   "equity": 10329.54,
+   "cash": 1619.38,
    "benchmark": 23951.7
   },
   {
    "date": "2024-12-20",
-   "equity": 9685.08,
-   "cash": 39.47,
+   "equity": 10180.94,
+   "cash": 87.64,
    "benchmark": 23587.5
   },
   {
    "date": "2024-12-23",
-   "equity": 9721.86,
-   "cash": 39.47,
+   "equity": 10190.71,
+   "cash": 87.64,
    "benchmark": 23753.45
   },
   {
    "date": "2024-12-24",
-   "equity": 9686.25,
-   "cash": 39.47,
+   "equity": 10195.49,
+   "cash": 87.64,
    "benchmark": 23727.65
   },
   {
    "date": "2024-12-26",
-   "equity": 9730.04,
-   "cash": 39.47,
+   "equity": 10245.1,
+   "cash": 87.64,
    "benchmark": 23750.2
   },
   {
    "date": "2024-12-27",
-   "equity": 9635.12,
-   "cash": 210.16,
+   "equity": 10185.59,
+   "cash": 122.96,
    "benchmark": 23813.4
   },
   {
    "date": "2024-12-30",
-   "equity": 9807.33,
-   "cash": 210.16,
+   "equity": 10316.56,
+   "cash": 122.96,
    "benchmark": 23644.9
   },
   {
    "date": "2024-12-31",
-   "equity": 9641.23,
-   "cash": 210.16,
+   "equity": 10145.79,
+   "cash": 122.96,
    "benchmark": 23644.8
   },
   {
    "date": "2025-01-01",
-   "equity": 9712.74,
-   "cash": 210.16,
+   "equity": 10247.98,
+   "cash": 122.96,
    "benchmark": 23742.9
   },
   {
    "date": "2025-01-02",
-   "equity": 9930.95,
-   "cash": 210.16,
+   "equity": 10508.38,
+   "cash": 122.96,
    "benchmark": 24188.65
   },
   {
    "date": "2025-01-03",
-   "equity": 9752.16,
-   "cash": 459.42,
+   "equity": 10377.42,
+   "cash": 330.37,
    "benchmark": 24004.75
   },
   {
    "date": "2025-01-06",
-   "equity": 9483.11,
-   "cash": 459.42,
+   "equity": 10160.34,
+   "cash": 330.37,
    "benchmark": 23616.05
   },
   {
    "date": "2025-01-07",
-   "equity": 9379.45,
-   "cash": 3972.9,
+   "equity": 10039.68,
+   "cash": 3843.85,
    "benchmark": 23707.9
   },
   {
    "date": "2025-01-08",
-   "equity": 9327.25,
-   "cash": 3972.9,
+   "equity": 10046.85,
+   "cash": 3843.85,
    "benchmark": 23688.95
   },
   {
    "date": "2025-01-09",
-   "equity": 9258.9,
-   "cash": 3972.9,
+   "equity": 10033.41,
+   "cash": 3843.85,
    "benchmark": 23526.5
   },
   {
    "date": "2025-01-10",
-   "equity": 9195.54,
-   "cash": 565.82,
+   "equity": 9976.06,
+   "cash": 108.61,
    "benchmark": 23431.5
   },
   {
    "date": "2025-01-13",
-   "equity": 8821.22,
-   "cash": 2661.26,
+   "equity": 9480.07,
+   "cash": 108.61,
    "benchmark": 23085.95
   },
   {
    "date": "2025-01-14",
-   "equity": 8915.0,
-   "cash": 2661.26,
+   "equity": 9766.11,
+   "cash": 108.61,
    "benchmark": 23176.05
   },
   {
    "date": "2025-01-15",
-   "equity": 9028.15,
-   "cash": 2661.26,
+   "equity": 9882.27,
+   "cash": 108.61,
    "benchmark": 23213.2
   },
   {
    "date": "2025-01-16",
-   "equity": 9234.66,
-   "cash": 2661.26,
+   "equity": 9964.49,
+   "cash": 108.61,
    "benchmark": 23311.8
   },
   {
    "date": "2025-01-17",
-   "equity": 9305.33,
-   "cash": 161.94,
+   "equity": 10004.67,
+   "cash": 85.77,
    "benchmark": 23203.2
   },
   {
    "date": "2025-01-20",
-   "equity": 9212.17,
-   "cash": 161.94,
+   "equity": 9890.13,
+   "cash": 85.77,
    "benchmark": 23344.75
   },
   {
    "date": "2025-01-21",
-   "equity": 8663.89,
-   "cash": 3145.65,
+   "equity": 9275.24,
+   "cash": 3497.91,
    "benchmark": 23024.65
   },
   {
    "date": "2025-01-22",
-   "equity": 8675.32,
-   "cash": 3145.65,
+   "equity": 9289.36,
+   "cash": 3497.91,
    "benchmark": 23155.35
   },
   {
    "date": "2025-01-23",
-   "equity": 8597.65,
-   "cash": 6438.28,
+   "equity": 9204.37,
+   "cash": 7045.01,
    "benchmark": 23205.35
   },
   {
    "date": "2025-01-24",
-   "equity": 8533.28,
-   "cash": 353.08,
+   "equity": 9139.64,
+   "cash": 743.83,
    "benchmark": 23092.2
   },
   {
    "date": "2025-01-27",
-   "equity": 8339.63,
-   "cash": 353.08,
+   "equity": 8936.59,
+   "cash": 743.83,
    "benchmark": 22829.15
   },
   {
    "date": "2025-01-28",
-   "equity": 8460.01,
-   "cash": 353.08,
+   "equity": 9058.96,
+   "cash": 743.83,
    "benchmark": 22957.25
   },
   {
    "date": "2025-01-29",
-   "equity": 8679.99,
-   "cash": 353.08,
+   "equity": 9293.25,
+   "cash": 743.83,
    "benchmark": 23163.1
   },
   {
    "date": "2025-01-30",
-   "equity": 8665.98,
-   "cash": 353.08,
+   "equity": 9275.53,
+   "cash": 743.83,
    "benchmark": 23249.5
   },
   {
    "date": "2025-01-31",
-   "equity": 8656.23,
-   "cash": 1073.89,
+   "equity": 9264.2,
+   "cash": 39.42,
    "benchmark": 23508.4
   },
   {
    "date": "2025-02-01",
-   "equity": 8578.44,
-   "cash": 1073.89,
+   "equity": 9165.08,
+   "cash": 39.42,
    "benchmark": 23482.15
   },
   {
    "date": "2025-02-03",
-   "equity": 8411.86,
-   "cash": 1073.89,
+   "equity": 8985.52,
+   "cash": 39.42,
    "benchmark": 23361.05
   },
   {
    "date": "2025-02-04",
-   "equity": 8682.63,
-   "cash": 1073.89,
+   "equity": 9314.83,
+   "cash": 39.42,
    "benchmark": 23739.25
   },
   {
    "date": "2025-02-05",
-   "equity": 8772.34,
-   "cash": 1073.89,
+   "equity": 9428.81,
+   "cash": 39.42,
    "benchmark": 23696.3
   },
   {
    "date": "2025-02-06",
-   "equity": 8735.53,
-   "cash": 1073.89,
+   "equity": 9405.62,
+   "cash": 39.42,
    "benchmark": 23603.35
   },
   {
    "date": "2025-02-07",
-   "equity": 8742.86,
-   "cash": 767.87,
+   "equity": 9398.65,
+   "cash": 39.42,
    "benchmark": 23559.95
   },
   {
    "date": "2025-02-10",
-   "equity": 8582.08,
-   "cash": 767.87,
+   "equity": 9229.53,
+   "cash": 39.42,
    "benchmark": 23381.6
   },
   {
    "date": "2025-02-11",
-   "equity": 8428.17,
-   "cash": 767.87,
+   "equity": 9064.56,
+   "cash": 39.42,
    "benchmark": 23071.8
   },
   {
    "date": "2025-02-12",
-   "equity": 8287.72,
-   "cash": 3921.9,
+   "equity": 8904.42,
+   "cash": 3419.83,
    "benchmark": 23045.25
   },
   {
    "date": "2025-02-13",
-   "equity": 8275.25,
-   "cash": 3921.9,
+   "equity": 8874.71,
+   "cash": 3419.83,
    "benchmark": 23031.4
   },
   {
    "date": "2025-02-14",
-   "equity": 8134.33,
-   "cash": 120.83,
+   "equity": 8682.95,
+   "cash": 201.02,
    "benchmark": 22929.25
   },
   {
    "date": "2025-02-17",
-   "equity": 8144.99,
-   "cash": 120.83,
+   "equity": 8691.95,
+   "cash": 201.02,
    "benchmark": 22959.5
   },
   {
    "date": "2025-02-18",
-   "equity": 8191.95,
-   "cash": 120.83,
+   "equity": 8733.63,
+   "cash": 201.02,
    "benchmark": 22945.3
   },
   {
    "date": "2025-02-19",
-   "equity": 8401.06,
-   "cash": 120.83,
+   "equity": 8959.3,
+   "cash": 201.02,
    "benchmark": 22932.9
   },
   {
    "date": "2025-02-20",
-   "equity": 8646.66,
-   "cash": 120.83,
+   "equity": 9217.98,
+   "cash": 201.02,
    "benchmark": 22913.15
   },
   {
    "date": "2025-02-21",
-   "equity": 8555.09,
-   "cash": 214.57,
+   "equity": 9121.19,
+   "cash": 1015.72,
    "benchmark": 22795.9
   },
   {
    "date": "2025-02-24",
-   "equity": 8561.9,
-   "cash": 214.57,
+   "equity": 9100.36,
+   "cash": 1015.72,
    "benchmark": 22553.35
   },
   {
    "date": "2025-02-25",
-   "equity": 8472.68,
-   "cash": 214.57,
+   "equity": 9092.81,
+   "cash": 1015.72,
    "benchmark": 22547.55
   },
   {
    "date": "2025-02-27",
-   "equity": 8386.71,
-   "cash": 214.57,
+   "equity": 9014.79,
+   "cash": 1015.72,
    "benchmark": 22545.05
   },
   {
    "date": "2025-02-28",
-   "equity": 8182.78,
-   "cash": 9.76,
+   "equity": 8766.16,
+   "cash": 141.99,
    "benchmark": 22124.7
   },
   {
    "date": "2025-03-03",
-   "equity": 8123.76,
-   "cash": 9.76,
+   "equity": 8691.19,
+   "cash": 141.99,
    "benchmark": 22119.3
   },
   {
    "date": "2025-03-04",
-   "equity": 8299.72,
-   "cash": 9.76,
+   "equity": 8927.35,
+   "cash": 141.99,
    "benchmark": 22082.65
   },
   {
    "date": "2025-03-05",
-   "equity": 8615.22,
-   "cash": 9.76,
+   "equity": 9161.74,
+   "cash": 141.99,
    "benchmark": 22337.3
   },
   {
    "date": "2025-03-06",
-   "equity": 8685.89,
-   "cash": 9.76,
+   "equity": 9200.88,
+   "cash": 141.99,
    "benchmark": 22544.7
   },
   {
    "date": "2025-03-07",
-   "equity": 8610.7,
-   "cash": 331.26,
+   "equity": 9103.95,
+   "cash": 634.44,
    "benchmark": 22552.5
   },
   {
    "date": "2025-03-10",
-   "equity": 8601.43,
-   "cash": 331.26,
+   "equity": 9009.27,
+   "cash": 634.44,
    "benchmark": 22460.3
   },
   {
    "date": "2025-03-11",
-   "equity": 8657.47,
-   "cash": 331.26,
+   "equity": 8997.34,
+   "cash": 3943.06,
    "benchmark": 22497.9
   },
   {
    "date": "2025-03-12",
-   "equity": 8654.32,
-   "cash": 331.26,
+   "equity": 8944.39,
+   "cash": 3943.06,
    "benchmark": 22470.5
   },
   {
    "date": "2025-03-13",
-   "equity": 8599.06,
-   "cash": 331.26,
+   "equity": 8897.97,
+   "cash": 3943.06,
    "benchmark": 22397.2
   },
   {
    "date": "2025-03-17",
-   "equity": 8558.85,
-   "cash": 116.8,
+   "equity": 8871.8,
+   "cash": 975.42,
    "benchmark": 22508.75
   },
   {
    "date": "2025-03-18",
-   "equity": 8558.85,
-   "cash": 116.8,
+   "equity": 8871.8,
+   "cash": 975.42,
    "benchmark": 22834.3
   },
   {
    "date": "2025-03-19",
-   "equity": 9126.75,
-   "cash": 116.8,
+   "equity": 9375.78,
+   "cash": 975.42,
    "benchmark": 22907.6
   },
   {
    "date": "2025-03-20",
-   "equity": 9266.57,
-   "cash": 116.8,
+   "equity": 9470.45,
+   "cash": 975.42,
    "benchmark": 23190.65
   },
   {
    "date": "2025-03-21",
-   "equity": 9262.98,
-   "cash": 316.63,
+   "equity": 9432.56,
+   "cash": 116.64,
    "benchmark": 23350.4
   },
   {
    "date": "2025-03-24",
-   "equity": 9522.33,
-   "cash": 316.63,
+   "equity": 9670.2,
+   "cash": 116.64,
    "benchmark": 23658.35
   },
   {
    "date": "2025-03-25",
-   "equity": 9486.71,
-   "cash": 316.63,
+   "equity": 9581.94,
+   "cash": 116.64,
    "benchmark": 23668.65
   },
   {
    "date": "2025-03-26",
-   "equity": 9251.01,
-   "cash": 316.63,
+   "equity": 9372.16,
+   "cash": 116.64,
    "benchmark": 23486.85
   },
   {
    "date": "2025-03-27",
-   "equity": 9359.5,
-   "cash": 316.63,
+   "equity": 9491.36,
+   "cash": 116.64,
    "benchmark": 23591.95
   },
   {
    "date": "2025-03-28",
-   "equity": 9340.38,
-   "cash": 73.78,
+   "equity": 9491.22,
+   "cash": 116.64,
    "benchmark": 23519.35
   },
   {
    "date": "2025-04-01",
-   "equity": 9335.05,
-   "cash": 73.78,
+   "equity": 9467.65,
+   "cash": 116.64,
    "benchmark": 23165.7
   },
   {
    "date": "2025-04-02",
-   "equity": 9441.87,
-   "cash": 73.78,
+   "equity": 9467.08,
+   "cash": 116.64,
    "benchmark": 23332.35
   },
   {
    "date": "2025-04-03",
-   "equity": 9506.64,
-   "cash": 73.78,
+   "equity": 9548.0,
+   "cash": 116.64,
    "benchmark": 23250.1
   },
   {
    "date": "2025-04-04",
-   "equity": 9251.28,
-   "cash": 1057.04,
+   "equity": 9312.56,
+   "cash": 125.05,
    "benchmark": 22904.45
   },
   {
    "date": "2025-04-07",
-   "equity": 8842.58,
-   "cash": 4439.46,
+   "equity": 9077.39,
+   "cash": 3507.47,
    "benchmark": 22161.6
   },
   {
    "date": "2025-04-08",
-   "equity": 8901.19,
-   "cash": 4439.46,
+   "equity": 9171.76,
+   "cash": 3507.47,
    "benchmark": 22535.85
   },
   {
    "date": "2025-04-09",
-   "equity": 8861.69,
-   "cash": 4439.46,
+   "equity": 9175.91,
+   "cash": 3507.47,
    "benchmark": 22399.15
   },
   {
    "date": "2025-04-11",
-   "equity": 9086.18,
-   "cash": 984.48,
+   "equity": 9218.18,
+   "cash": 185.97,
    "benchmark": 22828.55
   },
   {
    "date": "2025-04-15",
-   "equity": 9310.81,
-   "cash": 984.48,
+   "equity": 9420.87,
+   "cash": 185.97,
    "benchmark": 23328.55
   },
   {
    "date": "2025-04-16",
-   "equity": 9283.12,
-   "cash": 984.48,
+   "equity": 9563.66,
+   "cash": 185.97,
    "benchmark": 23437.2
   },
   {
    "date": "2025-04-17",
-   "equity": 9290.28,
-   "cash": 984.48,
+   "equity": 9610.65,
+   "cash": 185.97,
    "benchmark": 23851.65
   },
   {
    "date": "2025-04-21",
-   "equity": 9383.3,
-   "cash": 366.38,
+   "equity": 9781.72,
+   "cash": 185.97,
    "benchmark": 24125.55
   },
   {
    "date": "2025-04-22",
-   "equity": 9396.51,
-   "cash": 366.38,
+   "equity": 9721.3,
+   "cash": 185.97,
    "benchmark": 24167.25
   },
   {
    "date": "2025-04-23",
-   "equity": 9591.48,
-   "cash": 366.38,
+   "equity": 9885.66,
+   "cash": 185.97,
    "benchmark": 24328.95
   },
   {
    "date": "2025-04-24",
-   "equity": 9494.29,
-   "cash": 366.38,
+   "equity": 9884.27,
+   "cash": 185.97,
    "benchmark": 24246.7
   },
   {
    "date": "2025-04-25",
-   "equity": 9449.41,
-   "cash": 731.31,
+   "equity": 9669.06,
+   "cash": 440.57,
    "benchmark": 24039.35
   },
   {
    "date": "2025-04-28",
-   "equity": 9269.89,
-   "cash": 731.31,
+   "equity": 9625.56,
+   "cash": 440.57,
    "benchmark": 24328.5
   },
   {
    "date": "2025-04-29",
-   "equity": 9264.63,
-   "cash": 731.31,
+   "equity": 9501.7,
+   "cash": 440.57,
    "benchmark": 24335.95
   },
   {
    "date": "2025-04-30",
-   "equity": 9252.07,
-   "cash": 731.31,
+   "equity": 9399.42,
+   "cash": 440.57,
    "benchmark": 24334.2
   },
   {
    "date": "2025-05-02",
-   "equity": 9142.9,
-   "cash": 989.9,
+   "equity": 9334.55,
+   "cash": 465.75,
    "benchmark": 24346.7
   },
   {
    "date": "2025-05-05",
-   "equity": 9346.35,
-   "cash": 989.9,
+   "equity": 9433.46,
+   "cash": 465.75,
    "benchmark": 24461.15
   },
   {
    "date": "2025-05-06",
-   "equity": 9328.45,
-   "cash": 989.9,
+   "equity": 9406.12,
+   "cash": 465.75,
    "benchmark": 24379.6
   },
   {
    "date": "2025-05-07",
-   "equity": 9312.79,
-   "cash": 989.9,
+   "equity": 9485.1,
+   "cash": 465.75,
    "benchmark": 24414.4
   },
   {
    "date": "2025-05-08",
-   "equity": 9144.31,
-   "cash": 989.9,
+   "equity": 9285.5,
+   "cash": 465.75,
    "benchmark": 24273.8
   },
   {
    "date": "2025-05-09",
-   "equity": 9009.24,
-   "cash": 1022.85,
+   "equity": 9169.85,
+   "cash": 1146.71,
    "benchmark": 24008.0
   },
   {
    "date": "2025-05-12",
-   "equity": 9316.07,
-   "cash": 1022.85,
+   "equity": 9478.53,
+   "cash": 1146.71,
    "benchmark": 24924.7
   },
   {
    "date": "2025-05-13",
-   "equity": 9325.76,
-   "cash": 1022.85,
+   "equity": 9506.01,
+   "cash": 1146.71,
    "benchmark": 24578.35
   },
   {
    "date": "2025-05-14",
-   "equity": 9276.43,
-   "cash": 1022.85,
+   "equity": 9498.37,
+   "cash": 1146.71,
    "benchmark": 24666.9
   },
   {
    "date": "2025-05-15",
-   "equity": 9414.15,
-   "cash": 1022.85,
+   "equity": 9616.71,
+   "cash": 1146.71,
    "benchmark": 25062.1
   },
   {
    "date": "2025-05-16",
-   "equity": 9482.24,
-   "cash": 1735.65,
+   "equity": 9647.04,
+   "cash": 655.67,
    "benchmark": 25019.8
   },
   {
    "date": "2025-05-19",
-   "equity": 9442.35,
-   "cash": 1735.65,
+   "equity": 9637.35,
+   "cash": 655.67,
    "benchmark": 24945.45
   },
   {
    "date": "2025-05-20",
-   "equity": 9345.54,
-   "cash": 1735.65,
+   "equity": 9557.24,
+   "cash": 655.67,
    "benchmark": 24683.9
   },
   {
    "date": "2025-05-21",
-   "equity": 9409.96,
-   "cash": 1735.65,
+   "equity": 9631.82,
+   "cash": 655.67,
    "benchmark": 24813.45
   },
   {
    "date": "2025-05-22",
-   "equity": 9328.99,
-   "cash": 1735.65,
+   "equity": 9581.23,
+   "cash": 655.67,
    "benchmark": 24609.7
   },
   {
    "date": "2025-05-23",
-   "equity": 9351.43,
-   "cash": 679.91,
+   "equity": 9586.23,
+   "cash": 914.7,
    "benchmark": 24853.15
   },
   {
    "date": "2025-05-26",
-   "equity": 9233.71,
-   "cash": 679.91,
+   "equity": 9468.51,
+   "cash": 914.7,
    "benchmark": 25001.15
   },
   {
    "date": "2025-05-27",
-   "equity": 9169.81,
-   "cash": 679.91,
+   "equity": 9404.61,
+   "cash": 914.7,
    "benchmark": 24826.2
   },
   {
    "date": "2025-05-28",
-   "equity": 9138.9,
-   "cash": 679.91,
+   "equity": 9373.69,
+   "cash": 914.7,
    "benchmark": 24752.45
   },
   {
    "date": "2025-05-29",
-   "equity": 9212.14,
-   "cash": 679.91,
+   "equity": 9446.93,
+   "cash": 914.7,
    "benchmark": 24833.6
   },
   {
    "date": "2025-05-30",
-   "equity": 9344.68,
-   "cash": 969.98,
+   "equity": 9579.47,
+   "cash": 1204.78,
    "benchmark": 24750.7
   },
   {
    "date": "2025-06-02",
-   "equity": 9409.58,
-   "cash": 969.98,
+   "equity": 9644.37,
+   "cash": 1204.78,
    "benchmark": 24716.6
   },
   {
    "date": "2025-06-03",
-   "equity": 9290.46,
-   "cash": 969.98,
+   "equity": 9525.26,
+   "cash": 1204.78,
    "benchmark": 24542.5
   },
   {
    "date": "2025-06-04",
-   "equity": 9440.5,
-   "cash": 969.98,
+   "equity": 9675.3,
+   "cash": 1204.78,
    "benchmark": 24620.2
   },
   {
    "date": "2025-06-05",
-   "equity": 9630.26,
-   "cash": 969.98,
+   "equity": 9865.05,
+   "cash": 1204.78,
    "benchmark": 24750.9
   },
   {
    "date": "2025-06-06",
-   "equity": 9727.38,
-   "cash": 2670.61,
+   "equity": 9959.53,
+   "cash": 1345.25,
    "benchmark": 25003.05
   },
   {
    "date": "2025-06-09",
-   "equity": 9781.19,
-   "cash": 2670.61,
+   "equity": 10051.52,
+   "cash": 1345.25,
    "benchmark": 25103.2
   },
   {
    "date": "2025-06-10",
-   "equity": 9805.74,
-   "cash": 2670.61,
+   "equity": 10138.58,
+   "cash": 1345.25,
    "benchmark": 25104.25
   },
   {
    "date": "2025-06-11",
-   "equity": 9745.6,
-   "cash": 2670.61,
+   "equity": 10149.69,
+   "cash": 1345.25,
    "benchmark": 25141.4
   },
   {
    "date": "2025-06-12",
-   "equity": 9676.15,
-   "cash": 2670.61,
+   "equity": 10080.18,
+   "cash": 1345.25,
    "benchmark": 24888.2
   },
   {
    "date": "2025-06-13",
-   "equity": 9623.16,
-   "cash": 2670.61,
+   "equity": 10013.85,
+   "cash": 1648.11,
    "benchmark": 24718.6
   },
   {
    "date": "2025-06-16",
-   "equity": 9697.7,
-   "cash": 2670.61,
+   "equity": 10099.03,
+   "cash": 1648.11,
    "benchmark": 24946.5
   },
   {
    "date": "2025-06-17",
-   "equity": 9663.19,
-   "cash": 2670.61,
+   "equity": 10031.99,
+   "cash": 1648.11,
    "benchmark": 24853.4
   },
   {
    "date": "2025-06-18",
-   "equity": 9619.81,
-   "cash": 2670.61,
+   "equity": 9993.93,
+   "cash": 1648.11,
    "benchmark": 24812.05
   },
   {
    "date": "2025-06-19",
-   "equity": 9565.05,
-   "cash": 2670.61,
+   "equity": 9974.17,
+   "cash": 1648.11,
    "benchmark": 24793.25
   },
   {
    "date": "2025-06-20",
-   "equity": 9571.91,
-   "cash": 191.92,
+   "equity": 10077.64,
+   "cash": 444.32,
    "benchmark": 25112.4
   },
   {
    "date": "2025-06-23",
-   "equity": 9543.37,
-   "cash": 191.92,
+   "equity": 10050.42,
+   "cash": 444.32,
    "benchmark": 24971.9
   },
   {
    "date": "2025-06-24",
-   "equity": 9541.47,
-   "cash": 191.92,
+   "equity": 10048.94,
+   "cash": 444.32,
    "benchmark": 25044.35
   },
   {
    "date": "2025-06-25",
-   "equity": 9627.01,
-   "cash": 191.92,
+   "equity": 10138.28,
+   "cash": 444.32,
    "benchmark": 25244.75
   },
   {
    "date": "2025-06-26",
-   "equity": 9751.45,
-   "cash": 191.92,
+   "equity": 10269.04,
+   "cash": 444.32,
    "benchmark": 25549.0
   },
   {
    "date": "2025-06-27",
-   "equity": 9716.45,
-   "cash": 191.92,
+   "equity": 10202.31,
+   "cash": 243.58,
    "benchmark": 25637.8
   },
   {
    "date": "2025-06-30",
-   "equity": 9717.55,
-   "cash": 191.92,
+   "equity": 10231.76,
+   "cash": 243.58,
    "benchmark": 25517.05
   },
   {
    "date": "2025-07-01",
-   "equity": 9662.74,
-   "cash": 191.92,
+   "equity": 10315.76,
+   "cash": 243.58,
    "benchmark": 25541.8
   },
   {
    "date": "2025-07-02",
-   "equity": 9638.19,
-   "cash": 191.92,
+   "equity": 10259.33,
+   "cash": 243.58,
    "benchmark": 25453.4
   },
   {
    "date": "2025-07-03",
-   "equity": 9663.21,
-   "cash": 191.92,
+   "equity": 10263.08,
+   "cash": 243.58,
    "benchmark": 25405.3
   },
   {
    "date": "2025-07-04",
-   "equity": 9664.24,
-   "cash": 1109.02,
+   "equity": 10266.64,
+   "cash": 1553.43,
    "benchmark": 25461.0
   },
   {
    "date": "2025-07-07",
-   "equity": 9671.18,
-   "cash": 1109.02,
+   "equity": 10220.18,
+   "cash": 1553.43,
    "benchmark": 25461.3
   },
   {
    "date": "2025-07-08",
-   "equity": 9738.29,
-   "cash": 1109.02,
+   "equity": 10261.74,
+   "cash": 1553.43,
    "benchmark": 25522.5
   },
   {
    "date": "2025-07-09",
-   "equity": 9774.85,
-   "cash": 1109.02,
+   "equity": 10244.76,
+   "cash": 1553.43,
    "benchmark": 25476.1
   },
   {
    "date": "2025-07-10",
-   "equity": 9734.32,
-   "cash": 1109.02,
+   "equity": 10190.97,
+   "cash": 1553.43,
    "benchmark": 25355.25
   },
   {
    "date": "2025-07-11",
-   "equity": 9779.65,
-   "cash": 141.57,
+   "equity": 10190.94,
+   "cash": 77.01,
    "benchmark": 25149.85
   },
   {
    "date": "2025-07-14",
-   "equity": 9826.05,
-   "cash": 141.57,
+   "equity": 10174.82,
+   "cash": 77.01,
    "benchmark": 25082.3
   },
   {
    "date": "2025-07-15",
-   "equity": 9807.58,
-   "cash": 141.57,
+   "equity": 10228.0,
+   "cash": 77.01,
    "benchmark": 25195.8
   },
   {
    "date": "2025-07-16",
-   "equity": 9722.9,
-   "cash": 141.57,
+   "equity": 10197.46,
+   "cash": 77.01,
    "benchmark": 25212.05
   },
   {
    "date": "2025-07-17",
-   "equity": 9648.74,
-   "cash": 141.57,
+   "equity": 10173.17,
+   "cash": 77.01,
    "benchmark": 25111.45
   },
   {
    "date": "2025-07-18",
-   "equity": 9504.68,
-   "cash": 905.53,
+   "equity": 9988.55,
+   "cash": 997.77,
    "benchmark": 24968.4
   },
   {
    "date": "2025-07-21",
-   "equity": 9545.11,
-   "cash": 905.53,
+   "equity": 10034.14,
+   "cash": 997.77,
    "benchmark": 25090.7
   },
   {
    "date": "2025-07-22",
-   "equity": 9560.29,
-   "cash": 905.53,
+   "equity": 10052.44,
+   "cash": 997.77,
    "benchmark": 25060.9
   },
   {
    "date": "2025-07-23",
-   "equity": 9573.9,
-   "cash": 905.53,
+   "equity": 10063.18,
+   "cash": 997.77,
    "benchmark": 25219.9
   },
   {
    "date": "2025-07-24",
-   "equity": 9498.61,
-   "cash": 905.53,
+   "equity": 9985.95,
+   "cash": 997.77,
    "benchmark": 25062.1
   },
   {
    "date": "2025-07-25",
-   "equity": 9386.29,
-   "cash": 783.75,
+   "equity": 9870.01,
+   "cash": 1267.46,
    "benchmark": 24837.0
   },
   {
    "date": "2025-07-28",
-   "equity": 9427.89,
-   "cash": 783.75,
+   "equity": 9911.61,
+   "cash": 1267.46,
    "benchmark": 24680.9
   },
   {
    "date": "2025-07-29",
-   "equity": 9429.27,
-   "cash": 783.75,
+   "equity": 9912.99,
+   "cash": 1267.46,
    "benchmark": 24821.1
   },
   {
    "date": "2025-07-30",
-   "equity": 9381.54,
-   "cash": 783.75,
+   "equity": 9865.25,
+   "cash": 1267.46,
    "benchmark": 24855.05
   },
   {
    "date": "2025-07-31",
-   "equity": 9342.23,
-   "cash": 783.75,
+   "equity": 9825.94,
+   "cash": 1267.46,
    "benchmark": 24768.35
   },
   {
    "date": "2025-08-01",
-   "equity": 9154.55,
-   "cash": 1538.26,
+   "equity": 9638.27,
+   "cash": 2021.97,
    "benchmark": 24565.35
   },
   {
    "date": "2025-08-04",
-   "equity": 9261.05,
-   "cash": 1538.26,
+   "equity": 9744.76,
+   "cash": 2021.97,
    "benchmark": 24722.75
   },
   {
    "date": "2025-08-05",
-   "equity": 9217.86,
-   "cash": 1538.26,
+   "equity": 9701.58,
+   "cash": 2021.97,
    "benchmark": 24649.55
   },
   {
    "date": "2025-08-06",
-   "equity": 9126.79,
-   "cash": 1538.26,
+   "equity": 9610.51,
+   "cash": 2021.97,
    "benchmark": 24574.2
   },
   {
    "date": "2025-08-07",
-   "equity": 9131.23,
-   "cash": 1538.26,
+   "equity": 9614.94,
+   "cash": 2021.97,
    "benchmark": 24596.15
   },
   {
    "date": "2025-08-08",
-   "equity": 9099.69,
-   "cash": 1538.26,
+   "equity": 9583.4,
+   "cash": 2021.97,
    "benchmark": 24363.3
   },
   {
    "date": "2025-08-11",
-   "equity": 9117.32,
-   "cash": 1538.26,
+   "equity": 9601.04,
+   "cash": 2021.97,
    "benchmark": 24585.05
   },
   {
    "date": "2025-08-12",
-   "equity": 9089.47,
-   "cash": 1538.26,
+   "equity": 9573.19,
+   "cash": 2021.97,
    "benchmark": 24487.4
   },
   {
    "date": "2025-08-13",
-   "equity": 9101.45,
-   "cash": 1538.26,
+   "equity": 9585.17,
+   "cash": 2021.97,
    "benchmark": 24619.35
   },
   {
    "date": "2025-08-14",
-   "equity": 9139.55,
-   "cash": 1538.26,
+   "equity": 9623.27,
+   "cash": 2021.97,
    "benchmark": 24631.3
   },
   {
    "date": "2025-08-18",
-   "equity": 9148.79,
-   "cash": 794.45,
+   "equity": 9658.06,
+   "cash": 2021.97,
    "benchmark": 24876.95
   },
   {
    "date": "2025-08-19",
-   "equity": 9156.31,
-   "cash": 794.45,
+   "equity": 9649.65,
+   "cash": 2021.97,
    "benchmark": 24980.65
   },
   {
    "date": "2025-08-20",
-   "equity": 9195.15,
-   "cash": 794.45,
+   "equity": 9823.02,
+   "cash": 2021.97,
    "benchmark": 25050.55
   },
   {
    "date": "2025-08-21",
-   "equity": 9216.16,
-   "cash": 794.45,
+   "equity": 9848.71,
+   "cash": 2021.97,
    "benchmark": 25083.75
   },
   {
    "date": "2025-08-22",
-   "equity": 9093.44,
-   "cash": 794.45,
+   "equity": 9746.42,
+   "cash": 2016.64,
    "benchmark": 24870.1
   },
   {
    "date": "2025-08-25",
-   "equity": 9183.06,
-   "cash": 794.45,
+   "equity": 9820.68,
+   "cash": 2016.64,
    "benchmark": 24967.75
   },
   {
    "date": "2025-08-26",
-   "equity": 9193.67,
-   "cash": 794.45,
+   "equity": 9764.05,
+   "cash": 2016.64,
    "benchmark": 24712.05
   },
   {
    "date": "2025-08-28",
-   "equity": 9105.41,
-   "cash": 794.45,
+   "equity": 9662.1,
+   "cash": 2016.64,
    "benchmark": 24500.9
   },
   {
    "date": "2025-08-29",
-   "equity": 9120.08,
-   "cash": 593.41,
+   "equity": 9623.83,
+   "cash": 1146.54,
    "benchmark": 24426.85
   },
   {
    "date": "2025-09-01",
-   "equity": 9169.96,
-   "cash": 593.41,
+   "equity": 9702.45,
+   "cash": 1146.54,
    "benchmark": 24625.05
   },
   {
    "date": "2025-09-02",
-   "equity": 9117.58,
-   "cash": 593.41,
+   "equity": 9662.96,
+   "cash": 1146.54,
    "benchmark": 24579.6
   },
   {
    "date": "2025-09-03",
-   "equity": 9139.13,
-   "cash": 593.41,
+   "equity": 9655.9,
+   "cash": 1146.54,
    "benchmark": 24715.05
   },
   {
    "date": "2025-09-04",
-   "equity": 9174.34,
-   "cash": 593.41,
+   "equity": 9627.8,
+   "cash": 1146.54,
    "benchmark": 24734.3
   },
   {
    "date": "2025-09-05",
-   "equity": 9130.06,
-   "cash": 593.41,
+   "equity": 9531.09,
+   "cash": 1146.54,
    "benchmark": 24741.0
   },
   {
    "date": "2025-09-08",
-   "equity": 9109.55,
-   "cash": 593.41,
+   "equity": 9472.57,
+   "cash": 1146.54,
    "benchmark": 24773.15
   },
   {
    "date": "2025-09-09",
-   "equity": 9138.06,
-   "cash": 593.41,
+   "equity": 9549.29,
+   "cash": 1146.54,
    "benchmark": 24868.6
   },
   {
    "date": "2025-09-10",
-   "equity": 9198.54,
-   "cash": 593.41,
+   "equity": 9677.35,
+   "cash": 1146.54,
    "benchmark": 24973.1
   },
   {
    "date": "2025-09-11",
-   "equity": 9213.15,
-   "cash": 593.41,
+   "equity": 9693.56,
+   "cash": 1146.54,
    "benchmark": 25005.5
   },
   {
    "date": "2025-09-12",
-   "equity": 9204.29,
-   "cash": 1128.8,
+   "equity": 9707.24,
+   "cash": 174.24,
    "benchmark": 25114.0
   },
   {
    "date": "2025-09-15",
-   "equity": 9156.7,
-   "cash": 1128.8,
+   "equity": 9689.13,
+   "cash": 174.24,
    "benchmark": 25069.2
   },
   {
    "date": "2025-09-16",
-   "equity": 9240.39,
-   "cash": 1128.8,
+   "equity": 9822.03,
+   "cash": 174.24,
    "benchmark": 25239.1
   },
   {
    "date": "2025-09-17",
-   "equity": 9287.27,
-   "cash": 1128.8,
+   "equity": 9848.43,
+   "cash": 174.24,
    "benchmark": 25330.25
   },
   {
    "date": "2025-09-18",
-   "equity": 9347.09,
-   "cash": 1128.8,
+   "equity": 9875.09,
+   "cash": 174.24,
    "benchmark": 25423.6
   },
   {
    "date": "2025-09-19",
-   "equity": 9301.4,
-   "cash": 227.29,
+   "equity": 9806.74,
+   "cash": 80.52,
    "benchmark": 25327.05
   },
   {
    "date": "2025-09-22",
-   "equity": 9161.36,
-   "cash": 227.29,
+   "equity": 9659.5,
+   "cash": 80.52,
    "benchmark": 25202.35
   },
   {
    "date": "2025-09-23",
-   "equity": 9169.09,
-   "cash": 227.29,
+   "equity": 9671.75,
+   "cash": 80.52,
    "benchmark": 25169.5
   },
   {
    "date": "2025-09-24",
-   "equity": 9101.87,
-   "cash": 227.29,
+   "equity": 9596.4,
+   "cash": 80.52,
    "benchmark": 25056.9
   },
   {
    "date": "2025-09-25",
-   "equity": 9006.96,
-   "cash": 227.29,
+   "equity": 9495.44,
+   "cash": 80.52,
    "benchmark": 24890.85
   },
   {
    "date": "2025-09-26",
-   "equity": 8816.75,
-   "cash": 190.77,
+   "equity": 9295.11,
+   "cash": 270.87,
    "benchmark": 24654.7
   },
   {
    "date": "2025-09-29",
-   "equity": 8782.96,
-   "cash": 190.77,
+   "equity": 9260.69,
+   "cash": 270.87,
    "benchmark": 24634.9
   },
   {
    "date": "2025-09-30",
-   "equity": 8780.36,
-   "cash": 190.77,
+   "equity": 9258.3,
+   "cash": 270.87,
    "benchmark": 24611.1
   },
   {
    "date": "2025-10-01",
-   "equity": 8909.18,
-   "cash": 190.77,
+   "equity": 9401.22,
+   "cash": 270.87,
    "benchmark": 24836.3
   },
   {
    "date": "2025-10-03",
-   "equity": 8952.47,
-   "cash": 749.03,
+   "equity": 9451.29,
+   "cash": 1247.85,
    "benchmark": 24894.25
   },
   {
    "date": "2025-10-06",
-   "equity": 9137.67,
-   "cash": 749.03,
+   "equity": 9636.49,
+   "cash": 1247.85,
    "benchmark": 25077.65
   },
   {
    "date": "2025-10-07",
-   "equity": 9119.66,
-   "cash": 749.03,
+   "equity": 9618.48,
+   "cash": 1247.85,
    "benchmark": 25108.3
   },
   {
    "date": "2025-10-08",
-   "equity": 9278.68,
-   "cash": 749.03,
+   "equity": 9777.5,
+   "cash": 1247.85,
    "benchmark": 25046.15
   },
   {
    "date": "2025-10-09",
-   "equity": 9402.36,
-   "cash": 749.03,
+   "equity": 9901.18,
+   "cash": 1247.85,
    "benchmark": 25181.8
   },
   {
    "date": "2025-10-10",
-   "equity": 9372.57,
-   "cash": 181.14,
+   "equity": 9871.39,
+   "cash": 679.96,
    "benchmark": 25285.35
   },
   {
    "date": "2025-10-13",
-   "equity": 9311.67,
-   "cash": 181.14,
+   "equity": 9810.49,
+   "cash": 679.96,
    "benchmark": 25227.35
   },
   {
    "date": "2025-10-14",
-   "equity": 9322.71,
-   "cash": 181.14,
+   "equity": 9821.53,
+   "cash": 679.96,
    "benchmark": 25145.5
   },
   {
    "date": "2025-10-15",
-   "equity": 9325.86,
-   "cash": 181.14,
+   "equity": 9824.68,
+   "cash": 679.96,
    "benchmark": 25323.55
   },
   {
    "date": "2025-10-16",
-   "equity": 9421.72,
-   "cash": 181.14,
+   "equity": 9920.54,
+   "cash": 679.96,
    "benchmark": 25585.3
   },
   {
    "date": "2025-10-17",
-   "equity": 9411.87,
-   "cash": 116.24,
+   "equity": 9910.29,
+   "cash": 382.48,
    "benchmark": 25709.85
   },
   {
    "date": "2025-10-20",
-   "equity": 9452.85,
-   "cash": 116.24,
+   "equity": 9951.6,
+   "cash": 382.48,
    "benchmark": 25843.15
   },
   {
    "date": "2025-10-21",
-   "equity": 9452.21,
-   "cash": 116.24,
+   "equity": 9951.08,
+   "cash": 382.48,
    "benchmark": 25868.6
   },
   {
    "date": "2025-10-23",
-   "equity": 9558.27,
-   "cash": 116.24,
+   "equity": 10059.97,
+   "cash": 382.48,
    "benchmark": 25891.4
   },
   {
    "date": "2025-10-24",
-   "equity": 9494.92,
-   "cash": 116.24,
+   "equity": 9995.35,
+   "cash": 382.48,
    "benchmark": 25795.15
   },
   {
    "date": "2025-10-27",
-   "equity": 9538.33,
-   "cash": 116.24,
+   "equity": 10039.66,
+   "cash": 382.48,
    "benchmark": 25966.05
   },
   {
    "date": "2025-10-28",
-   "equity": 9529.19,
-   "cash": 116.24,
+   "equity": 10029.04,
+   "cash": 382.48,
    "benchmark": 25936.2
   },
   {
    "date": "2025-10-29",
-   "equity": 9584.46,
-   "cash": 116.24,
+   "equity": 10084.21,
+   "cash": 382.48,
    "benchmark": 26053.9
   },
   {
    "date": "2025-10-30",
-   "equity": 9499.28,
-   "cash": 116.24,
+   "equity": 9998.69,
+   "cash": 382.48,
    "benchmark": 25877.85
   },
   {
    "date": "2025-10-31",
-   "equity": 9419.16,
-   "cash": 1.93,
+   "equity": 9917.37,
+   "cash": 268.16,
    "benchmark": 25722.1
   },
   {
    "date": "2025-11-03",
-   "equity": 9433.59,
-   "cash": 1.93,
+   "equity": 9931.63,
+   "cash": 268.16,
    "benchmark": 25763.35
   },
   {
    "date": "2025-11-04",
-   "equity": 9413.45,
-   "cash": 1.93,
+   "equity": 9909.0,
+   "cash": 268.16,
    "benchmark": 25597.65
   },
   {
    "date": "2025-11-06",
-   "equity": 9386.4,
-   "cash": 1.93,
+   "equity": 9884.01,
+   "cash": 268.16,
    "benchmark": 25509.7
   },
   {
    "date": "2025-11-07",
-   "equity": 9367.11,
-   "cash": 282.15,
+   "equity": 9860.93,
+   "cash": 775.97,
    "benchmark": 25492.3
   },
   {
    "date": "2025-11-10",
-   "equity": 9216.15,
-   "cash": 282.15,
+   "equity": 9709.97,
+   "cash": 775.97,
    "benchmark": 25574.35
   },
   {
    "date": "2025-11-11",
-   "equity": 9297.18,
-   "cash": 282.15,
+   "equity": 9791.0,
+   "cash": 775.97,
    "benchmark": 25694.95
   },
   {
    "date": "2025-11-12",
-   "equity": 9352.14,
-   "cash": 282.15,
+   "equity": 9845.96,
+   "cash": 775.97,
    "benchmark": 25875.8
   },
   {
    "date": "2025-11-13",
-   "equity": 9278.19,
-   "cash": 282.15,
+   "equity": 9772.02,
+   "cash": 775.97,
    "benchmark": 25879.15
   },
   {
    "date": "2025-11-14",
-   "equity": 9302.91,
-   "cash": 1016.71,
+   "equity": 9769.79,
+   "cash": 1627.56,
    "benchmark": 25910.05
   },
   {
    "date": "2025-11-17",
-   "equity": 9431.43,
-   "cash": 1016.71,
+   "equity": 9845.85,
+   "cash": 1627.56,
    "benchmark": 26013.45
   },
   {
    "date": "2025-11-18",
-   "equity": 9355.66,
-   "cash": 1016.71,
+   "equity": 9773.59,
+   "cash": 1627.56,
    "benchmark": 25910.05
   },
   {
    "date": "2025-11-19",
-   "equity": 9452.59,
-   "cash": 1016.71,
+   "equity": 9899.19,
+   "cash": 1627.56,
    "benchmark": 26052.65
   },
   {
    "date": "2025-11-20",
-   "equity": 9478.17,
-   "cash": 1016.71,
+   "equity": 9961.92,
+   "cash": 1627.56,
    "benchmark": 26192.15
   },
   {
    "date": "2025-11-21",
-   "equity": 9344.76,
-   "cash": 209.52,
+   "equity": 9915.19,
+   "cash": 1889.12,
    "benchmark": 26068.15
   },
   {
    "date": "2025-11-24",
-   "equity": 9329.62,
-   "cash": 209.52,
+   "equity": 9866.99,
+   "cash": 1889.12,
    "benchmark": 25959.5
   },
   {
    "date": "2025-11-25",
-   "equity": 9412.02,
-   "cash": 209.52,
+   "equity": 9904.15,
+   "cash": 1889.12,
    "benchmark": 25884.8
   },
   {
    "date": "2025-11-26",
-   "equity": 9546.19,
-   "cash": 209.52,
+   "equity": 10088.45,
+   "cash": 1889.12,
    "benchmark": 26205.3
   },
   {
    "date": "2025-11-27",
-   "equity": 9551.76,
-   "cash": 209.52,
+   "equity": 10146.15,
+   "cash": 1889.12,
    "benchmark": 26215.55
   },
   {
    "date": "2025-11-28",
-   "equity": 9471.04,
-   "cash": 817.75,
+   "equity": 10073.22,
+   "cash": 1889.12,
    "benchmark": 26202.95
   },
   {
    "date": "2025-12-01",
-   "equity": 9468.45,
-   "cash": 817.75,
+   "equity": 10052.76,
+   "cash": 1889.12,
    "benchmark": 26175.75
   },
   {
    "date": "2025-12-02",
-   "equity": 9434.69,
-   "cash": 817.75,
+   "equity": 10008.2,
+   "cash": 1889.12,
    "benchmark": 26032.2
   },
   {
    "date": "2025-12-03",
-   "equity": 9394.14,
-   "cash": 817.75,
+   "equity": 9913.28,
+   "cash": 1889.12,
    "benchmark": 25986.0
   },
   {
    "date": "2025-12-04",
-   "equity": 9390.03,
-   "cash": 817.75,
+   "equity": 9926.74,
+   "cash": 1889.12,
    "benchmark": 26033.75
   },
   {
    "date": "2025-12-05",
-   "equity": 9474.79,
-   "cash": 225.4,
+   "equity": 10045.57,
+   "cash": 1834.6,
    "benchmark": 26186.45
   },
   {
    "date": "2025-12-08",
-   "equity": 9308.4,
-   "cash": 225.4,
+   "equity": 9891.0,
+   "cash": 1834.6,
    "benchmark": 25960.55
   },
   {
    "date": "2025-12-09",
-   "equity": 9362.97,
-   "cash": 225.4,
+   "equity": 9977.71,
+   "cash": 1834.6,
    "benchmark": 25839.65
   },
   {
    "date": "2025-12-10",
-   "equity": 9278.36,
-   "cash": 225.4,
+   "equity": 9859.41,
+   "cash": 1834.6,
    "benchmark": 25758.0
   },
   {
    "date": "2025-12-11",
-   "equity": 9357.27,
-   "cash": 225.4,
+   "equity": 9963.38,
+   "cash": 1834.6,
    "benchmark": 25898.55
   },
   {
    "date": "2025-12-12",
-   "equity": 9323.69,
-   "cash": 1671.13,
+   "equity": 9976.21,
+   "cash": 508.42,
    "benchmark": 26046.95
   },
   {
    "date": "2025-12-15",
-   "equity": 9310.82,
-   "cash": 1671.13,
+   "equity": 9989.79,
+   "cash": 508.42,
    "benchmark": 26027.3
   },
   {
    "date": "2025-12-16",
-   "equity": 9234.39,
-   "cash": 1671.13,
+   "equity": 9854.12,
+   "cash": 508.42,
    "benchmark": 25860.1
   },
   {
    "date": "2025-12-17",
-   "equity": 9225.03,
-   "cash": 1671.13,
+   "equity": 9814.97,
+   "cash": 508.42,
    "benchmark": 25818.55
   },
   {
    "date": "2025-12-18",
-   "equity": 9207.88,
-   "cash": 1671.13,
+   "equity": 9792.24,
+   "cash": 508.42,
    "benchmark": 25815.55
   },
   {
    "date": "2025-12-19",
-   "equity": 9195.72,
-   "cash": 285.78,
+   "equity": 9864.6,
+   "cash": 668.6,
    "benchmark": 25966.4
   },
   {
    "date": "2025-12-22",
-   "equity": 9258.56,
-   "cash": 285.78,
+   "equity": 9928.09,
+   "cash": 668.6,
    "benchmark": 26172.4
   },
   {
    "date": "2025-12-23",
-   "equity": 9249.0,
-   "cash": 285.78,
+   "equity": 9916.17,
+   "cash": 668.6,
    "benchmark": 26177.15
   },
   {
    "date": "2025-12-24",
-   "equity": 9218.4,
-   "cash": 285.78,
+   "equity": 9886.07,
+   "cash": 668.6,
    "benchmark": 26142.1
   },
   {
    "date": "2025-12-26",
-   "equity": 9146.11,
-   "cash": 906.63,
+   "equity": 9809.07,
+   "cash": 340.45,
    "benchmark": 26042.3
   },
   {
    "date": "2025-12-29",
-   "equity": 9135.96,
-   "cash": 906.63,
+   "equity": 9795.34,
+   "cash": 340.45,
    "benchmark": 25942.1
   },
   {
    "date": "2025-12-30",
-   "equity": 9123.42,
-   "cash": 906.63,
+   "equity": 9800.63,
+   "cash": 340.45,
    "benchmark": 25938.85
   },
   {
    "date": "2025-12-31",
-   "equity": 9223.89,
-   "cash": 906.63,
+   "equity": 9918.62,
+   "cash": 340.45,
    "benchmark": 26129.6
   },
   {
    "date": "2026-01-01",
-   "equity": 9367.94,
-   "cash": 906.63,
+   "equity": 10091.61,
+   "cash": 340.45,
    "benchmark": 26146.55
   },
   {
    "date": "2026-01-02",
-   "equity": 9371.43,
-   "cash": 906.63,
+   "equity": 10063.71,
+   "cash": 46.07,
    "benchmark": 26328.55
   },
   {
    "date": "2026-01-05",
-   "equity": 9330.7,
-   "cash": 906.63,
+   "equity": 10003.2,
+   "cash": 46.07,
    "benchmark": 26250.3
   },
   {
    "date": "2026-01-06",
-   "equity": 9315.8,
-   "cash": 906.63,
+   "equity": 9916.3,
+   "cash": 46.07,
    "benchmark": 26178.7
   },
   {
    "date": "2026-01-07",
-   "equity": 9293.5,
-   "cash": 906.63,
+   "equity": 9906.15,
+   "cash": 46.07,
    "benchmark": 26140.75
   },
   {
    "date": "2026-01-08",
-   "equity": 9328.06,
-   "cash": 906.63,
+   "equity": 9925.97,
+   "cash": 46.07,
    "benchmark": 25876.85
   },
   {
    "date": "2026-01-09",
-   "equity": 9272.98,
-   "cash": 906.63,
+   "equity": 9819.94,
+   "cash": 206.9,
    "benchmark": 25683.3
   },
   {
    "date": "2026-01-12",
-   "equity": 9304.04,
-   "cash": 906.63,
+   "equity": 9849.34,
+   "cash": 206.9,
    "benchmark": 25790.25
   },
   {
    "date": "2026-01-13",
-   "equity": 9418.56,
-   "cash": 906.63,
+   "equity": 9979.32,
+   "cash": 206.9,
    "benchmark": 25732.3
   },
   {
    "date": "2026-01-14",
-   "equity": 9467.45,
-   "cash": 906.63,
+   "equity": 10034.93,
+   "cash": 206.9,
    "benchmark": 25665.6
   },
   {
    "date": "2026-01-15",
-   "equity": 9467.45,
-   "cash": 906.63,
+   "equity": 10034.93,
+   "cash": 206.9,
    "benchmark": 25665.6
   },
   {
    "date": "2026-01-16",
-   "equity": 9357.27,
-   "cash": 1069.13,
+   "equity": 9926.22,
+   "cash": 248.0,
    "benchmark": 25694.35
   },
   {
    "date": "2026-01-19",
-   "equity": 9414.36,
-   "cash": 1069.13,
+   "equity": 10000.55,
+   "cash": 248.0,
    "benchmark": 25585.5
   },
   {
    "date": "2026-01-20",
-   "equity": 9294.72,
-   "cash": 1069.13,
+   "equity": 9854.94,
+   "cash": 248.0,
    "benchmark": 25232.5
   },
   {
    "date": "2026-01-21",
-   "equity": 9243.27,
-   "cash": 1069.13,
+   "equity": 9795.34,
+   "cash": 248.0,
    "benchmark": 25157.5
   },
   {
    "date": "2026-01-22",
-   "equity": 9384.18,
-   "cash": 1069.13,
+   "equity": 9970.06,
+   "cash": 248.0,
    "benchmark": 25289.9
   },
   {
    "date": "2026-01-23",
-   "equity": 9232.22,
-   "cash": 98.81,
+   "equity": 9807.01,
+   "cash": 421.29,
    "benchmark": 25048.65
   },
   {
    "date": "2026-01-27",
-   "equity": 9176.57,
-   "cash": 98.81,
+   "equity": 9754.51,
+   "cash": 421.29,
    "benchmark": 25175.4
   },
   {
    "date": "2026-01-28",
-   "equity": 9305.26,
-   "cash": 98.81,
+   "equity": 9882.35,
+   "cash": 421.29,
    "benchmark": 25342.75
   },
   {
    "date": "2026-01-29",
-   "equity": 9410.2,
-   "cash": 98.81,
+   "equity": 9986.59,
+   "cash": 421.29,
    "benchmark": 25418.9
   },
   {
    "date": "2026-01-30",
-   "equity": 9394.09,
-   "cash": 98.81,
+   "equity": 9970.48,
+   "cash": 421.29,
    "benchmark": 25320.65
   },
   {
    "date": "2026-02-02",
-   "equity": 9238.12,
-   "cash": 98.81,
+   "equity": 9804.14,
+   "cash": 421.29,
    "benchmark": 25088.4
   },
   {
    "date": "2026-02-03",
-   "equity": 9705.41,
-   "cash": 98.81,
+   "equity": 10291.18,
+   "cash": 421.29,
    "benchmark": 25727.55
   },
   {
    "date": "2026-02-04",
-   "equity": 10007.4,
-   "cash": 98.81,
+   "equity": 10597.26,
+   "cash": 421.29,
    "benchmark": 25776.0
   },
   {
    "date": "2026-02-05",
-   "equity": 9963.08,
-   "cash": 98.81,
+   "equity": 10554.89,
+   "cash": 421.29,
    "benchmark": 25642.8
   },
   {
    "date": "2026-02-06",
-   "equity": 9811.65,
-   "cash": 223.82,
+   "equity": 10400.66,
+   "cash": 495.67,
    "benchmark": 25693.7
   },
   {
    "date": "2026-02-09",
-   "equity": 9961.19,
-   "cash": 223.82,
+   "equity": 10547.27,
+   "cash": 495.67,
    "benchmark": 25867.3
   },
   {
    "date": "2026-02-10",
-   "equity": 9948.74,
-   "cash": 223.82,
+   "equity": 10533.46,
+   "cash": 495.67,
    "benchmark": 25935.15
   },
   {
    "date": "2026-02-11",
-   "equity": 9919.56,
-   "cash": 223.82,
+   "equity": 10501.21,
+   "cash": 495.67,
    "benchmark": 25953.85
   },
   {
    "date": "2026-02-12",
-   "equity": 9798.87,
-   "cash": 223.82,
+   "equity": 10379.74,
+   "cash": 495.67,
    "benchmark": 25807.2
   },
   {
    "date": "2026-02-13",
-   "equity": 9679.68,
-   "cash": 192.36,
+   "equity": 10256.96,
+   "cash": 464.21,
    "benchmark": 25471.1
   },
   {
    "date": "2026-02-16",
-   "equity": 9851.39,
-   "cash": 192.36,
+   "equity": 10432.75,
+   "cash": 464.21,
    "benchmark": 25682.75
   },
   {
    "date": "2026-02-17",
-   "equity": 9907.92,
-   "cash": 192.36,
+   "equity": 10496.59,
+   "cash": 464.21,
    "benchmark": 25725.4
   },
   {
    "date": "2026-02-18",
-   "equity": 9990.3,
-   "cash": 192.36,
+   "equity": 10585.78,
+   "cash": 464.21,
    "benchmark": 25819.35
   },
   {
    "date": "2026-02-19",
-   "equity": 9824.46,
-   "cash": 192.36,
+   "equity": 10413.66,
+   "cash": 464.21,
    "benchmark": 25454.35
   },
   {
    "date": "2026-02-20",
-   "equity": 9838.69,
-   "cash": 192.36,
+   "equity": 10428.86,
+   "cash": 464.21,
    "benchmark": 25571.25
   },
   {
    "date": "2026-02-23",
-   "equity": 9870.66,
-   "cash": 192.36,
+   "equity": 10459.27,
+   "cash": 464.21,
    "benchmark": 25713.0
   },
   {
    "date": "2026-02-24",
-   "equity": 9800.92,
-   "cash": 192.36,
+   "equity": 10387.69,
+   "cash": 464.21,
    "benchmark": 25424.65
   },
   {
    "date": "2026-02-25",
-   "equity": 9820.18,
-   "cash": 192.36,
+   "equity": 10403.3,
+   "cash": 464.21,
    "benchmark": 25482.5
   },
   {
    "date": "2026-02-26",
-   "equity": 9832.03,
-   "cash": 192.36,
+   "equity": 10413.74,
+   "cash": 464.21,
    "benchmark": 25496.55
   },
   {
    "date": "2026-02-27",
-   "equity": 9670.52,
-   "cash": 192.36,
+   "equity": 10247.65,
+   "cash": 464.21,
    "benchmark": 25178.65
   },
   {
    "date": "2026-03-02",
-   "equity": 9581.45,
-   "cash": 192.36,
+   "equity": 10159.84,
+   "cash": 464.21,
    "benchmark": 24865.7
   },
   {
    "date": "2026-03-04",
-   "equity": 9369.49,
-   "cash": 3161.82,
+   "equity": 9945.02,
+   "cash": 3433.67,
    "benchmark": 24480.5
   },
   {
    "date": "2026-03-05",
-   "equity": 9391.09,
-   "cash": 3161.82,
+   "equity": 9966.18,
+   "cash": 3433.67,
    "benchmark": 24765.9
   },
   {
    "date": "2026-03-06",
-   "equity": 9280.4,
-   "cash": 185.99,
+   "equity": 9853.34,
+   "cash": 224.87,
    "benchmark": 24450.45
   },
   {
    "date": "2026-03-09",
-   "equity": 9151.97,
-   "cash": 185.99,
+   "equity": 9718.3,
+   "cash": 224.87,
    "benchmark": 24028.05
   },
   {
    "date": "2026-03-10",
-   "equity": 9292.88,
-   "cash": 185.99,
+   "equity": 9859.23,
+   "cash": 224.87,
    "benchmark": 24261.6
   },
   {
    "date": "2026-03-11",
-   "equity": 9188.43,
-   "cash": 185.99,
+   "equity": 9751.91,
+   "cash": 224.87,
    "benchmark": 23866.85
   },
   {
    "date": "2026-03-12",
-   "equity": 9070.89,
-   "cash": 3717.57,
+   "equity": 9626.52,
+   "cash": 4052.02,
    "benchmark": 23639.15
   },
   {
    "date": "2026-03-13",
-   "equity": 8927.14,
-   "cash": 210.13,
+   "equity": 9476.88,
+   "cash": 309.49,
    "benchmark": 23151.1
   },
   {
    "date": "2026-03-16",
-   "equity": 8993.44,
-   "cash": 210.13,
+   "equity": 9548.64,
+   "cash": 309.49,
    "benchmark": 23408.8
   },
   {
    "date": "2026-03-17",
-   "equity": 9265.14,
-   "cash": 210.13,
+   "equity": 9836.17,
+   "cash": 309.49,
    "benchmark": 23581.15
   },
   {
    "date": "2026-03-18",
-   "equity": 9573.3,
-   "cash": 210.13,
+   "equity": 10162.81,
+   "cash": 309.49,
    "benchmark": 23777.8
   },
   {
    "date": "2026-03-19",
-   "equity": 9070.36,
-   "cash": 2066.05,
+   "equity": 9637.35,
+   "cash": 2165.41,
    "benchmark": 23002.15
   },
   {
    "date": "2026-03-20",
-   "equity": 9094.86,
-   "cash": 396.48,
+   "equity": 9664.89,
+   "cash": 727.77,
    "benchmark": 23114.5
   },
   {
    "date": "2026-03-23",
-   "equity": 8659.11,
-   "cash": 3534.25,
+   "equity": 9215.62,
+   "cash": 4090.76,
    "benchmark": 22512.65
   },
   {
    "date": "2026-03-24",
-   "equity": 8719.56,
-   "cash": 3534.25,
+   "equity": 9276.07,
+   "cash": 4090.76,
    "benchmark": 22912.4
   },
   {
    "date": "2026-03-25",
-   "equity": 8874.94,
-   "cash": 3534.25,
+   "equity": 9431.45,
+   "cash": 4090.76,
    "benchmark": 23306.45
   },
   {
    "date": "2026-03-27",
-   "equity": 8754.74,
-   "cash": 280.63,
+   "equity": 9310.85,
+   "cash": 604.74,
    "benchmark": 22819.6
   },
   {
    "date": "2026-03-30",
-   "equity": 8474.38,
-   "cash": 1983.47,
+   "equity": 9022.07,
+   "cash": 2307.58,
    "benchmark": 22331.4
   },
   {
    "date": "2026-04-01",
-   "equity": 8630.47,
-   "cash": 1983.47,
+   "equity": 9185.97,
+   "cash": 2307.58,
    "benchmark": 22679.4
   },
   {
    "date": "2026-04-02",
-   "equity": 8609.69,
-   "cash": 1983.47,
+   "equity": 9162.74,
+   "cash": 2307.58,
    "benchmark": 22713.1
   },
   {
    "date": "2026-04-06",
-   "equity": 8711.32,
-   "cash": 120.42,
+   "equity": 9271.33,
+   "cash": 1115.82,
    "benchmark": 22968.25
   },
   {
    "date": "2026-04-07",
-   "equity": 8755.25,
-   "cash": 120.42,
+   "equity": 9315.17,
+   "cash": 1115.82,
    "benchmark": 23123.65
   },
   {
    "date": "2026-04-08",
-   "equity": 8980.49,
-   "cash": 120.42,
+   "equity": 9547.81,
+   "cash": 1115.82,
    "benchmark": 23997.35
   },
   {
    "date": "2026-04-09",
-   "equity": 8902.45,
-   "cash": 120.42,
+   "equity": 9442.64,
+   "cash": 1115.82,
    "benchmark": 23775.1
   },
   {
    "date": "2026-04-10",
-   "equity": 8974.75,
-   "cash": 120.42,
+   "equity": 9527.54,
+   "cash": 1115.82,
    "benchmark": 24050.6
   },
   {
    "date": "2026-04-13",
-   "equity": 8828.94,
-   "cash": 120.42,
+   "equity": 9361.29,
+   "cash": 1115.82,
    "benchmark": 23842.65
   },
   {
    "date": "2026-04-15",
-   "equity": 9014.78,
-   "cash": 120.42,
+   "equity": 9491.28,
+   "cash": 1115.82,
    "benchmark": 24231.3
   },
   {
    "date": "2026-04-16",
-   "equity": 9012.33,
-   "cash": 120.42,
+   "equity": 9489.72,
+   "cash": 1115.82,
    "benchmark": 24196.75
   },
   {
    "date": "2026-04-17",
-   "equity": 9103.71,
-   "cash": 2113.68,
+   "equity": 9578.4,
+   "cash": 1115.82,
    "benchmark": 24353.55
   },
   {
    "date": "2026-04-20",
-   "equity": 8988.96,
-   "cash": 2113.68,
+   "equity": 9445.77,
+   "cash": 1115.82,
    "benchmark": 24364.85
   },
   {
    "date": "2026-04-21",
-   "equity": 9009.76,
-   "cash": 2113.68,
+   "equity": 9467.14,
+   "cash": 1115.82,
    "benchmark": 24576.6
   },
   {
    "date": "2026-04-22",
-   "equity": 9013.8,
-   "cash": 2113.68,
+   "equity": 9478.7,
+   "cash": 1115.82,
    "benchmark": 24378.1
   },
   {
    "date": "2026-04-23",
-   "equity": 9153.23,
-   "cash": 2113.68,
+   "equity": 9697.21,
+   "cash": 1115.82,
    "benchmark": 24173.05
   },
   {
    "date": "2026-04-24",
-   "equity": 9067.07,
-   "cash": 931.14,
+   "equity": 9578.0,
+   "cash": 16.38,
    "benchmark": 23897.95
   },
   {
    "date": "2026-04-27",
-   "equity": 9228.37,
-   "cash": 931.14,
+   "equity": 9771.71,
+   "cash": 16.38,
    "benchmark": 24092.7
   },
   {
    "date": "2026-04-28",
-   "equity": 9164.26,
-   "cash": 931.14,
+   "equity": 9673.18,
+   "cash": 16.38,
    "benchmark": 23995.7
   },
   {
    "date": "2026-04-29",
-   "equity": 9304.83,
-   "cash": 931.14,
+   "equity": 9817.77,
+   "cash": 16.38,
    "benchmark": 24177.65
   },
   {
    "date": "2026-04-30",
-   "equity": 9227.36,
-   "cash": 931.14,
+   "equity": 9734.9,
+   "cash": 16.38,
    "benchmark": 23997.55
   },
   {
    "date": "2026-05-04",
-   "equity": 9246.51,
-   "cash": 1107.58,
+   "equity": 9761.77,
+   "cash": 192.81,
    "benchmark": 24119.3
   },
   {
    "date": "2026-05-05",
-   "equity": 9214.78,
-   "cash": 1107.58,
+   "equity": 9725.47,
+   "cash": 192.81,
    "benchmark": 24032.8
   },
   {
    "date": "2026-05-06",
-   "equity": 9227.61,
-   "cash": 1107.58,
+   "equity": 9731.39,
+   "cash": 192.81,
    "benchmark": 24330.95
   },
   {
    "date": "2026-05-07",
-   "equity": 9188.97,
-   "cash": 1107.58,
+   "equity": 9685.74,
+   "cash": 192.81,
    "benchmark": 24326.65
   },
   {
    "date": "2026-05-08",
-   "equity": 9228.67,
-   "cash": 1107.58,
+   "equity": 9738.49,
+   "cash": 192.81,
    "benchmark": 24176.15
   },
   {
    "date": "2026-05-11",
-   "equity": 9092.93,
-   "cash": 1107.58,
+   "equity": 9590.32,
+   "cash": 192.81,
    "benchmark": 23815.85
   },
   {
    "date": "2026-05-12",
-   "equity": 8778.94,
-   "cash": 4306.29,
+   "equity": 9217.96,
+   "cash": 3621.1,
    "benchmark": 23379.55
   },
   {
    "date": "2026-05-13",
-   "equity": 8725.88,
-   "cash": 4306.29,
+   "equity": 9162.36,
+   "cash": 3621.1,
    "benchmark": 23412.6
   },
   {
    "date": "2026-05-14",
-   "equity": 8607.48,
-   "cash": 5392.06,
+   "equity": 9023.41,
+   "cash": 5807.99,
    "benchmark": 23689.6
   },
   {
    "date": "2026-05-15",
-   "equity": 8670.53,
-   "cash": 1018.16,
+   "equity": 9084.17,
+   "cash": 88.02,
    "benchmark": 23643.5
   },
   {
    "date": "2026-05-18",
-   "equity": 8747.27,
-   "cash": 1018.16,
+   "equity": 9174.22,
+   "cash": 88.02,
    "benchmark": 23649.95
   },
   {
    "date": "2026-05-19",
-   "equity": 8948.27,
-   "cash": 1018.16,
+   "equity": 9408.05,
+   "cash": 88.02,
    "benchmark": 23618.0
   },
   {
    "date": "2026-05-20",
-   "equity": 8948.87,
-   "cash": 1018.16,
+   "equity": 9400.62,
+   "cash": 88.02,
    "benchmark": 23659.0
   },
   {
    "date": "2026-05-21",
-   "equity": 8926.1,
-   "cash": 1018.16,
+   "equity": 9377.38,
+   "cash": 88.02,
    "benchmark": 23654.7
   },
   {
    "date": "2026-05-22",
-   "equity": 8889.96,
-   "cash": 735.02,
+   "equity": 9337.76,
+   "cash": 945.18,
    "benchmark": 23719.3
   },
   {
    "date": "2026-05-25",
-   "equity": 8956.84,
-   "cash": 735.02,
+   "equity": 9408.17,
+   "cash": 945.18,
    "benchmark": 24031.7
   },
   {
    "date": "2026-05-26",
-   "equity": 8899.11,
-   "cash": 735.02,
+   "equity": 9349.38,
+   "cash": 945.18,
    "benchmark": 23913.7
   },
   {
    "date": "2026-05-27",
-   "equity": 8961.82,
-   "cash": 735.02,
+   "equity": 9414.31,
+   "cash": 945.18,
    "benchmark": 23907.15
   },
   {
    "date": "2026-05-29",
-   "equity": 8776.33,
-   "cash": 610.57,
+   "equity": 9222.88,
+   "cash": 93.73,
    "benchmark": 23547.75
   },
   {
    "date": "2026-06-01",
-   "equity": 8607.47,
-   "cash": 2465.9,
+   "equity": 9025.97,
+   "cash": 2884.39,
    "benchmark": 23382.6
   },
   {
    "date": "2026-06-02",
-   "equity": 8595.43,
-   "cash": 2465.9,
+   "equity": 9013.92,
+   "cash": 2884.39,
    "benchmark": 23483.55
   },
   {
    "date": "2026-06-03",
-   "equity": 8634.08,
-   "cash": 2465.9,
+   "equity": 9052.57,
+   "cash": 2884.39,
    "benchmark": 23405.6
   },
   {
    "date": "2026-06-04",
-   "equity": 8639.93,
-   "cash": 2465.9,
+   "equity": 9058.42,
+   "cash": 2884.39,
    "benchmark": 23416.55
   },
   {
    "date": "2026-06-05",
-   "equity": 8571.2,
-   "cash": 70.63,
+   "equity": 8990.64,
+   "cash": 1049.76,
    "benchmark": 23366.7
   },
   {
    "date": "2026-06-08",
-   "equity": 8495.97,
-   "cash": 70.63,
+   "equity": 8908.04,
+   "cash": 1049.76,
    "benchmark": 23123.0
   },
   {
    "date": "2026-06-09",
-   "equity": 8473.08,
-   "cash": 70.63,
+   "equity": 8886.11,
+   "cash": 1049.76,
    "benchmark": 23242.1
   },
   {
    "date": "2026-06-10",
-   "equity": 8433.96,
-   "cash": 70.63,
+   "equity": 8849.92,
+   "cash": 1049.76,
    "benchmark": 23214.95
   },
   {
    "date": "2026-06-11",
-   "equity": 8354.56,
-   "cash": 70.63,
+   "equity": 8787.72,
+   "cash": 1049.76,
    "benchmark": 23161.6
   },
   {
    "date": "2026-06-12",
-   "equity": 8410.01,
-   "cash": 259.83,
+   "equity": 8853.52,
+   "cash": 1060.55,
    "benchmark": 23622.9
   },
   {
    "date": "2026-06-15",
-   "equity": 8579.9,
-   "cash": 259.83,
+   "equity": 9040.88,
+   "cash": 1060.55,
    "benchmark": 23853.9
   },
   {
    "date": "2026-06-16",
-   "equity": 8646.89,
-   "cash": 259.83,
+   "equity": 9063.41,
+   "cash": 1060.55,
    "benchmark": 23989.15
   },
   {
    "date": "2026-06-17",
-   "equity": 8731.1,
-   "cash": 259.83,
+   "equity": 9149.12,
+   "cash": 1060.55,
    "benchmark": 24085.7
   },
   {
    "date": "2026-06-18",
-   "equity": 8739.61,
-   "cash": 259.83,
+   "equity": 9170.39,
+   "cash": 1060.55,
    "benchmark": 24168.0
   },
   {
    "date": "2026-06-19",
-   "equity": 8657.49,
-   "cash": 259.83,
+   "equity": 9090.34,
+   "cash": 318.98,
    "benchmark": 24013.1
   },
   {
    "date": "2026-06-22",
-   "equity": 8670.6,
-   "cash": 259.83,
+   "equity": 9118.34,
+   "cash": 318.98,
    "benchmark": 24102.9
   },
   {
    "date": "2026-06-23",
-   "equity": 8529.62,
-   "cash": 259.83,
+   "equity": 8861.94,
+   "cash": 318.98,
    "benchmark": 23824.1
   },
   {
    "date": "2026-06-24",
-   "equity": 8509.58,
-   "cash": 259.83,
+   "equity": 8952.29,
+   "cash": 318.98,
    "benchmark": 24021.65
   },
   {
    "date": "2026-06-25",
-   "equity": 8461.43,
-   "cash": 259.83,
+   "equity": 8889.96,
+   "cash": 318.98,
    "benchmark": 24056.0
   },
   {
    "date": "2026-06-29",
-   "equity": 8462.02,
-   "cash": 86.03,
+   "equity": 8888.51,
+   "cash": 145.18,
    "benchmark": 23946.25
   },
   {
    "date": "2026-06-30",
-   "equity": 8250.75,
-   "cash": 2170.65,
+   "equity": 8600.32,
+   "cash": 2229.8,
    "benchmark": 23865.75
   },
   {
    "date": "2026-07-01",
-   "equity": 8216.37,
-   "cash": 2170.65,
+   "equity": 8549.88,
+   "cash": 2229.8,
    "benchmark": 24005.85
   },
   {
    "date": "2026-07-02",
-   "equity": 8296.07,
-   "cash": 2170.65,
+   "equity": 8793.2,
+   "cash": 2229.8,
    "benchmark": 24175.7
   },
   {
    "date": "2026-07-03",
-   "equity": 8287.6,
-   "cash": 259.69,
+   "equity": 8799.06,
+   "cash": 1021.92,
    "benchmark": 24270.85
   },
   {
    "date": "2026-07-06",
-   "equity": 8345.97,
-   "cash": 259.69,
+   "equity": 8861.26,
+   "cash": 1021.92,
    "benchmark": 24430.35
   },
   {
    "date": "2026-07-07",
-   "equity": 8399.77,
-   "cash": 259.69,
+   "equity": 8919.12,
+   "cash": 1021.92,
    "benchmark": 24398.7
   },
   {
    "date": "2026-07-08",
-   "equity": 8248.55,
-   "cash": 259.69,
+   "equity": 8805.95,
+   "cash": 1021.92,
    "benchmark": 23882.05
   },
   {
    "date": "2026-07-09",
-   "equity": 8220.26,
-   "cash": 259.69,
+   "equity": 8753.31,
+   "cash": 1021.92,
    "benchmark": 23962.8
   },
   {
    "date": "2026-07-10",
-   "equity": 8290.56,
-   "cash": 28.23,
+   "equity": 8826.03,
+   "cash": 911.83,
    "benchmark": 24206.9
   },
   {
    "date": "2026-07-13",
-   "equity": 8415.46,
-   "cash": 28.23,
+   "equity": 8959.96,
+   "cash": 911.83,
    "benchmark": 24211.0
   },
   {
    "date": "2026-07-14",
-   "equity": 8292.58,
-   "cash": 28.23,
+   "equity": 8864.9,
+   "cash": 911.83,
    "benchmark": 24052.05
   },
   {
    "date": "2026-07-15",
-   "equity": 8253.92,
-   "cash": 28.23,
+   "equity": 8797.81,
+   "cash": 911.83,
    "benchmark": 24078.5
   },
   {
    "date": "2026-07-16",
-   "equity": 8273.34,
-   "cash": 28.23,
+   "equity": 8830.79,
+   "cash": 911.83,
    "benchmark": 24072.75
   },
   {
    "date": "2026-07-17",
-   "equity": 8257.87,
-   "cash": 28.23,
+   "equity": 8800.87,
+   "cash": 911.83,
    "benchmark": 24334.3
   },
   {
    "date": "2026-07-20",
-   "equity": 8313.7,
-   "cash": 28.23,
+   "equity": 8862.3,
+   "cash": 911.83,
    "benchmark": 24238.5
   },
   {
    "date": "2026-07-21",
-   "equity": 8351.98,
-   "cash": 28.23,
+   "equity": 8873.18,
+   "cash": 911.83,
    "benchmark": 24187.7
   },
   {
    "date": "2026-07-22",
-   "equity": 8354.55,
-   "cash": 28.23,
+   "equity": 8879.31,
+   "cash": 911.83,
    "benchmark": 23996.25
   },
   {
    "date": "2026-07-23",
-   "equity": 8278.91,
-   "cash": 28.23,
+   "equity": 8835.28,
+   "cash": 911.83,
    "benchmark": 23869.6
   },
   {
    "date": "2026-07-24",
-   "equity": 8215.47,
-   "cash": 61.92,
+   "equity": 8792.42,
+   "cash": 430.8,
    "benchmark": 23767.45
   },
   {
    "date": "2026-07-27",
-   "equity": 8564.95,
-   "cash": 61.92,
+   "equity": 8995.99,
+   "cash": 430.8,
    "benchmark": 23995.95
   },
   {
    "date": "2026-07-28",
-   "equity": 8763.49,
-   "cash": 61.92,
+   "equity": 9027.87,
+   "cash": 430.8,
    "benchmark": 23985.35
   },
   {
    "date": "2026-07-29",
-   "equity": 8912.55,
-   "cash": 61.92,
+   "equity": 9222.5,
+   "cash": 430.8,
    "benchmark": 24250.2
   },
   {
    "date": "2026-07-30",
-   "equity": 8846.81,
-   "cash": 61.92,
+   "equity": 9163.11,
+   "cash": 430.8,
    "benchmark": 24317.15
   },
   {
    "date": "2026-07-31",
-   "equity": 8739.14,
-   "cash": 12.46,
+   "equity": 9168.73,
+   "cash": 155.49,
    "benchmark": 24383.6
   },
   {
    "date": "2026-08-03",
-   "equity": 8920.63,
-   "cash": 12.46,
+   "equity": 9333.14,
+   "cash": 155.49,
    "benchmark": 24774.3
   },
   {
    "date": "2026-08-04",
-   "equity": 8916.53,
-   "cash": 12.46,
+   "equity": 9332.14,
+   "cash": 155.49,
    "benchmark": 24614.9
   },
   {
    "date": "2026-08-05",
-   "equity": 8883.68,
-   "cash": 12.46,
+   "equity": 9295.45,
+   "cash": 155.49,
    "benchmark": 24624.65
   },
   {
    "date": "2026-08-06",
-   "equity": 8899.51,
-   "cash": 12.46,
+   "equity": 9231.39,
+   "cash": 155.49,
    "benchmark": 24636.0
   },
   {
    "date": "2026-08-07",
-   "equity": 8893.39,
-   "cash": 239.71,
+   "equity": 9242.04,
+   "cash": 80.2,
    "benchmark": 24570.65
   },
   {
    "date": "2026-08-10",
-   "equity": 8906.56,
-   "cash": 239.71,
+   "equity": 9254.72,
+   "cash": 80.2,
    "benchmark": 24583.8
   },
   {
    "date": "2026-08-11",
-   "equity": 8892.99,
-   "cash": 239.71,
+   "equity": 9238.61,
+   "cash": 80.2,
    "benchmark": 24471.7
   },
   {
    "date": "2026-08-12",
-   "equity": 8874.63,
-   "cash": 239.71,
+   "equity": 9221.35,
+   "cash": 80.2,
    "benchmark": 24435.95
   },
   {
    "date": "2026-08-13",
-   "equity": 8866.68,
-   "cash": 239.71,
+   "equity": 9212.65,
+   "cash": 80.2,
    "benchmark": 24395.85
   },
   {
    "date": "2026-08-14",
-   "equity": 8800.24,
-   "cash": 239.71,
+   "equity": 9142.17,
+   "cash": 80.2,
    "benchmark": 24366.0
   },
   {
    "date": "2026-08-17",
-   "equity": 8771.88,
-   "cash": 239.71,
+   "equity": 9115.99,
+   "cash": 80.2,
    "benchmark": 24287.65
   },
   {
    "date": "2026-08-18",
-   "equity": 8756.51,
-   "cash": 239.71,
+   "equity": 9103.47,
+   "cash": 80.2,
    "benchmark": 24154.9
   },
   {
    "date": "2026-08-19",
-   "equity": 8695.7,
-   "cash": 239.71,
+   "equity": 9036.67,
+   "cash": 80.2,
    "benchmark": 24078.3
   },
   {
    "date": "2026-08-20",
-   "equity": 8737.37,
-   "cash": 239.71,
+   "equity": 9080.14,
+   "cash": 80.2,
    "benchmark": 24231.85
   },
   {
    "date": "2026-08-21",
-   "equity": 8748.67,
-   "cash": 247.69,
+   "equity": 9096.07,
+   "cash": 90.29,
    "benchmark": 24252.0
   },
   {
    "date": "2026-08-24",
-   "equity": 8772.06,
-   "cash": 247.69,
+   "equity": 9119.91,
+   "cash": 90.29,
    "benchmark": 24219.05
   },
   {
    "date": "2026-08-25",
-   "equity": 8783.21,
-   "cash": 247.69,
+   "equity": 9130.22,
+   "cash": 90.29,
    "benchmark": 24334.55
   },
   {
    "date": "2026-08-26",
-   "equity": 8697.61,
-   "cash": 247.69,
+   "equity": 9041.68,
+   "cash": 90.29,
    "benchmark": 24207.75
   },
   {
    "date": "2026-08-27",
-   "equity": 8662.53,
-   "cash": 247.69,
+   "equity": 9005.15,
+   "cash": 90.29,
    "benchmark": 24090.85
   },
   {
    "date": "2026-08-28",
-   "equity": 8674.25,
-   "cash": 36.33,
+   "equity": 9013.7,
+   "cash": 144.52,
    "benchmark": 24175.65
   },
   {
    "date": "2026-08-31",
-   "equity": 8581.73,
-   "cash": 36.33,
+   "equity": 8920.73,
+   "cash": 144.52,
    "benchmark": 24080.4
   },
   {
    "date": "2026-09-01",
-   "equity": 8687.8,
-   "cash": 36.33,
+   "equity": 9031.44,
+   "cash": 144.52,
    "benchmark": 24055.8
   },
   {
    "date": "2026-09-02",
-   "equity": 8656.34,
-   "cash": 36.33,
+   "equity": 9001.02,
+   "cash": 144.52,
    "benchmark": 23914.45
   },
   {
    "date": "2026-09-03",
-   "equity": 8616.93,
-   "cash": 36.33,
+   "equity": 8960.12,
+   "cash": 144.52,
    "benchmark": 23873.45
   },
   {
    "date": "2026-09-04",
-   "equity": 8614.43,
-   "cash": 36.33,
+   "equity": 8957.26,
+   "cash": 144.52,
    "benchmark": 23897.7
   },
   {
    "date": "2026-09-07",
-   "equity": 8482.42,
-   "cash": 2192.62,
+   "equity": 8824.3,
+   "cash": 2300.8,
    "benchmark": 23779.15
   },
   {
    "date": "2026-09-08",
-   "equity": 8523.62,
-   "cash": 2192.62,
+   "equity": 8867.8,
+   "cash": 2300.8,
    "benchmark": 23635.1
   },
   {
    "date": "2026-09-09",
-   "equity": 8549.6,
-   "cash": 2192.62,
+   "equity": 8891.8,
+   "cash": 2300.8,
    "benchmark": 23431.5
   },
   {
    "date": "2026-09-10",
-   "equity": 8556.4,
-   "cash": 2192.62,
+   "equity": 8901.85,
+   "cash": 2300.8,
    "benchmark": 23477.8
   },
   {
    "date": "2026-09-11",
-   "equity": 8337.84,
-   "cash": 108.84,
+   "equity": 8677.88,
+   "cash": 281.48,
    "benchmark": 23398.1
   },
   {
    "date": "2026-09-15",
-   "equity": 8451.14,
-   "cash": 108.84,
+   "equity": 8793.78,
+   "cash": 281.48,
    "benchmark": 23118.6
   },
   {
    "date": "2026-09-16",
-   "equity": 8400.05,
-   "cash": 108.84,
+   "equity": 8739.58,
+   "cash": 281.48,
    "benchmark": 23217.6
   },
   {
    "date": "2026-09-17",
-   "equity": 8428.74,
-   "cash": 108.84,
+   "equity": 8767.78,
+   "cash": 281.48,
    "benchmark": 23270.6
   },
   {
    "date": "2026-09-18",
-   "equity": 8347.34,
-   "cash": 148.63,
+   "equity": 8660.78,
+   "cash": 386.78,
    "benchmark": 23346.4
   },
   {
    "date": "2026-09-21",
-   "equity": 8294.28,
-   "cash": 148.63,
+   "equity": 8726.08,
+   "cash": 386.78,
    "benchmark": 23414.3
   },
   {
    "date": "2026-09-22",
-   "equity": 8289.6,
-   "cash": 148.63,
+   "equity": 8757.08,
+   "cash": 386.78,
    "benchmark": 23329.0
   },
   {
    "date": "2026-09-23",
-   "equity": 8363.65,
-   "cash": 148.63,
+   "equity": 8752.43,
+   "cash": 386.78,
    "benchmark": 23446.8
   },
   {
    "date": "2026-09-24",
-   "equity": 8284.91,
-   "cash": 148.63,
+   "equity": 8721.68,
+   "cash": 386.78,
    "benchmark": 23063.1
   },
   {
    "date": "2026-09-25",
-   "equity": 8282.28,
-   "cash": 148.63,
+   "equity": 8706.73,
+   "cash": 243.17,
    "benchmark": 23140.5
   },
   {
    "date": "2026-09-28",
-   "equity": 8147.57,
-   "cash": 148.63,
+   "equity": 8589.07,
+   "cash": 243.17,
    "benchmark": 22780.25
   },
   {
    "date": "2026-09-29",
-   "equity": 8098.74,
-   "cash": 148.63,
+   "equity": 8655.27,
+   "cash": 243.17,
    "benchmark": 22716.2
   },
   {
    "date": "2026-09-30",
-   "equity": 8035.93,
-   "cash": 148.63,
+   "equity": 8534.07,
+   "cash": 243.17,
    "benchmark": 22620.45
   },
   {
    "date": "2026-10-01",
-   "equity": 8005.28,
-   "cash": 148.63,
+   "equity": 8420.17,
+   "cash": 243.17,
    "benchmark": 22421.95
   },
   {
    "date": "2026-10-05",
-   "equity": 8002.95,
-   "cash": 59.3,
+   "equity": 8363.77,
+   "cash": 157.37,
    "benchmark": 22555.75
   },
   {
    "date": "2026-10-06",
-   "equity": 8172.25,
-   "cash": 59.3,
+   "equity": 8583.52,
+   "cash": 157.37,
    "benchmark": 22776.1
   },
   {
    "date": "2026-10-07",
-   "equity": 8103.21,
-   "cash": 59.3,
+   "equity": 8592.22,
+   "cash": 157.37,
    "benchmark": 22603.05
   },
   {
    "date": "2026-10-08",
-   "equity": 7945.75,
-   "cash": 59.3,
+   "equity": 8444.12,
+   "cash": 157.37,
    "benchmark": 22231.8
   },
   {
    "date": "2026-10-09",
-   "equity": 8001.16,
-   "cash": 121.63,
+   "equity": 8534.35,
+   "cash": 167.55,
    "benchmark": 22520.45
   },
   {
    "date": "2026-10-12",
-   "equity": 7895.33,
-   "cash": 121.63,
+   "equity": 8419.15,
+   "cash": 167.55,
    "benchmark": 22363.35
   },
   {
    "date": "2026-10-13",
-   "equity": 7990.73,
-   "cash": 121.63,
+   "equity": 8520.3,
+   "cash": 167.55,
    "benchmark": 22721.95
   },
   {
    "date": "2026-10-14",
-   "equity": 8025.73,
-   "cash": 121.63,
+   "equity": 8558.65,
+   "cash": 167.55,
    "benchmark": 22622.7
   },
   {
    "date": "2026-10-15",
-   "equity": 8086.14,
-   "cash": 121.63,
+   "equity": 8620.6,
+   "cash": 167.55,
    "benchmark": 22997.35
   },
   {
    "date": "2026-10-16",
-   "equity": 8029.13,
-   "cash": 330.63,
+   "equity": 8560.54,
+   "cash": 376.54,
    "benchmark": 23146.15
   },
   {
    "date": "2026-10-19",
-   "equity": 8009.43,
-   "cash": 330.63,
+   "equity": 8541.14,
+   "cash": 376.54,
    "benchmark": 22888.95
   },
   {
    "date": "2026-10-21",
-   "equity": 8011.11,
-   "cash": 330.63,
+   "equity": 8544.64,
+   "cash": 376.54,
    "benchmark": 22811.35
   },
   {
    "date": "2026-10-22",
-   "equity": 7962.53,
-   "cash": 330.63,
+   "equity": 8492.34,
+   "cash": 376.54,
    "benchmark": 22687.65
   },
   {
    "date": "2026-10-23",
-   "equity": 7956.86,
-   "cash": 321.46,
+   "equity": 8487.82,
+   "cash": 587.82,
    "benchmark": 22600.0
   },
   {
    "date": "2026-10-26",
-   "equity": 8018.16,
-   "cash": 321.46,
+   "equity": 8548.22,
+   "cash": 587.82,
    "benchmark": 22753.2
   },
   {
    "date": "2026-10-27",
-   "equity": 8004.66,
-   "cash": 321.46,
+   "equity": 8532.22,
+   "cash": 587.82,
    "benchmark": 22749.75
   },
   {
    "date": "2026-10-28",
-   "equity": 8038.06,
-   "cash": 321.46,
+   "equity": 8568.02,
+   "cash": 587.82,
    "benchmark": 22698.85
   },
   {
    "date": "2026-10-29",
-   "equity": 8129.76,
-   "cash": 321.46,
+   "equity": 8662.12,
+   "cash": 587.82,
    "benchmark": 22936.75
   },
   {
    "date": "2026-10-30",
-   "equity": 8126.93,
-   "cash": 179.83,
+   "equity": 8657.99,
+   "cash": 36.49,
    "benchmark": 23053.1
   }
  ],
  "trades": [
   {
-   "date": "2025-02-28",
-   "ticker": "POWERGRID",
-   "side": "BUY",
-   "shares": 6,
-   "price": 241.78,
-   "fees": 2.47,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "SBIN",
-   "side": "SELL",
-   "shares": 4,
-   "price": 705.61,
-   "fees": 19.71,
-   "pnl": 21.69,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "JIOFIN",
-   "side": "SELL",
-   "shares": 15,
-   "price": 220.95,
-   "fees": 20.48,
-   "pnl": 191.69,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "POWERGRID",
-   "side": "SELL",
-   "shares": 10,
-   "price": 253.78,
-   "fees": 19.27,
-   "pnl": 100.73,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "HDFCLIFE",
-   "side": "BUY",
-   "shares": 1,
-   "price": 621.26,
-   "fees": 1.06,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "TATACONSUM",
-   "side": "BUY",
-   "shares": 1,
-   "price": 946.96,
-   "fees": 1.61,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "HDFCBANK",
-   "side": "BUY",
-   "shares": 1,
-   "price": 819.8,
-   "fees": 1.39,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "HDFCLIFE",
-   "side": "BUY",
-   "shares": 4,
-   "price": 621.26,
-   "fees": 4.22,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "HDFCBANK",
-   "side": "BUY",
-   "shares": 3,
-   "price": 819.8,
-   "fees": 4.18,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-07",
-   "ticker": "TATACONSUM",
-   "side": "BUY",
-   "shares": 1,
-   "price": 946.96,
-   "fees": 1.61,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "HDFCLIFE",
-   "side": "SELL",
-   "shares": 5,
-   "price": 625.83,
-   "fees": 20.19,
-   "pnl": 2.67,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "TATACONSUM",
-   "side": "SELL",
-   "shares": 2,
-   "price": 925.7,
-   "fees": 18.21,
-   "pnl": -60.73,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "HDFCBANK",
-   "side": "SELL",
-   "shares": 4,
-   "price": 830.07,
-   "fees": 20.49,
-   "pnl": 20.57,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "WIPRO",
-   "side": "BUY",
-   "shares": 4,
-   "price": 245.62,
-   "fees": 1.67,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "ETERNAL",
-   "side": "BUY",
-   "shares": 5,
-   "price": 203.69,
-   "fees": 1.73,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "MAXHEALTH",
-   "side": "BUY",
-   "shares": 1,
-   "price": 994.98,
-   "fees": 1.69,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "ETERNAL",
-   "side": "BUY",
-   "shares": 11,
-   "price": 203.69,
-   "fees": 3.81,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "WIPRO",
-   "side": "BUY",
-   "shares": 9,
-   "price": 245.62,
-   "fees": 3.76,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-17",
-   "ticker": "MAXHEALTH",
-   "side": "BUY",
-   "shares": 1,
-   "price": 994.98,
-   "fees": 1.69,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-21",
-   "ticker": "WIPRO",
-   "side": "SELL",
-   "shares": 13,
-   "price": 249.82,
-   "fees": 20.37,
-   "pnl": 34.31,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-21",
-   "ticker": "ETERNAL",
-   "side": "SELL",
-   "shares": 16,
-   "price": 227.52,
-   "fees": 20.98,
-   "pnl": 360.3,
-   "reason": "dropped by model"
-  },
-  {
    "date": "2025-03-21",
    "ticker": "MAXHEALTH",
    "side": "SELL",
-   "shares": 2,
+   "shares": 1,
    "price": 1166.83,
-   "fees": 18.96,
-   "pnl": 324.73,
+   "fees": 17.15,
+   "pnl": 154.7,
    "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-21",
-   "ticker": "JIOFIN",
-   "side": "BUY",
-   "shares": 5,
-   "price": 228.23,
-   "fees": 1.94,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-21",
-   "ticker": "AXISBANK",
-   "side": "BUY",
-   "shares": 1,
-   "price": 1068.41,
-   "fees": 1.82,
-   "pnl": 0.0,
-   "reason": "model pick"
   },
   {
    "date": "2025-03-21",
@@ -3247,9 +3017,29 @@
    "date": "2025-03-21",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 10,
+   "shares": 5,
    "price": 228.23,
-   "fees": 3.88,
+   "fees": 1.94,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-03-21",
+   "ticker": "ITC",
+   "side": "BUY",
+   "shares": 3,
+   "price": 379.69,
+   "fees": 1.94,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-03-21",
+   "ticker": "JIOFIN",
+   "side": "BUY",
+   "shares": 11,
+   "price": 228.23,
+   "fees": 4.27,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -3265,41 +3055,11 @@
   },
   {
    "date": "2025-03-21",
-   "ticker": "AXISBANK",
+   "ticker": "ITC",
    "side": "BUY",
-   "shares": 1,
-   "price": 1068.41,
-   "fees": 1.82,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-03-28",
-   "ticker": "AXISBANK",
-   "side": "SELL",
-   "shares": 2,
-   "price": 1100.21,
-   "fees": 18.75,
-   "pnl": 44.85,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-03-28",
-   "ticker": "ETERNAL",
-   "side": "BUY",
-   "shares": 6,
-   "price": 201.7,
-   "fees": 2.06,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-03-28",
-   "ticker": "ETERNAL",
-   "side": "BUY",
-   "shares": 6,
-   "price": 201.7,
-   "fees": 2.06,
+   "shares": 3,
+   "price": 379.69,
+   "fees": 1.94,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -3315,16 +3075,6 @@
   },
   {
    "date": "2025-04-04",
-   "ticker": "ETERNAL",
-   "side": "SELL",
-   "shares": 12,
-   "price": 210.53,
-   "fees": 19.26,
-   "pnl": 86.7,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-04-04",
    "ticker": "DRREDDY",
    "side": "BUY",
    "shares": 1,
@@ -3335,31 +3085,21 @@
   },
   {
    "date": "2025-04-04",
-   "ticker": "HINDALCO",
+   "ticker": "ITC",
    "side": "BUY",
-   "shares": 2,
-   "price": 592.49,
-   "fees": 2.01,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-04-04",
-   "ticker": "JIOFIN",
-   "side": "BUY",
-   "shares": 1,
-   "price": 221.46,
-   "fees": 0.38,
+   "shares": 3,
+   "price": 383.58,
+   "fees": 1.96,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
   {
    "date": "2025-04-04",
-   "ticker": "HINDALCO",
+   "ticker": "DRREDDY",
    "side": "BUY",
-   "shares": 4,
-   "price": 592.49,
-   "fees": 4.03,
+   "shares": 1,
+   "price": 1096.0,
+   "fees": 1.86,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -3370,8 +3110,18 @@
    "shares": 16,
    "price": 212.69,
    "fees": 20.61,
-   "pnl": -262.47,
+   "pnl": -269.24,
    "reason": "trailing stop"
+  },
+  {
+   "date": "2025-04-11",
+   "ticker": "ITC",
+   "side": "SELL",
+   "shares": 9,
+   "price": 394.67,
+   "fees": 20.85,
+   "pnl": 102.32,
+   "reason": "dropped by model"
   },
   {
    "date": "2025-04-11",
@@ -3385,123 +3135,143 @@
   },
   {
    "date": "2025-04-11",
-   "ticker": "TATASTEEL",
+   "ticker": "ONGC",
    "side": "BUY",
-   "shares": 18,
-   "price": 127.75,
-   "fees": 3.91,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-04-21",
-   "ticker": "DRREDDY",
-   "side": "SELL",
-   "shares": 1,
-   "price": 1162.61,
-   "fees": 17.14,
-   "pnl": 49.46,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-04-21",
-   "ticker": "HINDALCO",
-   "side": "SELL",
-   "shares": 6,
-   "price": 614.27,
-   "fees": 21.05,
-   "pnl": 109.6,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-04-21",
-   "ticker": "TCS",
-   "side": "BUY",
-   "shares": 1,
-   "price": 3133.76,
-   "fees": 5.33,
+   "shares": 5,
+   "price": 217.62,
+   "fees": 1.85,
    "pnl": 0.0,
    "reason": "model pick"
   },
   {
-   "date": "2025-04-21",
+   "date": "2025-04-11",
+   "ticker": "TATASTEEL",
+   "side": "BUY",
+   "shares": 19,
+   "price": 127.75,
+   "fees": 4.13,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-04-11",
+   "ticker": "ONGC",
+   "side": "BUY",
+   "shares": 10,
+   "price": 217.62,
+   "fees": 3.7,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "DRREDDY",
+   "side": "SELL",
+   "shares": 2,
+   "price": 1160.04,
+   "fees": 18.94,
+   "pnl": 109.13,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "TATASTEEL",
+   "side": "SELL",
+   "shares": 28,
+   "price": 132.94,
+   "fees": 21.11,
+   "pnl": 124.46,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "SHRIRAMFIN",
+   "side": "BUY",
+   "shares": 2,
+   "price": 639.64,
+   "fees": 2.17,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "SBIN",
+   "side": "BUY",
+   "shares": 1,
+   "price": 769.07,
+   "fees": 1.31,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "ONGC",
+   "side": "BUY",
+   "shares": 1,
+   "price": 232.69,
+   "fees": 0.4,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "SHRIRAMFIN",
+   "side": "BUY",
+   "shares": 3,
+   "price": 639.64,
+   "fees": 3.26,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-04-25",
+   "ticker": "SBIN",
+   "side": "BUY",
+   "shares": 2,
+   "price": 769.07,
+   "fees": 2.61,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-05-02",
+   "ticker": "SBIN",
+   "side": "SELL",
+   "shares": 3,
+   "price": 767.19,
+   "fees": 18.91,
+   "pnl": -24.54,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-05-02",
    "ticker": "HINDUNILVR",
    "side": "BUY",
    "shares": 1,
-   "price": 2285.14,
-   "fees": 3.88,
+   "price": 2253.65,
+   "fees": 3.83,
    "pnl": 0.0,
    "reason": "model pick"
-  },
-  {
-   "date": "2025-04-25",
-   "ticker": "TATASTEEL",
-   "side": "SELL",
-   "shares": 27,
-   "price": 132.94,
-   "fees": 20.9,
-   "pnl": 119.47,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-04-25",
-   "ticker": "SHRIRAMFIN",
-   "side": "BUY",
-   "shares": 1,
-   "price": 639.64,
-   "fees": 1.09,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-04-25",
-   "ticker": "SHRIRAMFIN",
-   "side": "BUY",
-   "shares": 4,
-   "price": 639.64,
-   "fees": 4.35,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-05-02",
-   "ticker": "TCS",
-   "side": "SELL",
-   "shares": 1,
-   "price": 3236.97,
-   "fees": 20.36,
-   "pnl": 82.86,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-05-02",
-   "ticker": "ASIANPAINT",
-   "side": "BUY",
-   "shares": 1,
-   "price": 2363.74,
-   "fees": 4.02,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-05-02",
-   "ticker": "SHRIRAMFIN",
-   "side": "BUY",
-   "shares": 1,
-   "price": 589.27,
-   "fees": 1.0,
-   "pnl": 0.0,
-   "reason": "use spare cash"
   },
   {
    "date": "2025-05-09",
    "ticker": "SHRIRAMFIN",
    "side": "SELL",
-   "shares": 6,
+   "shares": 5,
    "price": 587.17,
-   "fees": 20.8,
-   "pnl": -285.27,
+   "fees": 19.89,
+   "pnl": -282.26,
    "reason": "trailing stop"
+  },
+  {
+   "date": "2025-05-09",
+   "ticker": "ONGC",
+   "side": "SELL",
+   "shares": 16,
+   "price": 221.95,
+   "fees": 20.84,
+   "pnl": 33.45,
+   "reason": "dropped by model"
   },
   {
    "date": "2025-05-09",
@@ -3515,11 +3285,31 @@
   },
   {
    "date": "2025-05-09",
+   "ticker": "NESTLEIND",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1146.1,
+   "fees": 1.95,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-05-09",
    "ticker": "JIOFIN",
    "side": "BUY",
    "shares": 10,
    "price": 247.38,
    "fees": 4.21,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-05-09",
+   "ticker": "NESTLEIND",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1146.1,
+   "fees": 1.95,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -3535,6 +3325,26 @@
   },
   {
    "date": "2025-05-16",
+   "ticker": "NESTLEIND",
+   "side": "SELL",
+   "shares": 2,
+   "price": 1187.21,
+   "fees": 19.02,
+   "pnl": 63.19,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-05-16",
+   "ticker": "BHARTIARTL",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1776.6,
+   "fees": 3.02,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-05-16",
    "ticker": "HCLTECH",
    "side": "BUY",
    "shares": 2,
@@ -3544,13 +3354,23 @@
    "reason": "model pick"
   },
   {
-   "date": "2025-05-23",
-   "ticker": "ASIANPAINT",
-   "side": "SELL",
+   "date": "2025-05-16",
+   "ticker": "BHARTIARTL",
+   "side": "BUY",
    "shares": 1,
-   "price": 2271.05,
-   "fees": 18.86,
-   "pnl": -111.55,
+   "price": 1776.6,
+   "fees": 3.02,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-05-23",
+   "ticker": "BHARTIARTL",
+   "side": "SELL",
+   "shares": 2,
+   "price": 1793.94,
+   "fees": 20.9,
+   "pnl": 13.77,
    "reason": "dropped by model"
   },
   {
@@ -3565,21 +3385,21 @@
   },
   {
    "date": "2025-05-23",
-   "ticker": "HDFCBANK",
-   "side": "BUY",
-   "shares": 3,
-   "price": 938.39,
-   "fees": 4.79,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-05-23",
    "ticker": "ETERNAL",
    "side": "BUY",
    "shares": 13,
    "price": 237.55,
    "fees": 5.25,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-05-23",
+   "ticker": "HDFCBANK",
+   "side": "BUY",
+   "shares": 3,
+   "price": 938.39,
+   "fees": 4.79,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -3625,13 +3445,53 @@
   },
   {
    "date": "2025-06-06",
-   "ticker": "ASIANPAINT",
+   "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 1,
-   "price": 2202.1,
-   "fees": 3.74,
+   "shares": 14,
+   "price": 234.98,
+   "fees": 5.59,
    "pnl": 0.0,
    "reason": "model pick"
+  },
+  {
+   "date": "2025-06-06",
+   "ticker": "WIPRO",
+   "side": "BUY",
+   "shares": 2,
+   "price": 234.98,
+   "fees": 0.8,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-06-13",
+   "ticker": "WIPRO",
+   "side": "SELL",
+   "shares": 16,
+   "price": 245.96,
+   "fees": 21.44,
+   "pnl": 154.3,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-06-13",
+   "ticker": "BHARTIARTL",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1802.46,
+   "fees": 3.06,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-06-13",
+   "ticker": "BHARTIARTL",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1802.46,
+   "fees": 3.06,
+   "pnl": 0.0,
+   "reason": "use spare cash"
   },
   {
    "date": "2025-06-20",
@@ -3645,21 +3505,21 @@
   },
   {
    "date": "2025-06-20",
-   "ticker": "ASIANPAINT",
+   "ticker": "BHARTIARTL",
    "side": "SELL",
-   "shares": 1,
-   "price": 2262.51,
-   "fees": 18.85,
-   "pnl": 41.56,
+   "shares": 2,
+   "price": 1896.77,
+   "fees": 21.22,
+   "pnl": 167.41,
    "reason": "dropped by model"
   },
   {
    "date": "2025-06-20",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 12,
+   "shares": 13,
    "price": 253.33,
-   "fees": 5.17,
+   "fees": 5.6,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -3694,13 +3554,53 @@
    "reason": "use spare cash"
   },
   {
+   "date": "2025-06-27",
+   "ticker": "ETERNAL",
+   "side": "SELL",
+   "shares": 15,
+   "price": 261.86,
+   "fees": 21.43,
+   "pnl": 106.52,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-06-27",
+   "ticker": "BEL",
+   "side": "BUY",
+   "shares": 8,
+   "price": 411.23,
+   "fees": 5.59,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-06-27",
+   "ticker": "ITC",
+   "side": "BUY",
+   "shares": 1,
+   "price": 399.18,
+   "fees": 0.68,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-06-27",
+   "ticker": "BEL",
+   "side": "BUY",
+   "shares": 1,
+   "price": 411.23,
+   "fees": 0.7,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
    "date": "2025-07-04",
    "ticker": "ITC",
    "side": "SELL",
-   "shares": 9,
+   "shares": 10,
    "price": 393.36,
-   "fees": 20.83,
-   "pnl": -72.32,
+   "fees": 21.44,
+   "pnl": -78.74,
    "reason": "dropped by model"
   },
   {
@@ -3720,7 +3620,7 @@
    "shares": 1,
    "price": 2474.78,
    "fees": 19.18,
-   "pnl": 170.46,
+   "pnl": 201.95,
    "reason": "dropped by model"
   },
   {
@@ -3735,6 +3635,16 @@
   },
   {
    "date": "2025-07-11",
+   "ticker": "TITAN",
+   "side": "BUY",
+   "shares": 1,
+   "price": 3350.61,
+   "fees": 5.7,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-07-11",
    "ticker": "TCS",
    "side": "BUY",
    "shares": 1,
@@ -3744,23 +3654,23 @@
    "reason": "model pick"
   },
   {
-   "date": "2025-07-11",
+   "date": "2025-07-18",
    "ticker": "BEL",
-   "side": "BUY",
-   "shares": 7,
-   "price": 406.07,
-   "fees": 4.83,
-   "pnl": 0.0,
-   "reason": "model pick"
+   "side": "SELL",
+   "shares": 9,
+   "price": 391.64,
+   "fees": 20.8,
+   "pnl": -197.15,
+   "reason": "trailing stop"
   },
   {
    "date": "2025-07-18",
-   "ticker": "ETERNAL",
+   "ticker": "TITAN",
    "side": "SELL",
-   "shares": 14,
-   "price": 257.2,
-   "fees": 20.92,
-   "pnl": 33.26,
+   "shares": 1,
+   "price": 3391.77,
+   "fees": 20.6,
+   "pnl": 20.57,
    "reason": "dropped by model"
   },
   {
@@ -3770,6 +3680,16 @@
    "shares": 1,
    "price": 2027.87,
    "fees": 3.45,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-07-18",
+   "ticker": "BEL",
+   "side": "BUY",
+   "shares": 8,
+   "price": 391.64,
+   "fees": 5.33,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -3787,10 +3707,10 @@
    "date": "2025-07-25",
    "ticker": "BEL",
    "side": "SELL",
-   "shares": 9,
+   "shares": 10,
    "price": 392.08,
-   "fees": 20.81,
-   "pnl": -117.84,
+   "fees": 21.42,
+   "pnl": -16.95,
    "reason": "dropped by model"
   },
   {
@@ -3834,34 +3754,24 @@
    "reason": "model pick"
   },
   {
-   "date": "2025-08-18",
+   "date": "2025-08-22",
    "ticker": "INFY",
    "side": "SELL",
    "shares": 2,
-   "price": 1384.2,
-   "fees": 19.63,
-   "pnl": -84.8,
+   "price": 1434.04,
+   "fees": 19.79,
+   "pnl": 14.73,
    "reason": "dropped by model"
   },
   {
-   "date": "2025-08-18",
-   "ticker": "ITC",
-   "side": "BUY",
-   "shares": 7,
-   "price": 387.41,
-   "fees": 4.61,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-08-18",
-   "ticker": "ITC",
+   "date": "2025-08-22",
+   "ticker": "ICICIBANK",
    "side": "BUY",
    "shares": 2,
-   "price": 387.41,
-   "fees": 1.32,
+   "price": 1424.39,
+   "fees": 4.84,
    "pnl": 0.0,
-   "reason": "use spare cash"
+   "reason": "model pick"
   },
   {
    "date": "2025-08-29",
@@ -3875,31 +3785,11 @@
   },
   {
    "date": "2025-08-29",
-   "ticker": "ITC",
-   "side": "SELL",
-   "shares": 9,
-   "price": 390.7,
-   "fees": 20.79,
-   "pnl": 8.82,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-08-29",
-   "ticker": "ICICIBANK",
+   "ticker": "HCLTECH",
    "side": "BUY",
    "shares": 2,
-   "price": 1386.11,
-   "fees": 4.71,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-08-29",
-   "ticker": "HDFCBANK",
-   "side": "BUY",
-   "shares": 3,
-   "price": 936.12,
-   "fees": 4.77,
+   "price": 1379.49,
+   "fees": 4.69,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -3910,17 +3800,7 @@
    "shares": 2,
    "price": 1405.85,
    "fees": 19.7,
-   "pnl": 19.77,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-09-12",
-   "ticker": "HDFCBANK",
-   "side": "SELL",
-   "shares": 3,
-   "price": 951.56,
-   "fees": 19.76,
-   "pnl": 26.57,
+   "pnl": -56.79,
    "reason": "dropped by model"
   },
   {
@@ -3935,21 +3815,11 @@
   },
   {
    "date": "2025-09-12",
-   "ticker": "SUNPHARMA",
+   "ticker": "BHARTIARTL",
    "side": "BUY",
    "shares": 1,
-   "price": 1601.97,
-   "fees": 2.72,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-09-12",
-   "ticker": "SUNPHARMA",
-   "side": "BUY",
-   "shares": 1,
-   "price": 1601.97,
-   "fees": 2.72,
+   "price": 1878.95,
+   "fees": 3.19,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -3967,29 +3837,19 @@
    "date": "2025-09-19",
    "ticker": "BHARTIARTL",
    "side": "SELL",
-   "shares": 1,
-   "price": 1938.01,
-   "fees": 18.34,
-   "pnl": 40.71,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-09-19",
-   "ticker": "SUNPHARMA",
-   "side": "SELL",
    "shares": 2,
-   "price": 1641.01,
-   "fees": 20.43,
-   "pnl": 57.66,
+   "price": 1938.01,
+   "fees": 21.35,
+   "pnl": 96.77,
    "reason": "dropped by model"
   },
   {
    "date": "2025-09-19",
    "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 12,
+   "shares": 13,
    "price": 246.62,
-   "fees": 5.03,
+   "fees": 5.45,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -3997,19 +3857,9 @@
    "date": "2025-09-19",
    "ticker": "KOTAKBANK",
    "side": "BUY",
-   "shares": 7,
+   "shares": 8,
    "price": 405.5,
-   "fees": 4.83,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-09-19",
-   "ticker": "HCLTECH",
-   "side": "BUY",
-   "shares": 2,
-   "price": 1391.44,
-   "fees": 4.73,
+   "fees": 5.51,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4027,10 +3877,10 @@
    "date": "2025-09-26",
    "ticker": "WIPRO",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 227.22,
-   "fees": 20.27,
-   "pnl": -291.9,
+   "fees": 20.62,
+   "pnl": -311.65,
    "reason": "dropped by model"
   },
   {
@@ -4057,10 +3907,10 @@
    "date": "2025-10-03",
    "ticker": "KOTAKBANK",
    "side": "SELL",
-   "shares": 8,
+   "shares": 9,
    "price": 419.38,
-   "fees": 20.54,
-   "pnl": 97.7,
+   "fees": 21.19,
+   "pnl": 110.92,
    "reason": "dropped by model"
   },
   {
@@ -4110,7 +3960,7 @@
    "shares": 2,
    "price": 1420.52,
    "fees": 19.74,
-   "pnl": 38.41,
+   "pnl": 62.31,
    "reason": "dropped by model"
   },
   {
@@ -4127,9 +3977,9 @@
    "date": "2025-10-17",
    "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 13,
+   "shares": 14,
    "price": 232.19,
-   "fees": 5.13,
+   "fees": 5.53,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4187,10 +4037,10 @@
    "date": "2025-11-07",
    "ticker": "WIPRO",
    "side": "SELL",
-   "shares": 15,
+   "shares": 16,
    "price": 227.93,
-   "fees": 20.64,
-   "pnl": -84.4,
+   "fees": 20.99,
+   "pnl": -89.0,
    "reason": "dropped by model"
   },
   {
@@ -4217,9 +4067,9 @@
    "date": "2025-11-07",
    "ticker": "HINDALCO",
    "side": "BUY",
-   "shares": 3,
+   "shares": 4,
    "price": 786.3,
-   "fees": 4.01,
+   "fees": 5.35,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4234,14 +4084,14 @@
    "reason": "use spare cash"
   },
   {
-   "date": "2025-11-07",
-   "ticker": "HINDALCO",
-   "side": "BUY",
-   "shares": 1,
-   "price": 786.3,
-   "fees": 1.34,
-   "pnl": 0.0,
-   "reason": "use spare cash"
+   "date": "2025-11-14",
+   "ticker": "ETERNAL",
+   "side": "SELL",
+   "shares": 12,
+   "price": 303.75,
+   "fees": 20.99,
+   "pnl": -49.19,
+   "reason": "dropped by model"
   },
   {
    "date": "2025-11-14",
@@ -4255,122 +4105,62 @@
   },
   {
    "date": "2025-11-14",
-   "ticker": "ADANIENT",
+   "ticker": "BAJAJFINSV",
    "side": "BUY",
    "shares": 1,
-   "price": 2438.91,
-   "fees": 4.15,
+   "price": 2064.04,
+   "fees": 3.51,
    "pnl": 0.0,
    "reason": "model pick"
+  },
+  {
+   "date": "2025-11-14",
+   "ticker": "GRASIM",
+   "side": "BUY",
+   "shares": 1,
+   "price": 2774.76,
+   "fees": 4.72,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-11-14",
+   "ticker": "MAXHEALTH",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1101.14,
+   "fees": 1.87,
+   "pnl": 0.0,
+   "reason": "use spare cash"
   },
   {
    "date": "2025-11-21",
    "ticker": "MAXHEALTH",
    "side": "SELL",
-   "shares": 2,
+   "shares": 3,
    "price": 1179.0,
-   "fees": 18.99,
-   "pnl": 47.49,
+   "fees": 20.82,
+   "pnl": 123.52,
    "reason": "dropped by model"
   },
   {
    "date": "2025-11-21",
-   "ticker": "ETERNAL",
-   "side": "SELL",
-   "shares": 12,
-   "price": 301.95,
-   "fees": 20.96,
-   "pnl": -70.76,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-11-21",
-   "ticker": "ADANIENT",
-   "side": "SELL",
-   "shares": 1,
-   "price": 2421.22,
-   "fees": 19.09,
-   "pnl": -36.78,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-11-21",
-   "ticker": "HINDALCO",
+   "ticker": "SHRIRAMFIN",
    "side": "BUY",
    "shares": 4,
-   "price": 773.66,
-   "fees": 5.26,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-11-21",
-   "ticker": "ONGC",
-   "side": "BUY",
-   "shares": 13,
-   "price": 240.25,
-   "fees": 5.31,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-11-21",
-   "ticker": "SHRIRAMFIN",
-   "side": "BUY",
-   "shares": 3,
    "price": 812.28,
-   "fees": 4.14,
+   "fees": 5.52,
    "pnl": 0.0,
    "reason": "model pick"
-  },
-  {
-   "date": "2025-11-21",
-   "ticker": "ONGC",
-   "side": "BUY",
-   "shares": 2,
-   "price": 240.25,
-   "fees": 0.82,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2025-11-28",
-   "ticker": "ONGC",
-   "side": "SELL",
-   "shares": 15,
-   "price": 236.65,
-   "fees": 20.84,
-   "pnl": -74.84,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-11-28",
-   "ticker": "BHARTIARTL",
-   "side": "BUY",
-   "shares": 1,
-   "price": 2075.48,
-   "fees": 3.53,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-11-28",
-   "ticker": "SHRIRAMFIN",
-   "side": "BUY",
-   "shares": 1,
-   "price": 840.25,
-   "fees": 1.43,
-   "pnl": 0.0,
-   "reason": "use spare cash"
   },
   {
    "date": "2025-12-05",
-   "ticker": "HINDALCO",
+   "ticker": "GRASIM",
    "side": "SELL",
-   "shares": 4,
-   "price": 818.98,
-   "fees": 20.42,
-   "pnl": 160.84,
+   "shares": 1,
+   "price": 2738.47,
+   "fees": 19.58,
+   "pnl": -55.87,
    "reason": "dropped by model"
   },
   {
@@ -4380,17 +4170,7 @@
    "shares": 4,
    "price": 843.45,
    "fees": 20.57,
-   "pnl": 76.17,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-12-05",
-   "ticker": "BHARTIARTL",
-   "side": "SELL",
-   "shares": 1,
-   "price": 2082.59,
-   "fees": 18.57,
-   "pnl": -11.46,
+   "pnl": 104.14,
    "reason": "dropped by model"
   },
   {
@@ -4407,71 +4187,41 @@
    "date": "2025-12-05",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 10,
-   "price": 292.4,
-   "fees": 4.97,
-   "pnl": 0.0,
-   "reason": "model pick"
-  },
-  {
-   "date": "2025-12-05",
-   "ticker": "POWERGRID",
-   "side": "BUY",
    "shares": 11,
-   "price": 265.57,
-   "fees": 4.97,
+   "price": 292.4,
+   "fees": 5.47,
    "pnl": 0.0,
    "reason": "model pick"
-  },
-  {
-   "date": "2025-12-05",
-   "ticker": "POWERGRID",
-   "side": "BUY",
-   "shares": 3,
-   "price": 265.57,
-   "fees": 1.35,
-   "pnl": 0.0,
-   "reason": "use spare cash"
   },
   {
    "date": "2025-12-05",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 1,
+   "shares": 2,
    "price": 292.4,
-   "fees": 0.5,
+   "fees": 0.99,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
   {
    "date": "2025-12-12",
+   "ticker": "BAJAJFINSV",
+   "side": "SELL",
+   "shares": 1,
+   "price": 2081.32,
+   "fees": 18.57,
+   "pnl": -1.28,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2025-12-12",
    "ticker": "ETERNAL",
    "side": "SELL",
-   "shares": 11,
+   "shares": 13,
    "price": 298.05,
-   "fees": 20.42,
-   "pnl": 41.73,
+   "fees": 21.35,
+   "pnl": 52.1,
    "reason": "dropped by model"
-  },
-  {
-   "date": "2025-12-12",
-   "ticker": "POWERGRID",
-   "side": "SELL",
-   "shares": 14,
-   "price": 259.46,
-   "fees": 20.97,
-   "pnl": -106.41,
-   "reason": "dropped by model"
-  },
-  {
-   "date": "2025-12-12",
-   "ticker": "BHARTIARTL",
-   "side": "BUY",
-   "shares": 1,
-   "price": 2057.51,
-   "fees": 3.5,
-   "pnl": 0.0,
-   "reason": "model pick"
   },
   {
    "date": "2025-12-12",
@@ -4485,6 +4235,26 @@
   },
   {
    "date": "2025-12-12",
+   "ticker": "BEL",
+   "side": "BUY",
+   "shares": 8,
+   "price": 387.27,
+   "fees": 5.27,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2025-12-12",
+   "ticker": "BEL",
+   "side": "BUY",
+   "shares": 2,
+   "price": 387.27,
+   "fees": 1.32,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2025-12-12",
    "ticker": "JSWSTEEL",
    "side": "BUY",
    "shares": 1,
@@ -4495,21 +4265,21 @@
   },
   {
    "date": "2025-12-19",
-   "ticker": "BHARTIARTL",
+   "ticker": "BEL",
    "side": "SELL",
-   "shares": 1,
-   "price": 2071.63,
-   "fees": 18.55,
-   "pnl": -4.43,
+   "shares": 10,
+   "price": 390.65,
+   "fees": 21.4,
+   "pnl": 12.41,
    "reason": "dropped by model"
   },
   {
    "date": "2025-12-19",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 10,
+   "shares": 11,
    "price": 286.05,
-   "fees": 4.86,
+   "fees": 5.35,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4564,22 +4334,72 @@
    "reason": "model pick"
   },
   {
+   "date": "2025-12-26",
+   "ticker": "SHRIRAMFIN",
+   "side": "BUY",
+   "shares": 1,
+   "price": 947.39,
+   "fees": 1.61,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-01-02",
+   "ticker": "SBILIFE",
+   "side": "SELL",
+   "shares": 1,
+   "price": 2064.53,
+   "fees": 18.54,
+   "pnl": 29.69,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-01-02",
+   "ticker": "ITC",
+   "side": "BUY",
+   "shares": 7,
+   "price": 333.77,
+   "fees": 3.97,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-01-09",
+   "ticker": "ITC",
+   "side": "SELL",
+   "shares": 7,
+   "price": 321.47,
+   "fees": 18.83,
+   "pnl": -104.93,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-01-09",
+   "ticker": "SBILIFE",
+   "side": "BUY",
+   "shares": 1,
+   "price": 2067.13,
+   "fees": 3.51,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
    "date": "2026-01-16",
    "ticker": "ETERNAL",
    "side": "SELL",
-   "shares": 12,
+   "shares": 13,
    "price": 287.7,
-   "fees": 20.69,
-   "pnl": -0.89,
+   "fees": 21.14,
+   "pnl": 0.31,
    "reason": "dropped by model"
   },
   {
    "date": "2026-01-16",
    "ticker": "BEL",
    "side": "BUY",
-   "shares": 7,
+   "shares": 8,
    "price": 407.96,
-   "fees": 4.85,
+   "fees": 5.55,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4597,10 +4417,10 @@
    "date": "2026-01-23",
    "ticker": "SHRIRAMFIN",
    "side": "SELL",
-   "shares": 3,
+   "shares": 4,
    "price": 990.11,
-   "fees": 19.94,
-   "pnl": 108.22,
+   "fees": 21.48,
+   "pnl": 149.4,
    "reason": "dropped by model"
   },
   {
@@ -4610,26 +4430,26 @@
    "shares": 1,
    "price": 1999.82,
    "fees": 18.44,
-   "pnl": -34.92,
+   "pnl": -85.75,
    "reason": "dropped by model"
   },
   {
    "date": "2026-01-23",
    "ticker": "BEL",
    "side": "SELL",
-   "shares": 8,
+   "shares": 9,
    "price": 408.4,
-   "fees": 20.4,
-   "pnl": -16.82,
+   "fees": 21.04,
+   "pnl": -17.01,
    "reason": "dropped by model"
   },
   {
    "date": "2026-01-23",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 4,
+   "shares": 5,
    "price": 258.7,
-   "fees": 1.76,
+   "fees": 2.2,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4637,9 +4457,9 @@
    "date": "2026-01-23",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 4,
+   "shares": 5,
    "price": 252.31,
-   "fees": 1.72,
+   "fees": 2.14,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4667,9 +4487,9 @@
    "date": "2026-01-23",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 10,
+   "shares": 9,
    "price": 258.7,
-   "fees": 4.4,
+   "fees": 3.96,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -4697,10 +4517,10 @@
    "date": "2026-02-06",
    "ticker": "JIOFIN",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 267.47,
-   "fees": 21.14,
-   "pnl": 191.16,
+   "fees": 21.56,
+   "pnl": 205.91,
    "reason": "dropped by model"
   },
   {
@@ -4717,9 +4537,9 @@
    "date": "2026-02-06",
    "ticker": "ITC",
    "side": "BUY",
-   "shares": 10,
+   "shares": 11,
    "price": 317.16,
-   "fees": 5.39,
+   "fees": 5.93,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -4827,9 +4647,9 @@
    "date": "2026-03-06",
    "ticker": "ETERNAL",
    "side": "BUY",
-   "shares": 10,
+   "shares": 11,
    "price": 232.57,
-   "fees": 3.95,
+   "fees": 4.35,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -4847,10 +4667,10 @@
    "date": "2026-03-12",
    "ticker": "ITC",
    "side": "SELL",
-   "shares": 12,
+   "shares": 13,
    "price": 296.04,
-   "fees": 20.85,
-   "pnl": -262.61,
+   "fees": 21.31,
+   "pnl": -284.19,
    "reason": "trailing stop"
   },
   {
@@ -4877,9 +4697,9 @@
    "date": "2026-03-13",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 9,
+   "shares": 10,
    "price": 234.7,
-   "fees": 3.59,
+   "fees": 3.99,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -4897,10 +4717,10 @@
    "date": "2026-03-20",
    "ticker": "ETERNAL",
    "side": "SELL",
-   "shares": 16,
+   "shares": 17,
    "price": 232.29,
-   "fees": 21.1,
-   "pnl": -8.69,
+   "fees": 21.46,
+   "pnl": -9.33,
    "reason": "dropped by model"
   },
   {
@@ -4947,10 +4767,10 @@
    "date": "2026-03-23",
    "ticker": "JIOFIN",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 225.57,
-   "fees": 20.23,
-   "pnl": -148.04,
+   "fees": 20.58,
+   "pnl": -157.51,
    "reason": "trailing stop"
   },
   {
@@ -4967,9 +4787,9 @@
    "date": "2026-03-27",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 9,
+   "shares": 10,
    "price": 232.01,
-   "fees": 3.55,
+   "fees": 3.94,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -4985,32 +4805,22 @@
   },
   {
    "date": "2026-04-06",
-   "ticker": "MAXHEALTH",
+   "ticker": "CIPLA",
    "side": "BUY",
    "shares": 1,
-   "price": 929.95,
-   "fees": 1.58,
+   "price": 1189.74,
+   "fees": 2.02,
    "pnl": 0.0,
    "reason": "model pick"
   },
   {
-   "date": "2026-04-06",
-   "ticker": "MAXHEALTH",
-   "side": "BUY",
-   "shares": 1,
-   "price": 929.95,
-   "fees": 1.58,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2026-04-17",
-   "ticker": "MAXHEALTH",
+   "date": "2026-04-24",
+   "ticker": "CIPLA",
    "side": "SELL",
-   "shares": 2,
-   "price": 1005.86,
-   "fees": 18.46,
-   "pnl": 133.37,
+   "shares": 1,
+   "price": 1282.96,
+   "fees": 17.33,
+   "pnl": 75.9,
    "reason": "dropped by model"
   },
   {
@@ -5022,6 +4832,16 @@
    "fees": 2.01,
    "pnl": 0.0,
    "reason": "model pick"
+  },
+  {
+   "date": "2026-04-24",
+   "ticker": "HCLTECH",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1180.53,
+   "fees": 2.01,
+   "pnl": 0.0,
+   "reason": "use spare cash"
   },
   {
    "date": "2026-05-04",
@@ -5057,20 +4877,20 @@
    "date": "2026-05-12",
    "ticker": "JIOFIN",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 229.93,
-   "fees": 20.33,
-   "pnl": -49.38,
+   "fees": 20.69,
+   "pnl": -51.81,
    "reason": "trailing stop"
   },
   {
    "date": "2026-05-14",
    "ticker": "HCLTECH",
    "side": "SELL",
-   "shares": 1,
+   "shares": 2,
    "price": 1102.82,
-   "fees": 17.05,
-   "pnl": -94.76,
+   "fees": 18.76,
+   "pnl": -174.17,
    "reason": "trailing stop"
   },
   {
@@ -5087,9 +4907,9 @@
    "date": "2026-05-15",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 4,
+   "shares": 5,
    "price": 232.52,
-   "fees": 1.58,
+   "fees": 1.98,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -5100,6 +4920,16 @@
    "shares": 10,
    "price": 232.52,
    "fees": 3.95,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-05-15",
+   "ticker": "HCLTECH",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1111.26,
+   "fees": 1.89,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5117,10 +4947,10 @@
    "date": "2026-05-22",
    "ticker": "HCLTECH",
    "side": "SELL",
-   "shares": 1,
+   "shares": 2,
    "price": 1142.07,
-   "fees": 17.11,
-   "pnl": 13.7,
+   "fees": 18.88,
+   "pnl": 42.74,
    "reason": "dropped by model"
   },
   {
@@ -5167,10 +4997,10 @@
    "date": "2026-05-29",
    "ticker": "JIOFIN",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 238.39,
-   "fees": 20.51,
-   "pnl": 61.75,
+   "fees": 20.88,
+   "pnl": 67.26,
    "reason": "dropped by model"
   },
   {
@@ -5194,13 +5024,23 @@
    "reason": "use spare cash"
   },
   {
+   "date": "2026-05-29",
+   "ticker": "MAXHEALTH",
+   "side": "BUY",
+   "shares": 1,
+   "price": 963.39,
+   "fees": 1.64,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
    "date": "2026-06-01",
    "ticker": "MAXHEALTH",
    "side": "SELL",
-   "shares": 2,
+   "shares": 3,
    "price": 936.79,
-   "fees": 18.24,
-   "pnl": -187.54,
+   "fees": 19.7,
+   "pnl": -215.6,
    "reason": "trailing stop"
   },
   {
@@ -5210,7 +5050,7 @@
    "shares": 3,
    "price": 910.94,
    "fees": 19.58,
-   "pnl": -71.96,
+   "pnl": -71.97,
    "reason": "dropped by model"
   },
   {
@@ -5267,19 +5107,9 @@
    "date": "2026-06-05",
    "ticker": "HDFCLIFE",
    "side": "BUY",
-   "shares": 3,
+   "shares": 4,
    "price": 573.26,
-   "fees": 2.92,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2026-06-05",
-   "ticker": "HCLTECH",
-   "side": "BUY",
-   "shares": 1,
-   "price": 1132.94,
-   "fees": 1.93,
+   "fees": 3.9,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5307,9 +5137,49 @@
    "date": "2026-06-12",
    "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 12,
+   "shares": 13,
    "price": 178.11,
-   "fees": 3.63,
+   "fees": 3.94,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-06-19",
+   "ticker": "HDFCLIFE",
+   "side": "SELL",
+   "shares": 6,
+   "price": 591.85,
+   "fees": 20.84,
+   "pnl": 90.71,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-06-19",
+   "ticker": "INFY",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1051.4,
+   "fees": 1.79,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-06-19",
+   "ticker": "INFY",
+   "side": "BUY",
+   "shares": 2,
+   "price": 1051.4,
+   "fees": 3.57,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-06-19",
+   "ticker": "HCLTECH",
+   "side": "BUY",
+   "shares": 1,
+   "price": 1110.38,
+   "fees": 1.89,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5330,18 +5200,38 @@
    "shares": 2,
    "price": 1051.61,
    "fees": 18.6,
-   "pnl": -181.28,
+   "pnl": -158.71,
    "reason": "trailing stop"
   },
   {
    "date": "2026-07-03",
    "ticker": "WIPRO",
    "side": "SELL",
-   "shares": 19,
+   "shares": 20,
    "price": 174.09,
-   "fees": 20.47,
-   "pnl": -92.13,
+   "fees": 20.74,
+   "pnl": -96.41,
    "reason": "dropped by model"
+  },
+  {
+   "date": "2026-07-03",
+   "ticker": "INFY",
+   "side": "SELL",
+   "shares": 3,
+   "price": 1047.2,
+   "fees": 20.21,
+   "pnl": -32.81,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-07-03",
+   "ticker": "HDFCLIFE",
+   "side": "BUY",
+   "shares": 2,
+   "price": 567.7,
+   "fees": 1.93,
+   "pnl": 0.0,
+   "reason": "model pick"
   },
   {
    "date": "2026-07-03",
@@ -5367,19 +5257,19 @@
    "date": "2026-07-03",
    "ticker": "ONGC",
    "side": "BUY",
-   "shares": 9,
+   "shares": 10,
    "price": 236.83,
-   "fees": 3.62,
+   "fees": 4.03,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
   {
    "date": "2026-07-03",
-   "ticker": "SHRIRAMFIN",
+   "ticker": "HDFCLIFE",
    "side": "BUY",
-   "shares": 1,
-   "price": 1055.3,
-   "fees": 1.79,
+   "shares": 4,
+   "price": 567.7,
+   "fees": 3.86,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5387,20 +5277,20 @@
    "date": "2026-07-10",
    "ticker": "HDFCLIFE",
    "side": "SELL",
-   "shares": 5,
+   "shares": 6,
    "price": 567.7,
-   "fees": 19.74,
-   "pnl": -47.52,
+   "fees": 20.62,
+   "pnl": -20.62,
    "reason": "dropped by model"
   },
   {
    "date": "2026-07-10",
    "ticker": "ONGC",
    "side": "SELL",
-   "shares": 13,
+   "shares": 14,
    "price": 243.92,
-   "fees": 20.26,
-   "pnl": 71.91,
+   "fees": 20.63,
+   "pnl": 78.62,
    "reason": "dropped by model"
   },
   {
@@ -5427,9 +5317,9 @@
    "date": "2026-07-10",
    "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 12,
+   "shares": 14,
    "price": 173.48,
-   "fees": 3.54,
+   "fees": 4.13,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5437,9 +5327,9 @@
    "date": "2026-07-10",
    "ticker": "NTPC",
    "side": "BUY",
-   "shares": 6,
+   "shares": 7,
    "price": 340.87,
-   "fees": 3.48,
+   "fees": 4.06,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5447,20 +5337,20 @@
    "date": "2026-07-24",
    "ticker": "WIPRO",
    "side": "SELL",
-   "shares": 18,
+   "shares": 20,
    "price": 175.12,
-   "fees": 20.23,
-   "pnl": 9.32,
+   "fees": 20.77,
+   "pnl": 12.06,
    "reason": "dropped by model"
   },
   {
    "date": "2026-07-24",
    "ticker": "NTPC",
    "side": "SELL",
-   "shares": 9,
+   "shares": 10,
    "price": 343.49,
-   "fees": 20.13,
-   "pnl": 3.46,
+   "fees": 20.66,
+   "pnl": 5.55,
    "reason": "dropped by model"
   },
   {
@@ -5475,21 +5365,21 @@
   },
   {
    "date": "2026-07-24",
-   "ticker": "ETERNAL",
+   "ticker": "TATASTEEL",
    "side": "BUY",
-   "shares": 3,
-   "price": 280.0,
-   "fees": 1.43,
+   "shares": 6,
+   "price": 182.67,
+   "fees": 1.86,
    "pnl": 0.0,
    "reason": "model pick"
   },
   {
    "date": "2026-07-24",
-   "ticker": "ETERNAL",
+   "ticker": "TATASTEEL",
    "side": "BUY",
-   "shares": 8,
-   "price": 280.0,
-   "fees": 3.81,
+   "shares": 12,
+   "price": 182.67,
+   "fees": 3.73,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5497,9 +5387,9 @@
    "date": "2026-07-24",
    "ticker": "SHRIRAMFIN",
    "side": "BUY",
-   "shares": 1,
+   "shares": 2,
    "price": 997.25,
-   "fees": 1.7,
+   "fees": 3.39,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5520,16 +5410,36 @@
    "shares": 3,
    "price": 1038.53,
    "fees": 20.17,
-   "pnl": -12.43,
+   "pnl": 45.61,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-07-31",
+   "ticker": "TATASTEEL",
+   "side": "SELL",
+   "shares": 18,
+   "price": 189.69,
+   "fees": 20.63,
+   "pnl": 105.73,
    "reason": "dropped by model"
   },
   {
    "date": "2026-07-31",
    "ticker": "ONGC",
    "side": "BUY",
-   "shares": 4,
+   "shares": 5,
    "price": 241.5,
-   "fees": 1.64,
+   "fees": 2.05,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-07-31",
+   "ticker": "ITC",
+   "side": "BUY",
+   "shares": 4,
+   "price": 281.0,
+   "fees": 1.91,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -5544,13 +5454,23 @@
    "reason": "use spare cash"
   },
   {
+   "date": "2026-07-31",
+   "ticker": "ITC",
+   "side": "BUY",
+   "shares": 8,
+   "price": 281.0,
+   "fees": 3.82,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
    "date": "2026-08-07",
-   "ticker": "ETERNAL",
+   "ticker": "ITC",
    "side": "SELL",
-   "shares": 11,
-   "price": 315.0,
-   "fees": 20.71,
-   "pnl": 364.29,
+   "shares": 12,
+   "price": 286.1,
+   "fees": 20.66,
+   "pnl": 40.54,
    "reason": "dropped by model"
   },
   {
@@ -5577,9 +5497,9 @@
    "date": "2026-08-07",
    "ticker": "POWERGRID",
    "side": "BUY",
-   "shares": 7,
+   "shares": 8,
    "price": 270.34,
-   "fees": 3.22,
+   "fees": 3.68,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5587,10 +5507,10 @@
    "date": "2026-08-21",
    "ticker": "POWERGRID",
    "side": "SELL",
-   "shares": 11,
+   "shares": 12,
    "price": 272.4,
-   "fees": 19.98,
-   "pnl": 2.68,
+   "fees": 20.41,
+   "pnl": 4.31,
    "reason": "dropped by model"
   },
   {
@@ -5607,9 +5527,9 @@
    "date": "2026-08-21",
    "ticker": "ITC",
    "side": "BUY",
-   "shares": 7,
+   "shares": 8,
    "price": 269.4,
-   "fees": 3.21,
+   "fees": 3.66,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5617,10 +5537,10 @@
    "date": "2026-08-28",
    "ticker": "ITC",
    "side": "SELL",
-   "shares": 11,
+   "shares": 12,
    "price": 266.0,
-   "fees": 19.88,
-   "pnl": -57.28,
+   "fees": 20.29,
+   "pnl": -61.09,
    "reason": "dropped by model"
   },
   {
@@ -5657,10 +5577,10 @@
    "date": "2026-09-11",
    "ticker": "ONGC",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 232.5,
-   "fees": 20.39,
-   "pnl": -142.75,
+   "fees": 20.75,
+   "pnl": -152.12,
    "reason": "dropped by model"
   },
   {
@@ -5707,9 +5627,9 @@
    "date": "2026-09-11",
    "ticker": "WIPRO",
    "side": "BUY",
-   "shares": 13,
+   "shares": 14,
    "price": 167.4,
-   "fees": 3.7,
+   "fees": 3.98,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5745,42 +5665,112 @@
   },
   {
    "date": "2026-09-18",
-   "ticker": "TATASTEEL",
+   "ticker": "WIPRO",
+   "side": "SELL",
+   "shares": 20,
+   "price": 166.83,
+   "fees": 20.51,
+   "pnl": -31.91,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "COALINDIA",
    "side": "BUY",
-   "shares": 6,
-   "price": 185.54,
-   "fees": 1.89,
+   "shares": 2,
+   "price": 409.9,
+   "fees": 1.39,
    "pnl": 0.0,
    "reason": "model pick"
   },
   {
    "date": "2026-09-18",
+   "ticker": "NTPC",
+   "side": "BUY",
+   "shares": 3,
+   "price": 323.65,
+   "fees": 1.65,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "NTPC",
+   "side": "BUY",
+   "shares": 7,
+   "price": 323.65,
+   "fees": 3.85,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "COALINDIA",
+   "side": "BUY",
+   "shares": 3,
+   "price": 409.9,
+   "fees": 2.09,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "NTPC",
+   "side": "SELL",
+   "shares": 10,
+   "price": 326.6,
+   "fees": 20.4,
+   "pnl": 9.1,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-09-25",
    "ticker": "TATASTEEL",
    "side": "BUY",
-   "shares": 5,
-   "price": 185.54,
-   "fees": 1.58,
+   "shares": 6,
+   "price": 187.97,
+   "fees": 1.92,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "TATASTEEL",
+   "side": "BUY",
+   "shares": 12,
+   "price": 187.97,
+   "fees": 3.83,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
   {
    "date": "2026-10-05",
-   "ticker": "WIPRO",
+   "ticker": "TATACONSUM",
    "side": "SELL",
-   "shares": 19,
-   "price": 162.14,
-   "fees": 20.12,
-   "pnl": -120.05,
+   "shares": 3,
+   "price": 953.75,
+   "fees": 19.77,
+   "pnl": -131.52,
+   "reason": "dropped by model"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "COALINDIA",
+   "side": "SELL",
+   "shares": 5,
+   "price": 425.1,
+   "fees": 18.63,
+   "pnl": 57.37,
    "reason": "dropped by model"
   },
   {
    "date": "2026-10-05",
    "ticker": "TATASTEEL",
    "side": "SELL",
-   "shares": 11,
+   "shares": 18,
    "price": 178.14,
-   "fees": 18.38,
-   "pnl": -99.78,
+   "fees": 20.31,
+   "pnl": -197.25,
    "reason": "dropped by model"
   },
   {
@@ -5790,6 +5780,16 @@
    "shares": 5,
    "price": 212.0,
    "fees": 1.8,
+   "pnl": 0.0,
+   "reason": "model pick"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "KOTAKBANK",
+   "side": "BUY",
+   "shares": 2,
+   "price": 416.0,
+   "fees": 1.41,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -5807,9 +5807,19 @@
    "date": "2026-10-05",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 9,
+   "shares": 10,
    "price": 212.0,
-   "fees": 3.24,
+   "fees": 3.6,
+   "pnl": 0.0,
+   "reason": "use spare cash"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "KOTAKBANK",
+   "side": "BUY",
+   "shares": 5,
+   "price": 416.0,
+   "fees": 3.54,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5825,22 +5835,22 @@
   },
   {
    "date": "2026-10-09",
-   "ticker": "TATACONSUM",
+   "ticker": "JIOFIN",
    "side": "SELL",
-   "shares": 3,
-   "price": 955.0,
-   "fees": 19.78,
-   "pnl": -127.78,
+   "shares": 15,
+   "price": 214.62,
+   "fees": 20.33,
+   "pnl": 18.97,
    "reason": "dropped by model"
   },
   {
    "date": "2026-10-09",
-   "ticker": "JIOFIN",
+   "ticker": "KOTAKBANK",
    "side": "SELL",
-   "shares": 14,
-   "price": 214.62,
-   "fees": 20.0,
-   "pnl": 16.68,
+   "shares": 7,
+   "price": 441.0,
+   "fees": 20.12,
+   "pnl": 154.88,
    "reason": "dropped by model"
   },
   {
@@ -5857,9 +5867,9 @@
    "date": "2026-10-09",
    "ticker": "ONGC",
    "side": "BUY",
-   "shares": 4,
+   "shares": 5,
    "price": 221.27,
-   "fees": 1.5,
+   "fees": 1.88,
    "pnl": 0.0,
    "reason": "model pick"
   },
@@ -5877,9 +5887,9 @@
    "date": "2026-10-09",
    "ticker": "ITC",
    "side": "BUY",
-   "shares": 6,
+   "shares": 7,
    "price": 266.0,
-   "fees": 2.71,
+   "fees": 3.17,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5927,10 +5937,10 @@
    "date": "2026-10-23",
    "ticker": "ONGC",
    "side": "SELL",
-   "shares": 14,
+   "shares": 15,
    "price": 227.5,
-   "fees": 20.28,
-   "pnl": 66.94,
+   "fees": 20.63,
+   "pnl": 72.82,
    "reason": "dropped by model"
   },
   {
@@ -5945,21 +5955,11 @@
   },
   {
    "date": "2026-10-23",
-   "ticker": "ITC",
-   "side": "BUY",
-   "shares": 1,
-   "price": 257.9,
-   "fees": 0.44,
-   "pnl": 0.0,
-   "reason": "use spare cash"
-  },
-  {
-   "date": "2026-10-23",
    "ticker": "TMPV",
    "side": "BUY",
-   "shares": 7,
+   "shares": 8,
    "price": 264.6,
-   "fees": 3.15,
+   "fees": 3.6,
    "pnl": 0.0,
    "reason": "use spare cash"
   },
@@ -5987,9 +5987,9 @@
    "date": "2026-10-30",
    "ticker": "JIOFIN",
    "side": "BUY",
-   "shares": 4,
+   "shares": 6,
    "price": 204.5,
-   "fees": 1.39,
+   "fees": 2.09,
    "pnl": 0.0,
    "reason": "use spare cash"
   }

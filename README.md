@@ -10,23 +10,34 @@ It uses **live prices and news**, runs **in the cloud on GitHub Actions** (your 
 
 | Time | Run | What happens |
 |---|---|---|
-| 10:05, 11:35, 1:05, 2:15 | **watch** | Checks live prices against each holding's trailing stop and sells if hit. You get a 🚨 message. |
-| 3:07 PM | **decide** | Downloads prices (including today's live price), reads the news, retrains the AI on Fridays, trades at live prices, and sends the 📈 daily update. Fridays also include a 🗓️ weekly recap. |
-| Sunday 9:17 AM | **backtest** | Re-tests the strategy on the last 2 years with ₹10,000 of dummy money. You get a 🧪 summary. |
+| 10:05, 11:35, 1:05, 2:15 | **watch** | Checks live prices. If a holding is down 7%+ on the day you get a ⚠️ alert (no selling). |
+| 3:07 PM | **decide** | Live prices + news. Sends the 📈 daily update. **Every 4 weeks (on a Friday)** it retrains the AI and re-picks stocks. Fridays include a 🗓️ weekly recap. |
+| Sunday 9:17 AM | **backtest** | Re-tests the strategy on the last 3 years with ₹10,000 of dummy money. You get a 🧪 summary. |
 
-NSE holidays are detected automatically: no trades and no messages.
+NSE holidays are detected automatically.
 
 ## The AI
 
-1. **Price model:** an ensemble of gradient-boosted trees and logistic regression. It predicts the chance each stock **beats the median NIFTY 50 stock over the next 5 trading days**. It learns from 19 price signals (momentum over 1 week to 12 months, volatility, RSI, trend, drawdown, volume surges, rank against peers, market trend). It is retrained weekly on a rolling 3 years, with no look-ahead.
-2. **News model:** for every NIFTY 50 stock it collects headlines from the last 3 days via Google News. **FinBERT**, an AI trained on financial text, scores each one from −1 (bad) to +1 (good).
-   - Good news nudges a stock's score up and bad news nudges it down. Strongly negative news (≤ −0.45 with 3+ headlines) blocks a buy.
-   - Every day's scores are saved to `state/news_history.csv`, and the price model starts using news as a feature once enough history builds up (roughly 2–3 months). Free historical news archives don't exist, so the bot builds its own.
-3. **Portfolio for ₹10,000:** holds the **top 3** affordable picks (≈₹3,300 each, whole shares only). Stocks priced above the per-stock budget are skipped. Leftover cash buys extra shares of the picks. A holding is kept while it stays in the top 12, which avoids paying fees on needless trades.
-4. **Risk:** an **8% trailing stop** (sell if the price falls 8% below its highest point since buying). Only 40% of the money is invested when NIFTY is below its 200-day average.
-5. **Realistic costs:** 0.1% STT, exchange fees and GST, stamp duty, slippage, and the **₹15.34 DP charge** every time a stock is sold.
+1. **Price model:** an ensemble of gradient-boosted trees and logistic regression. It predicts which NIFTY 50 stocks will **beat the median stock over the next month**. It learns from 19 price signals (momentum, volatility, RSI, trend, drawdown, volume, rank against peers, market trend). It is retrained every 4 weeks on a rolling 3 years, with no look-ahead.
+2. **News model:** collects Google News headlines from the last 3 days for every stock, and **FinBERT** (a finance-tuned AI) scores each one from −1 to +1. Good news nudges a stock's score up and bad news nudges it down. Strongly negative news blocks a buy. Daily scores are saved to `state/news_history.csv`, and the price model starts using them once a few months of history exist.
+3. **Portfolio for ₹10,000:** holds the top 3 affordable picks (whole shares). Leftover cash buys extra shares, and a pick is kept while it stays in the top 12.
+4. **Risk:** only 40% of the money is invested when NIFTY is below its 200-day average. There is no trailing stop (see results below).
+5. **Realistic costs:** STT, exchange fees and GST, stamp duty, slippage, and the ₹15.34 DP charge on every sell.
 
-**Small-account reality check:** the DP charge is a flat fee, so on ₹10,000 every sell costs about 0.15%. In testing, fees came to roughly 8–10% of the account per year. That's a real drag, and it's why the bot trades sparingly. Fees matter much less on bigger accounts.
+## How the strategy was chosen (real NSE data, ₹10,000 dummy money)
+
+Several versions were tested on the same data (`python -m bot.research --set main`; results in `state/research.md`).
+The original weekly version earned +15.8% over 3 years against NIFTY's +20.4%: it paid **54% of the account in fees**.
+Trading monthly with a 1-month target fixed most of that.
+An 8% trailing stop then *hurt* in every period tested, because it sold on normal dips:
+
+| Period ending Oct 2026 | Monthly AI, **no stop** (live) | with 8% stop | with 20% stop | NIFTY |
+|---|---|---|---|---|
+| 1 year | **+7.0%** | −16.2% | −16.1% | −10.9% |
+| 2 years | **+23.5%** | −17.1% | −7.0% | −5.3% |
+| 4 years | **+155%** | +48.6% | +132% | +28.0% |
+
+**Read these with healthy skepticism.** The stock list is *today's* NIFTY 50, which favours stocks that did well (survivorship bias). The version was picked after comparing several. The periods overlap. And past results don't predict the future. Expect real performance to be noticeably worse than the backtest. That's what the paper-trading period is for.
 
 ## Setup
 

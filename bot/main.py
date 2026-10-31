@@ -112,6 +112,10 @@ def _daily_message(pf, info, px, sentiment):
         for t, p in pf.positions.items():
             last = float(px.get(t, p["entry_price"]))
             L.append(f" • {t} ×{p['shares']}  {100 * (last / p['entry_price'] - 1):+.1f}%")
+    if pf.last_rebalance and not info["rebalanced"]:
+        nxt = pd.Timestamp(pf.last_rebalance) + pd.Timedelta(days=max(config.REBALANCE_DAYS - 3, 3))
+        nxt += pd.Timedelta(days=(config.REBALANCE_WEEKDAY - nxt.weekday()) % 7)
+        L.append(f"Next review of picks: around {nxt:%d %b}")
     if info["rebalanced"]:
         L.append(f"Market mood: {'risk-ON ✅' if info['risk_on'] else 'risk-OFF ⚠️ (investing less)'}")
         if info.get("veto"):
@@ -154,6 +158,31 @@ def run_watch(force: bool):
     n = len(pf.trades)
     hits = pf.check_stops(quotes, now)
     pf.save(STATE)
+    if not config.STOP_LOSS:
+        lp = config.STATE_DIR / "last_prices.json"
+        prev = json.loads(lp.read_text())["prices"] if lp.exists() else {}
+        alerted_file = config.STATE_DIR / "alerts_today.json"
+        alerted = json.loads(alerted_file.read_text()) if alerted_file.exists() else {}
+        if alerted.get("date") != str(now.date()):
+            alerted = {"date": str(now.date()), "tickers": []}
+        L = []
+        for t, p in pf.positions.items():
+            q, pc = quotes.get(t), prev.get(t)
+            if q is None or not pc or t in alerted["tickers"]:
+                continue
+            chg = q / pc - 1
+            if chg <= -config.INTRADAY_ALERT:
+                L.append(f" • {t} ₹{q:,.2f} ({100 * chg:+.1f}% today, {100 * (q / p['entry_price'] - 1):+.1f}% vs our cost)")
+                alerted["tickers"].append(t)
+        alerted_file.write_text(json.dumps(alerted))
+        if L:
+            msg = "\n".join([f"⚠️ *NSE AI bot* — big drop alert ({now:%d %b %H:%M} IST)", *L,
+                              "No action taken: the strategy holds through dips and reviews picks at the monthly rebalance."])
+            print(msg)
+            notify.send(msg)
+        else:
+            print("[watch] no big moves: " + ", ".join(f"{t} ₹{quotes.get(t, float('nan')):,.2f}" for t in pf.positions))
+        return
     if hits:
         L = [f"🚨 *NSE AI bot* — trailing stop hit ({now:%d %b %H:%M} IST)"]
         for t in pf.trades[n:]:
@@ -171,7 +200,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["backtest", "decide", "daily", "watch", "report", "test-message"])
     ap.add_argument("--force", action="store_true")
-    ap.add_argument("--years", type=float, default=2.0)
+    ap.add_argument("--years", type=float, default=3.0)
     a = ap.parse_args(argv)
     if a.cmd == "backtest":
         run_backtest(a.years)
@@ -180,7 +209,7 @@ def main(argv=None):
     elif a.cmd == "watch":
         run_watch(a.force)
     elif a.cmd == "test-message":
-        notify.send("✅ NSE AI bot: messages are working! You'll get updates on weekdays after ~3:10 PM IST.")
+        notify.send("✅ NSE AI bot: messages are working! You'll get a daily update on trading days around 3:10 PM IST.")
     else:
         report.build()
 

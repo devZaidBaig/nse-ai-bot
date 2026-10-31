@@ -14,12 +14,12 @@ from .metrics import summarize
 from .portfolio import Portfolio
 
 VARIANTS = [
-    ("A. Weekly AI, 5-day target (original)", dict(REBALANCE_DAYS=7, HORIZON_DAYS=5)),
-    ("B. Monthly AI, 1-month target", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21)),
-    ("C. Monthly AI, 1-month, wider hold buffer", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, HOLD_BUFFER=20)),
-    ("D. Monthly AI, 1-month, no trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.99)),
-    ("E. Monthly plain momentum (no AI)", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, MODEL="momentum")),
-    ("F. Same as B but ₹1,00,000 account", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STARTING_CAPITAL=100_000)),
+    ("A. Weekly AI, 5-day target (original)", dict(REBALANCE_DAYS=7, HORIZON_DAYS=5, STOP_LOSS=0.08)),
+    ("B. Monthly AI, 1-month target", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.08)),
+    ("C. Monthly AI, 1-month, wider hold buffer", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, HOLD_BUFFER=20, STOP_LOSS=0.08)),
+    ("D. Monthly AI, 1-month, no trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None)),
+    ("E. Monthly plain momentum (no AI)", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, MODEL="momentum", STOP_LOSS=0.08)),
+    ("F. Same as B but ₹1,00,000 account", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STARTING_CAPITAL=100_000, STOP_LOSS=0.08)),
 ]
 
 
@@ -38,8 +38,8 @@ def backtest(close, volume, bench, panel, years):
 
 ROBUSTNESS = [
     (f"{n} [{y}y]", {**o, "_years": y}) for y in (1, 2, 4) for n, o in [
-        ("B. Monthly AI, 8% trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21)),
-        ("D. Monthly AI, no stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.99)),
+        ("B. Monthly AI, 8% trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.08)),
+        ("D. Monthly AI, no stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None)),
         ("G. Monthly AI, 20% safety stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.20)),
     ]
 ]

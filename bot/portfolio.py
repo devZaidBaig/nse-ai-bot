@@ -73,6 +73,8 @@ class Portfolio:
     def check_stops(self, prices: pd.Series, date):
         """Trailing stop: sell if price drops STOP_LOSS below the highest price seen since buying."""
         hit = []
+        if not config.STOP_LOSS:
+            return hit
         for t in list(self.positions):
             px = prices.get(t)
             if px is None or math.isnan(px):

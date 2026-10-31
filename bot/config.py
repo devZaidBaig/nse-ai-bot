@@ -25,11 +25,13 @@ HISTORY_YEARS = 6                   # price history to download
 # ---- Strategy ----
 TOP_N = 3                           # number of stocks to hold (small account → few, affordable picks)
 REBALANCE_WEEKDAY = 4               # 0=Mon ... 4=Fri; re-rank & rebalance on this weekday
-REBALANCE_DAYS = 7                  # how often to rebalance (7 = weekly, 28 = every 4 weeks)
+REBALANCE_DAYS = 28                 # rebalance every 4 weeks (weekly churned fees away — see state/research.md)
 MODEL = "ml"                        # "ml" = AI ranker, "momentum" = plain 12-1 momentum (baseline)
-HORIZON_DAYS = 5                    # model predicts the next 5-day return
+HORIZON_DAYS = 21                   # model predicts which stocks beat their peers over the next month
 TRAIN_YEARS = 3                     # rolling training window
-STOP_LOSS = 0.08                    # trailing stop: exit if price falls 8% below its peak since we bought
+STOP_LOSS = None                    # trailing stop off: in real-data tests an 8% or 20% stop cut returns
+                                    # in every period (it sold on normal dips). Set e.g. 0.20 to re-enable.
+INTRADAY_ALERT = 0.07               # message you if a holding is down 7%+ on the day (alert only, no selling)
 MAX_POSITION_WEIGHT = 0.34          # max share of the account in one stock
 REGIME_SMA = 200                    # NIFTY below its 200-day average = risk-off
 RISK_OFF_EXPOSURE = 0.4             # invest only 40% of capital when risk-off

@@ -7,8 +7,15 @@ on:
     - cron: "5 6 * * 1-5"
     - cron: "35 7 * * 1-5"
     - cron: "45 8 * * 1-5"
-    # Main daily decision at 3:07 PM IST, market still open → trades at live prices
+    # Main daily decision at 3:07 PM IST, market still open → trades at live prices.
+    # Backup attempts at 3:22 PM and 4:13 PM in case GitHub delays/skips a scheduled run
+    # (the bot ignores duplicates, so only the first successful attempt trades).
     - cron: "37 9 * * 1-5"
+    - cron: "52 9 * * 1-5"
+    - cron: "43 10 * * 1-5"
+  push:
+    branches: [main]
+    paths: ["run-request.txt"]     # edit this file to start a run (first word: decide / watch / test-message)
   workflow_dispatch:
     inputs:
       mode:
@@ -45,33 +52,64 @@ jobs:
       - name: Pick mode
         id: m
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then MODE="${{ inputs.mode }}";
-          elif [ "${{ github.event.schedule }}" = "37 9 * * 1-5" ]; then MODE=decide; else MODE=watch; fi
+          FORCE=""
+          case "${{ github.event_name }}/${{ github.event.schedule }}" in
+            workflow_dispatch/*) MODE="${{ inputs.mode }}"; [ "${{ inputs.force }}" = "true" ] && FORCE="--force" ;;
+            push/*) MODE=REQ ;;
+            "schedule/37 9 * * 1-5"|"schedule/52 9 * * 1-5"|"schedule/43 10 * * 1-5") MODE=decide ;;
+            *) MODE=watch ;;
+          esac
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
-          echo "Mode: $MODE"
+          echo "force=$FORCE" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
+      - name: Read run request
+        id: req
+        run: |
+          MODE="${{ steps.m.outputs.mode }}"; FORCE="${{ steps.m.outputs.force }}"
+          if [ "$MODE" = "REQ" ]; then MODE=$(head -1 run-request.txt | awk '{print $1}'); FORCE="--force"; fi
+          case "$MODE" in decide|watch|test-message) ;; *) echo "unknown mode '$MODE'"; exit 1 ;; esac
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"; echo "force=$FORCE" >> "$GITHUB_OUTPUT"
+          echo "Mode: $MODE $FORCE"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
       - name: Install FinBERT (news AI)
-        if: steps.m.outputs.mode == 'decide'
+        if: steps.req.outputs.mode == 'decide'
         run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install "transformers>=4.44"
       - name: Cache FinBERT model
-        if: steps.m.outputs.mode == 'decide'
+        if: steps.req.outputs.mode == 'decide'
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: hf-finbert-v1
       - name: Run bot
-        run: python -m bot.main ${{ steps.m.outputs.mode }} ${{ inputs.force && '--force' || '' }}
+        id: bot
+        run: |
+          set +e
+          python -m bot.main ${{ steps.req.outputs.mode }} ${{ steps.req.outputs.force }} 2>&1 | tee run.log
+          CODE=${PIPESTATUS[0]}
+          echo "code=$CODE" >> "$GITHUB_OUTPUT"
+          # Keep a record of every decide run and every failure, so skips are never silent
+          if [ "${{ steps.req.outputs.mode }}" = "decide" ] || [ "$CODE" != "0" ]; then
+            mkdir -p state
+            [ -f state/runlog.csv ] || echo "time_ist,trigger,mode,exit_code,last_line" > state/runlog.csv
+            LAST=$(grep -v '^\s*$' run.log | grep -v '^\[notify\]' | tail -1 | tr ',"' ";'" | cut -c1-200)
+            echo "$(TZ=Asia/Kolkata date '+%F %H:%M'),${{ github.event_name }},${{ steps.req.outputs.mode }},$CODE,\"$LAST\"" >> state/runlog.csv
+          fi
+          exit 0
       - name: Save portfolio & dashboard
-        if: steps.m.outputs.mode != 'test-message'
+        if: always() && steps.req.outputs.mode != 'test-message'
         run: |
           git config user.name "nse-ai-bot"
           git config user.email "nse-ai-bot@users.noreply.github.com"
           git add state docs
           git diff --cached --quiet && exit 0
-          git commit -m "${{ steps.m.outputs.mode }} $(TZ=Asia/Kolkata date '+%F %H:%M')"
+          git commit -m "${{ steps.req.outputs.mode }} $(TZ=Asia/Kolkata date '+%F %H:%M')"
           git pull --rebase --autostash && git push
+      - name: Mark run failed if the bot crashed
+        if: steps.bot.outputs.code != '0'
+        run: |
+          echo "Bot exited with code ${{ steps.bot.outputs.code }} — see the Run bot step log"
+          exit 1

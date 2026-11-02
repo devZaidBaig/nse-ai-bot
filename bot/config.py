@@ -72,7 +72,7 @@ NAMES = {
     "M&M": "Mahindra & Mahindra", "MARUTI": "Maruti Suzuki", "NESTLEIND": "Nestle India", "NTPC": "NTPC",
     "ONGC": "ONGC", "POWERGRID": "Power Grid", "RELIANCE": "Reliance Industries", "SBILIFE": "SBI Life",
     "SBIN": "State Bank of India", "SHRIRAMFIN": "Shriram Finance", "SUNPHARMA": "Sun Pharma",
-    "TATACONSUM": "Tata Consumer", "TMPV": "Tata Motors", "TATASTEEL": "Tata Steel", "TCS": "TCS",
+    "TATACONSUM": "Tata Consumer", "TMPV": "Tata Motors Passenger Vehicles", "TATASTEEL": "Tata Steel", "TCS": "TCS",
     "TECHM": "Tech Mahindra", "TITAN": "Titan Company", "TRENT": "Trent", "ULTRACEMCO": "UltraTech Cement",
     "WIPRO": "Wipro",
 }

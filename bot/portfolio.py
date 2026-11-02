@@ -108,12 +108,12 @@ class Portfolio:
             if want > have and (want - have) * px > 0.05 * total:   # skip tiny top-ups
                 self._buy(t, want - have, px, date, "model pick")
         # Whole shares leave leftover cash: plan extra shares for the cheapest picks, then one order per stock
-        cap = total * config.MAX_POSITION_WEIGHT * 1.15
+        # Each stock may grow to 15% above its target weight — never beyond (respects risk-off exposure)
         extra, cash = {}, self.cash - len(targets) * config.FLAT_FEE_PER_ORDER
         while True:
             options = [(prices[t], t) for t in targets.index
                        if t in self.positions and not math.isnan(prices.get(t, float("nan")))
-                       and (self.positions[t]["shares"] + extra.get(t, 0) + 1) * prices[t] <= cap
+                       and (self.positions[t]["shares"] + extra.get(t, 0) + 1) * prices[t] <= total * targets[t] * 1.15
                        and cash >= prices[t] * 1.003]
             if not options:
                 break

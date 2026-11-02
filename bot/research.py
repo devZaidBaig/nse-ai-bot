@@ -38,9 +38,9 @@ def backtest(close, volume, bench, panel, years):
 
 ROBUSTNESS = [
     (f"{n} [{y}y]", {**o, "_years": y}) for y in (1, 2, 4) for n, o in [
-        ("B. Monthly AI, 8% trailing stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.08)),
-        ("D. Monthly AI, no stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None)),
-        ("G. Monthly AI, 20% safety stop", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=0.20)),
+        ("D. Monthly AI, risk-off filter working (40%)", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None)),
+        ("H. Monthly AI, no risk-off filter (always 100%)", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None, RISK_OFF_EXPOSURE=1.0)),
+        ("I. Monthly AI, risk-off 70%", dict(REBALANCE_DAYS=28, HORIZON_DAYS=21, STOP_LOSS=None, RISK_OFF_EXPOSURE=0.7)),
     ]
 ]
 

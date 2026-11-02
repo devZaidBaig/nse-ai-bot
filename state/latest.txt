@@ -1,0 +1,18 @@
+📈 *NSE AI bot* — 2026-11-02
+Value ₹9,983  (today -0.17%, total -0.17% vs NIFTY +0.00%)
+Cash ₹236
+Trades:
+ • BUY 4 TMPV @ ₹272.40 (model pick)
+ • BUY 6 JIOFIN @ ₹213.25 (model pick)
+ • BUY 5 ITC @ ₹266.40 (model pick)
+ • BUY 12 JIOFIN @ ₹213.25 (use spare cash)
+ • BUY 9 ITC @ ₹266.40 (use spare cash)
+ • BUY 4 TMPV @ ₹272.40 (use spare cash)
+Holding:
+ • TMPV ×8  +0.0%
+ • JIOFIN ×18  +0.0%
+ • ITC ×14  +0.0%
+Market mood: risk-OFF ⚠️ (investing less)
+📰 TMPV news +0.36: Tata Motors Commercial Vehicle Sales Up 27% at 47,652 Units in October
+📰 JIOFIN news +0.21: Jio Financial Services stock faces profit pressure as lending expands
+📰 ITC news -0.07: ITC Q2 preview: Cigarette biz may drag PAT down up to 28%, say analysts

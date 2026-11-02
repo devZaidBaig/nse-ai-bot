@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: trading-state
+  group: research-${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
@@ -44,6 +44,6 @@ jobs:
         run: |
           git config user.name "nse-ai-bot"
           git config user.email "nse-ai-bot@users.noreply.github.com"
-          git add state/backtest.json docs
+          git add state/backtest.json
           git diff --cached --quiet || git commit -m "Backtest $(TZ=Asia/Kolkata date +%F)"
           git pull --rebase --autostash && git push

@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: trading-state
+  group: research-${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:

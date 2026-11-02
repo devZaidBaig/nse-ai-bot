@@ -1,3 +1,4 @@
 time_ist,trigger,mode,exit_code,last_line
 2026-11-02 16:45,push,decide,0,"📰 ITC news -0.07: ITC Q2 preview: Cigarette biz may drag PAT down up to 28%; say analysts"
 2026-11-02 17:11,push,decide,0,"📰 ITC news -0.07: ITC Q2 preview: Cigarette biz may drag PAT down up to 28%; say analysts"
+2026-11-03 01:16,schedule,decide,0,"[decide] latest data is 2026-11-02 — NSE closed today (holiday). Skipping."

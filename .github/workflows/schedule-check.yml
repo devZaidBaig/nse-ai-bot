@@ -1,0 +1,31 @@
+name: Schedule check (temporary demo)
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"      # every 5 minutes — demo only, will be removed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heartbeat
+  cancel-in-progress: false
+
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Write heartbeat
+        run: |
+          mkdir -p state
+          [ -f state/heartbeat.log ] || echo "fired_at_ist,event,scheduled_cron" > state/heartbeat.log
+          echo "$(TZ=Asia/Kolkata date '+%F %H:%M:%S'),${{ github.event_name }},${{ github.event.schedule }}" >> state/heartbeat.log
+          tail -5 state/heartbeat.log
+          git config user.name "nse-ai-bot"
+          git config user.email "nse-ai-bot@users.noreply.github.com"
+          git add state/heartbeat.log
+          git commit -m "heartbeat $(TZ=Asia/Kolkata date '+%H:%M')"
+          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done

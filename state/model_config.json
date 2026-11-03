@@ -1,0 +1,42 @@
+{
+ "name": "default (price factors only)",
+ "features": [
+  "ret_5",
+  "ret_10",
+  "ret_21",
+  "ret_63",
+  "ret_126",
+  "mom_12_1",
+  "vol_21",
+  "vol_63",
+  "rsi_14",
+  "dist_sma50",
+  "dist_sma200",
+  "drawdown_252",
+  "volume_ratio",
+  "rank_ret_21",
+  "rank_ret_63",
+  "rank_mom_12_1",
+  "rank_vol_21",
+  "mkt_ret_21",
+  "mkt_above_sma200"
+ ],
+ "params": {
+  "max_depth": 4,
+  "learning_rate": 0.05,
+  "min_samples_leaf": 200,
+  "max_iter": 200,
+  "l2": 1.0,
+  "C": 0.1,
+  "w_gbm": 0.6
+ },
+ "news_exit": null,
+ "trained_at": "2026-11-03 20:00",
+ "holdout": {
+  "total_return_pct": 19.18,
+  "nifty_return_pct": -7.58,
+  "sharpe": 0.98,
+  "max_drawdown_pct": -16.76
+ },
+ "oos_ic": 0.0376
+}

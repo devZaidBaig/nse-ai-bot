@@ -1,0 +1,2 @@
+date,model,promoted,oos_ic,holdout_total_return_pct,holdout_nifty_return_pct,holdout_sharpe,holdout_max_drawdown_pct,news_exit
+2026-11-03,default (price factors only),False,0.0376,19.18,-7.58,0.98,-16.76,False

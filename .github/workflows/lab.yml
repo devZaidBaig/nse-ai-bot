@@ -1,0 +1,53 @@
+name: Lab
+
+on:
+  push:
+    branches: [main]
+    paths: ["lab-request.txt"]      # first line = command for bot.lab (probe / gdelt / train)
+  workflow_dispatch:
+    inputs:
+      cmd:
+        description: "Lab command"
+        default: "train"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lab
+  cancel-in-progress: false
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run lab command
+        env:
+          WA_TOKEN: ${{ secrets.WA_TOKEN }}
+          WA_PHONE_NUMBER_ID: ${{ secrets.WA_PHONE_NUMBER_ID }}
+          WA_TO: ${{ secrets.WA_TO }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          CMD="${{ inputs.cmd }}"; [ -z "$CMD" ] && CMD=$(head -1 lab-request.txt)
+          mkdir -p state/lab
+          set +e
+          python -m bot.lab $CMD 2>&1 | tee state/lab/last_output.txt
+          echo "exit=${PIPESTATUS[0]} cmd=$CMD at $(TZ=Asia/Kolkata date '+%F %H:%M')" >> state/lab/last_output.txt
+          exit 0
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "nse-ai-bot"
+          git config user.email "nse-ai-bot@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet && exit 0
+          git commit -m "lab $(head -1 lab-request.txt | cut -c1-30) $(TZ=Asia/Kolkata date '+%F %H:%M')"
+          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 10; done

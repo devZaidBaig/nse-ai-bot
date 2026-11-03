@@ -90,7 +90,13 @@ def update(keys=None, start="2018-01-01", chunk_years=10, max_minutes=None):
     """Fill/refresh the cache. First run backfills from `start`; later runs only fetch recent days."""
     CACHE.mkdir(parents=True, exist_ok=True)
     allq = {**COMPANY_QUERIES, **WORLD_QUERIES}
-    keys = keys or list(allq)
+    if not keys:
+        def _need(k):
+            f = CACHE / f"{k.replace('&', 'and')}.csv"
+            if not f.exists():
+                return 0
+            return 1 if pd.read_csv(f)["vol"].isna().mean() > 0.5 else 2
+        keys = sorted(allq, key=_need)
     today = pd.Timestamp.now(tz="Asia/Kolkata").normalize().tz_localize(None)
     t0 = time.time()
     for key in keys:
@@ -100,6 +106,12 @@ def update(keys=None, start="2018-01-01", chunk_years=10, max_minutes=None):
         f = CACHE / f"{key.replace('&', 'and')}.csv"
         old = pd.read_csv(f, parse_dates=["date"], index_col="date") if f.exists() else pd.DataFrame()
         s0 = (old.index.max() - pd.Timedelta(days=5)) if len(old) else pd.Timestamp(start)
+        # Repair: a series whose attention (volume) history failed earlier gets it re-downloaded in full
+        if len(old) and old["vol"].isna().mean() > 0.5:
+            v = _timeline(allq[key], "timelinevolraw", pd.Timestamp(start), today)
+            if len(v):
+                old["vol"] = v.reindex(old.index)
+                print(f"[gdelt] {key}: repaired attention history ({v.notna().sum()} days)")
         frames = []
         cur = s0
         while cur <= today:

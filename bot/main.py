@@ -196,9 +196,39 @@ def run_watch(force: bool):
         print("[watch] all positions OK: " + ", ".join(f"{t} ₹{quotes.get(t, float('nan')):,.2f}" for t in pf.positions))
 
 
+# ------------------------------------------------------------------ morning: news refresh + check
+def run_morning(force: bool):
+    """Refresh GDELT news history (yesterday's news), check holdings for news shocks, then live-price watch."""
+    from . import gdelt
+    try:
+        gdelt.update(max_minutes=40)
+    except Exception as e:
+        print(f"[morning] news refresh failed: {e}")
+    pf = Portfolio.load(STATE)
+    L = [f"🌅 *NSE AI bot* — morning news check {_now_ist():%d %b}"]
+    try:
+        close, volume, bench, macro, gnews = data.load_all()
+        panel = features.build(close, volume, bench, macro, gnews)
+        last = panel.xs(close.index[-1], level="date")
+        for t in pf.positions:
+            if t in last.index and pd.notna(last.at[t, "n_tone_shock"]):
+                z, a = last.at[t, "n_tone_shock"], last.at[t, "n_attn"]
+                flag = " ⚠️" if z <= -2 else (" 👍" if z >= 2 else "")
+                L.append(f" • {t}: news tone {z:+.1f}σ vs its normal, attention {a:+.1f}{flag}")
+        wm = last["w_mood"].dropna()
+        if len(wm):
+            L.append(f"World/India news mood: {wm.iloc[0]:+.1f}σ vs the past year")
+    except Exception as e:
+        L.append(f"(news check unavailable: {e.__class__.__name__})")
+    msg = "\n".join(L)
+    print(msg)
+    (config.STATE_DIR / "morning.txt").write_text(msg + "\n")
+    run_watch(force)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["backtest", "decide", "daily", "watch", "report", "test-message"])
+    ap.add_argument("cmd", choices=["backtest", "decide", "daily", "watch", "morning", "report", "test-message"])
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--years", type=float, default=3.0)
     a = ap.parse_args(argv)
@@ -208,6 +238,8 @@ def main(argv=None):
         run_decide(a.force)
     elif a.cmd == "watch":
         run_watch(a.force)
+    elif a.cmd == "morning":
+        run_morning(a.force)
     elif a.cmd == "test-message":
         notify.send("✅ NSE AI bot: messages are working! You'll get a daily update on trading days around 3:10 PM IST.")
     else:

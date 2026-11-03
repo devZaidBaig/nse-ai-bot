@@ -15,7 +15,7 @@ on:
     - cron: "43 10 * * 1-5"
   push:
     branches: [main]
-    paths: ["run-request.txt"]     # edit this file to start a run (first word: decide / watch / test-message)
+    paths: ["run-request.txt"]     # edit this file to start a run (first word: morning / watch / decide / test-message)
   workflow_dispatch:
     inputs:
       mode:
@@ -47,7 +47,7 @@ env:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Pick mode
         id: m
@@ -62,12 +62,14 @@ jobs:
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "force=$FORCE" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
+        with:
+          ref: main          # always start from the latest state, even if this job waited in a queue
       - name: Read run request
         id: req
         run: |
           MODE="${{ steps.m.outputs.mode }}"; FORCE="${{ steps.m.outputs.force }}"
           if [ "$MODE" = "REQ" ]; then MODE=$(head -1 run-request.txt | awk '{print $1}'); FORCE="--force"; fi
-          case "$MODE" in decide|watch|test-message) ;; *) echo "unknown mode '$MODE'"; exit 1 ;; esac
+          case "$MODE" in decide|watch|morning|test-message) ;; *) echo "unknown mode '$MODE'"; exit 1 ;; esac
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"; echo "force=$FORCE" >> "$GITHUB_OUTPUT"
           echo "Mode: $MODE $FORCE"
       - uses: actions/setup-python@v5

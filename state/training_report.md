@@ -1,4 +1,4 @@
-# Training report — 2026-11-03 20:00 IST
+# Training report — 2026-11-03 21:51 IST
 
 Data 2018-11-05 → 2026-11-03. Training/evaluation years 2021-05-05 → 2025-11-03; **holdout (never used for choices) 2025-11-03 → 2026-11-03**.
 
@@ -12,10 +12,10 @@ News-exit rule: **off**
 
 | Setup | Train return | Train Sharpe | Holdout return | NIFTY (holdout) | Holdout Sharpe | Holdout max DD | OOS IC |
 |---|---|---|---|---|---|---|---|
-| champion: default (price factors only) | +57.8% | 0.56 | +19.2% | -7.6% | 0.98 | -16.76% | 0.0376 |
-| everything · P2 | +68.6% | 0.66 | -2.1% | -7.6% | -0.04 | -19.69% | 0.0538 |
-| price+macro+sector+news · P1 | +131.7% | 0.96 | -14.8% | -7.6% | -0.98 | -19.76% | 0.0491 |
-| price+macro+sector+news · P2 | +174.0% | 1.16 | -12.0% | -7.6% | -0.58 | -23.4% | 0.0477 |
+| champion: default (price factors only) | +73.9% | 0.66 | +5.3% | -7.6% | 0.4 | -16.04% | 0.0389 |
+| price+macro+sector+news · P3 | +111.4% | 0.92 | -17.2% | -7.6% | -1.32 | -22.98% | 0.0596 |
+| price+macro+sector+news · P1 | +128.8% | 0.97 | -9.1% | -7.6% | -0.48 | -20.16% | 0.0555 |
+| price+macro+sector+news · P2 | +153.4% | 1.07 | -7.7% | -7.6% | -0.39 | -19.92% | 0.0555 |
 
 ## Walk-forward out-of-sample skill (training years, refit quarterly)
 
@@ -23,20 +23,20 @@ IC = rank correlation between the model's scores and next-month excess returns (
 
 | Setup | OOS IC | t-stat | Top-3 picks' excess return / month | Months |
 |---|---|---|---|---|
-| everything · P2 | 0.0538 | 2.03 | +1.40% | 52 |
-| price+macro+sector+news · P1 | 0.0491 | 1.90 | +1.21% | 52 |
-| price+macro+sector+news · P2 | 0.0477 | 1.84 | +1.62% | 52 |
-| price+macro+sector+news · P3 | 0.0465 | 1.79 | +0.42% | 52 |
-| everything · P1 | 0.0456 | 1.62 | +1.36% | 52 |
-| price+news · P1 | 0.0427 | 1.66 | +1.45% | 52 |
-| price+news · P3 | 0.0425 | 1.69 | +1.09% | 52 |
-| price+world · P1 | 0.0413 | 1.69 | +1.18% | 52 |
-| everything · P3 | 0.0412 | 1.42 | +1.49% | 52 |
-| price+macro+sector · P1 | 0.0398 | 1.61 | +0.80% | 52 |
-| price · P1 | 0.0376 | 1.62 | +1.75% | 52 |
-| price+macro · P1 | 0.0367 | 1.72 | +1.27% | 52 |
-| price+news · P2 | 0.0332 | 1.30 | +1.70% | 52 |
-| price+sector · P1 | 0.0325 | 1.36 | +0.88% | 52 |
+| price+macro+sector+news · P3 | 0.0596 | 2.40 | +1.87% | 52 |
+| price+macro+sector+news · P1 | 0.0555 | 2.04 | +1.00% | 52 |
+| price+macro+sector+news · P2 | 0.0555 | 2.09 | +1.27% | 52 |
+| everything · P1 | 0.0534 | 2.00 | +1.08% | 52 |
+| everything · P2 | 0.0530 | 1.93 | +1.08% | 52 |
+| price+macro+sector · P2 | 0.0488 | 1.94 | +1.72% | 52 |
+| everything · P3 | 0.0433 | 1.61 | +1.53% | 52 |
+| price+macro+sector · P1 | 0.0398 | 1.59 | +1.01% | 52 |
+| price+macro+sector · P3 | 0.0392 | 1.55 | +1.07% | 52 |
+| price+macro · P1 | 0.0390 | 1.87 | +1.42% | 52 |
+| price · P1 | 0.0389 | 1.60 | +1.83% | 52 |
+| price+world · P1 | 0.0352 | 1.45 | +1.28% | 52 |
+| price+sector · P1 | 0.0343 | 1.43 | +0.87% | 52 |
+| price+news · P1 | 0.0325 | 1.32 | +0.72% | 52 |
 
 ## Factor tests (monthly IC vs next-month excess return)
 
@@ -44,7 +44,7 @@ IC = rank correlation between the model's scores and next-month excess returns (
 
 | Factor | Group | IC (train) | t (train) | % months positive | IC (holdout) |
 |---|---|---|---|---|---|
-| tilt_usdinr | macro | 0.0542 | 2.44 | 60% | -0.0028 |
+| tilt_usdinr | macro | 0.0543 | 2.44 | 60% | -0.0028 |
 | tilt_us10y | macro | -0.0556 | -2.20 | 42% | 0.0574 |
 | dist_sma50 | base | -0.0612 | -2.01 | 37% | -0.0464 |
 | rel_sector_21 | sector | -0.0435 | -1.84 | 42% | -0.0330 |
@@ -66,21 +66,23 @@ IC = rank correlation between the model's scores and next-month excess returns (
 | ret_126 | base | -0.0286 | -0.85 | 50% | -0.0824 |
 | rank_mom_12_1 | base | 0.0262 | 0.81 | 54% | -0.0217 |
 | mom_12_1 | base | 0.0262 | 0.81 | 54% | -0.0217 |
-| n_tone_21 | news | -0.0151 | -0.74 | 48% | -0.0230 |
-| rank_vol_21 | base | 0.0221 | 0.74 | 52% | 0.0420 |
 | vol_21 | base | 0.0221 | 0.74 | 52% | 0.0420 |
+| rank_vol_21 | base | 0.0221 | 0.74 | 52% | 0.0420 |
 | tilt_gold | macro | -0.0180 | -0.63 | 52% | -0.0074 |
-| n_tone_x_attn | news | -0.0174 | -0.52 | 46% | nan |
+| n_tone_21 | news | -0.0116 | -0.58 | 52% | -0.0189 |
 | tilt_indiavix | macro | 0.0126 | 0.47 | 48% | -0.0318 |
-| rank_n_tone_shock | news | 0.0133 | 0.46 | 55% | 0.0567 |
-| n_tone_shock | news | 0.0133 | 0.46 | 55% | 0.0567 |
+| rank_n_tone_shock | news | 0.0133 | 0.47 | 57% | 0.0470 |
+| n_tone_shock | news | 0.0133 | 0.47 | 57% | 0.0470 |
+| tilt_dxy | macro | -0.0117 | -0.44 | 50% | 0.0364 |
 
 ## News event study (sudden very negative / positive company news with an attention spike)
 
 | Period | Bad-news events | Their next-month excess return | t | Good-news events | Excess | t |
 |---|---|---|---|---|---|---|
-| Training | 0 | None% | None | 0 | None% | None |
-| Holdout | 0 | None% | None | 0 | None% | None |
+| Training (tone shock + attention spike) | 224 | -0.03% | -0.04 | 109 | 0.81% | 1.47 |
+| Holdout (tone shock + attention spike) | 38 | -1.94% | -2.18 | 27 | 0.48% | 0.41 |
+| Training (tone shock alone, monthly) | 79 | -0.7% | -0.92 | 61 | 0.76% | 0.96 |
+| Holdout (tone shock alone, monthly) | 23 | -1.1% | -1.36 | 7 | -3.19% | -0.87 |
 
 ## World/India news mood vs NIFTY's next month
 

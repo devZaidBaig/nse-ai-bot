@@ -54,16 +54,17 @@ WORLD_QUERIES = {
 }
 
 
-def _get(params, retries=4):
+def _get(params, retries=8):
+    """GDELT rate-limits shared cloud IPs hard (HTTP 429), so back off patiently."""
     url = API + "?" + urllib.parse.urlencode(params)
     for k in range(retries):
         try:
-            raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
+            raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90).read()
             time.sleep(PAUSE)
             return raw.decode("utf-8", errors="ignore")
         except Exception as e:
-            wait = PAUSE * (2 + 2 * k)
-            print(f"[gdelt] {e.__class__.__name__} ({str(e)[:80]}); retry in {wait:.0f}s")
+            wait = min(30 * (k + 1), 180)
+            print(f"[gdelt] {e.__class__.__name__} ({str(e)[:60]}); retry {k + 1}/{retries} in {wait}s")
             time.sleep(wait)
     return ""
 
@@ -85,7 +86,7 @@ def _timeline(query, mode, start: pd.Timestamp, end: pd.Timestamp) -> pd.Series:
     return s
 
 
-def update(keys=None, start="2018-01-01", chunk_years=2, max_minutes=None):
+def update(keys=None, start="2018-01-01", chunk_years=10, max_minutes=None):
     """Fill/refresh the cache. First run backfills from `start`; later runs only fetch recent days."""
     CACHE.mkdir(parents=True, exist_ok=True)
     allq = {**COMPANY_QUERIES, **WORLD_QUERIES}

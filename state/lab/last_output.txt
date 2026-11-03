@@ -1,0 +1,44 @@
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 44s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 44s
+{
+ "2017-01-01\u21922017-03-31": {
+  "days": 90,
+  "first": "2017-01-01",
+  "last": "2017-03-31",
+  "mean_tone": -0.005,
+  "secs": 129.3
+ },
+ "2019-06-01\u21922019-06-30": {
+  "days": 30,
+  "first": "2019-06-01",
+  "last": "2019-06-30",
+  "mean_tone": -0.799,
+  "secs": 73.9
+ },
+ "2023-01-01\u21922024-12-31": {
+  "days": 0,
+  "first": null,
+  "last": null,
+  "mean_tone": null,
+  "secs": 153.6
+ },
+ "2026-10-01\u21922026-11-03": {
+  "days": 0,
+  "first": null,
+  "last": null,
+  "mean_tone": null,
+  "secs": 149.9
+ }
+}
+exit=0 cmd=probe at 2026-11-03 15:25

@@ -2,7 +2,7 @@
 import pandas as pd
 
 from . import config
-from .model import Ranker, apply_news, target_weights
+from .model import Ranker, active_config, apply_news, target_weights
 
 
 def is_rebalance_day(pf, date: pd.Timestamp) -> bool:
@@ -23,7 +23,22 @@ def step(pf, panel, close, bench, date, ctx: dict, retrain_every_days=0, news=No
     prices = close.loc[date]
     n_before = len(pf.trades)
     stops = pf.check_stops(prices, date)
-    info = {"date": str(date.date()), "rebalanced": False, "stops": stops}
+    info = {"date": str(date.date()), "rebalanced": False, "stops": stops, "news_exits": []}
+
+    # News-exit rule: only active if training found statistical evidence that sudden very negative
+    # company news predicts underperformance (see state/training_report.md)
+    rule = active_config().get("news_exit")
+    if rule and pf.positions:
+        try:
+            today = panel.xs(date, level="date")
+            for t in list(pf.positions):
+                if t in today.index:
+                    z, a = today.at[t, "n_tone_shock"], today.at[t, "n_attn"]
+                    if pd.notna(z) and z <= rule["z"] and (pd.isna(a) or a >= rule.get("attn", -9)):
+                        pf._sell(t, pf.positions[t]["shares"], float(prices[t]), date, f"news exit (tone shock {z:.1f}σ)")
+                        info["news_exits"].append(t)
+        except KeyError:
+            pass
 
     if is_rebalance_day(pf, date):
         rows = panel.xs(date, level="date", drop_level=False).dropna(subset=["ret_63", "vol_21"])

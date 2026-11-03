@@ -53,7 +53,7 @@ def main(argv=None):
     a = ap.parse_args(argv)
     if a.set == "robustness":
         VARIANTS = ROBUSTNESS
-    close, volume, bench = data.load_prices()
+    close, volume, bench, macro, gnews = data.load_all()
     panels, results = {}, []
     for name, over in VARIANTS:
         years = over.get("_years", a.years)
@@ -64,7 +64,7 @@ def main(argv=None):
         try:
             h = config.HORIZON_DAYS
             if h not in panels:
-                panels[h] = features.build(close, volume, bench)
+                panels[h] = features.build(close, volume, bench, macro, gnews)
             s, eq = backtest(close, volume, bench, panels[h], years)
             results.append({"name": name, "settings": over, "stats": s,
                             "equity": [{"date": e["date"], "equity": e["equity"], "benchmark": e["benchmark"]} for e in eq[::5]]})

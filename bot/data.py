@@ -92,3 +92,42 @@ def live_quotes(tickers) -> pd.Series:
     last = raw["Close"].ffill().iloc[-1]
     last.index = [c.replace(".NS", "") for c in last.index]
     return last.dropna()
+
+
+def load_macro(index: pd.DatetimeIndex) -> pd.DataFrame:
+    """Daily closes of world/macro factors aligned to NSE trading days (previous value carried forward)."""
+    if os.environ.get("BOT_SYNTHETIC") == "1":
+        rng = np.random.default_rng(11)
+        cols = list(config.MACRO)
+        walk = np.exp(np.cumsum(rng.normal(0, 0.01, (len(index), len(cols))), axis=0)) * 100
+        return pd.DataFrame(walk, index=index, columns=cols)
+    import yfinance as yf
+    raw = yf.download(list(config.MACRO.values()), period=f"{config.HISTORY_YEARS}y", interval="1d",
+                      auto_adjust=True, progress=False, group_by="column", threads=True)["Close"]
+    raw.index = pd.to_datetime(raw.index).tz_localize(None).normalize()
+    inv = {v: k for k, v in config.MACRO.items()}
+    raw = raw.rename(columns=inv)
+    # Foreign markets close after India: only use values up to the previous calendar day (no look-ahead)
+    raw = raw.shift(1)
+    out = raw.reindex(raw.index.union(index)).ffill().reindex(index)
+    missing = [c for c in config.MACRO if c not in out.columns or out[c].notna().sum() < 200]
+    if missing:
+        print(f"[data] macro factors unavailable: {missing}")
+    return out[[c for c in config.MACRO if c in out.columns]]
+
+
+def load_all():
+    """Prices, volume, NIFTY, world-market factors and GDELT news history, all aligned to NSE trading days."""
+    from . import gdelt
+    close, volume, bench = load_prices()
+    try:
+        macro = load_macro(close.index)
+    except Exception as e:
+        print(f"[data] macro factors failed: {e}")
+        macro = None
+    try:
+        g = gdelt.load(close.columns, close.index)
+    except Exception as e:
+        print(f"[data] news history failed: {e}")
+        g = {}
+    return close, volume, bench, macro, g

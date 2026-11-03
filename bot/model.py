@@ -1,5 +1,8 @@
 """The 'AI': an ensemble of gradient-boosted trees + logistic regression that ranks stocks
-by the probability they outperform their peers over the next week."""
+by the probability they beat their peers over the next month. Which factors it uses and its
+settings come from state/model_config.json, chosen by the training pipeline (bot/train.py)."""
+import json
+
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
@@ -11,15 +14,44 @@ from sklearn.preprocessing import StandardScaler
 from . import config
 from .features import FEATURES
 
+DEFAULT_CONFIG = {"features": FEATURES, "params": {"max_depth": 4, "learning_rate": 0.05, "min_samples_leaf": 200,
+                                                   "max_iter": 200, "l2": 1.0, "C": 0.1, "w_gbm": 0.6},
+                  "news_exit": None, "name": "default (price factors only)"}
+_override = None
+
+
+def _merge(cfg):
+    return {**DEFAULT_CONFIG, **cfg, "params": {**DEFAULT_CONFIG["params"], **cfg.get("params", {})}}
+
+
+def active_config() -> dict:
+    """The model setup the bot trades with: a temporary override (during training), else the saved champion."""
+    if _override is not None:
+        return _override
+    try:
+        cfg = json.loads(config.MODEL_CONFIG.read_text())
+        return {**DEFAULT_CONFIG, **cfg, "params": {**DEFAULT_CONFIG["params"], **cfg.get("params", {})}}
+    except Exception:
+        return DEFAULT_CONFIG
+
+
+def set_override(cfg):
+    global _override
+    _override = None if cfg is None else {**DEFAULT_CONFIG, **cfg, "params": {**DEFAULT_CONFIG["params"], **cfg.get("params", {})}}
+
 
 class Ranker:
-    def __init__(self):
+    def __init__(self, cfg=None):
+        cfg = _merge(cfg) if cfg else active_config()
+        p = cfg["params"]
+        self.features = list(cfg["features"])
+        self.w_gbm = p["w_gbm"]
         self.gbm = HistGradientBoostingClassifier(
-            max_iter=200, learning_rate=0.05, max_depth=4, min_samples_leaf=200,
-            l2_regularization=1.0, random_state=0,
+            max_iter=p["max_iter"], learning_rate=p["learning_rate"], max_depth=p["max_depth"],
+            min_samples_leaf=p["min_samples_leaf"], l2_regularization=p["l2"], random_state=0,
         )
-        self.lin = make_pipeline(SimpleImputer(strategy="median"), StandardScaler(),
-                                 LogisticRegression(C=0.1, max_iter=500))
+        self.lin = make_pipeline(SimpleImputer(strategy="median", keep_empty_features=True), StandardScaler(),
+                                 LogisticRegression(C=p["C"], max_iter=500))
         self.trained_on = None
 
     def fit(self, panel: pd.DataFrame, as_of: pd.Timestamp):
@@ -32,9 +64,10 @@ class Ranker:
         first = last_label_date - pd.DateOffset(years=config.TRAIN_YEARS)
         d = panel.index.get_level_values("date")
         train = panel[(d >= first) & (d <= last_label_date)].dropna(subset=["label"])
-        train = train[train[FEATURES].notna().sum(axis=1) >= len(FEATURES) - 5]  # news features may be missing
-        # Use a feature only once it has enough history (news features start empty and fill up over time)
-        self.cols = [c for c in FEATURES if train[c].notna().mean() >= 0.05]
+        feats = [c for c in self.features if c in panel.columns]
+        train = train[train[feats].notna().mean(axis=1) >= 0.6]
+        # Use a factor only if it has enough history in this training window
+        self.cols = [c for c in feats if train[c].notna().mean() >= 0.3]
         X, y = train[self.cols].to_numpy(), train["label"].to_numpy()
         self.gbm.fit(X, y)
         self.lin.fit(X, y)
@@ -43,7 +76,7 @@ class Ranker:
 
     def score(self, rows: pd.DataFrame) -> pd.Series:
         X = rows[self.cols].to_numpy()
-        p = 0.6 * self.gbm.predict_proba(X)[:, 1] + 0.4 * self.lin.predict_proba(X)[:, 1]
+        p = self.w_gbm * self.gbm.predict_proba(X)[:, 1] + (1 - self.w_gbm) * self.lin.predict_proba(X)[:, 1]
         return pd.Series(p, index=rows.index.get_level_values("ticker"), name="proba")
 
 

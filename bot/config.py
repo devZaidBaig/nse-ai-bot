@@ -20,7 +20,7 @@ UNIVERSE = [
 ]
 # Tickers that fail to download are skipped automatically, so a stale entry won't break a run.
 BENCHMARK = "^NSEI"                 # NIFTY 50 index
-HISTORY_YEARS = 6                   # price history to download
+HISTORY_YEARS = 8                   # price history to download (more history = more to learn from)
 
 # ---- Strategy ----
 TOP_N = 3                           # number of stocks to hold (small account → few, affordable picks)
@@ -76,3 +76,29 @@ NAMES = {
     "TECHM": "Tech Mahindra", "TITAN": "Titan Company", "TRENT": "Trent", "ULTRACEMCO": "UltraTech Cement",
     "WIPRO": "Wipro",
 }
+
+# ---- World / macro market factors (Yahoo tickers) ----
+MACRO = {
+    "usdinr": "INR=X",        # rupee (up = weaker rupee: good for IT exporters, bad for importers)
+    "brent": "BZ=F",          # crude oil (hurts oil importers/paint/aviation, helps ONGC)
+    "us10y": "^TNX",          # US 10-year yield (global risk appetite / foreign flows)
+    "spx": "^GSPC",           # S&P 500 (global equity mood)
+    "indiavix": "^INDIAVIX",  # India fear gauge
+    "gold": "GC=F",
+    "dxy": "DX-Y.NYB",        # US dollar index
+}
+
+# ---- Sectors (for sector momentum and peer comparison) ----
+SECTORS = {
+    "Banks": ["AXISBANK", "HDFCBANK", "ICICIBANK", "KOTAKBANK", "SBIN"],
+    "Finance": ["BAJFINANCE", "BAJAJFINSV", "SHRIRAMFIN", "JIOFIN", "HDFCLIFE", "SBILIFE"],
+    "IT": ["INFY", "TCS", "HCLTECH", "WIPRO", "TECHM"],
+    "Auto": ["MARUTI", "M&M", "BAJAJ-AUTO", "EICHERMOT", "TMPV"],
+    "Energy": ["RELIANCE", "ONGC", "NTPC", "POWERGRID", "COALINDIA"],
+    "Metals": ["TATASTEEL", "JSWSTEEL", "HINDALCO"],
+    "Consumer": ["HINDUNILVR", "ITC", "NESTLEIND", "TATACONSUM", "ASIANPAINT", "TITAN", "TRENT", "ETERNAL"],
+    "Pharma/Health": ["SUNPHARMA", "CIPLA", "DRREDDY", "APOLLOHOSP", "MAXHEALTH"],
+    "Industrials": ["LT", "BEL", "ADANIENT", "ADANIPORTS", "GRASIM", "ULTRACEMCO", "INDIGO", "BHARTIARTL"],
+}
+
+MODEL_CONFIG = STATE_DIR / "model_config.json"   # written by training; read by the live bot

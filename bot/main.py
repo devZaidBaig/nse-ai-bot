@@ -31,8 +31,8 @@ def _inr(v):
 
 # ------------------------------------------------------------------ backtest
 def run_backtest(years: float):
-    close, volume, bench = data.load_prices()
-    panel = features.build(close, volume, bench)
+    close, volume, bench, macro, gnews = data.load_all()
+    panel = features.build(close, volume, bench, macro, gnews)
     start = close.index[-1] - pd.DateOffset(years=years)
     days = close.index[close.index >= start]
     pf, ctx = Portfolio(), {}
@@ -57,7 +57,7 @@ def run_backtest(years: float):
 # ------------------------------------------------------------------ main daily decision
 def run_decide(force: bool):
     pf = Portfolio.load(STATE)
-    close, volume, bench = data.load_prices()
+    close, volume, bench, macro, gnews = data.load_all()
     today = close.index[-1]
     if not force:
         if today.normalize() < _now_ist().normalize():
@@ -73,7 +73,7 @@ def run_decide(force: bool):
             sentiment = news.today_sentiment(list(close.columns), today)
         except Exception as e:
             print(f"[news] skipped: {e}")
-    panel = features.build(close, volume, bench)
+    panel = features.build(close, volume, bench, macro, gnews)
     info = step(pf, panel, close, bench, today, {}, retrain_every_days=0, news=sentiment)
     pf.save(STATE)
     px = close.loc[today].dropna()

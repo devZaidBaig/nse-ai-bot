@@ -1,13 +1,13 @@
-# Strategy experiments (each row ends 2026-11-02)
+# Strategy experiments (each row ends 2026-11-03)
 
 | Variant | Return | NIFTY | CAGR | Sharpe | Max DD | Trades | Win % | Fees (% of capital) |
 |---|---|---|---|---|---|---|---|---|
-| D. Monthly AI, risk-off filter working (40%) [1y] | +18.8% | -9.0% | 18.86% | 1.16 | -16.99% | 54 | 52.6 | 4.4% |
-| H. Monthly AI, no risk-off filter (always 100%) [1y] | +15.5% | -9.0% | 15.59% | 0.79 | -21.55% | 49 | 58.8 | 4.9% |
-| I. Monthly AI, risk-off 70% [1y] | +16.8% | -9.0% | 16.84% | 0.95 | -19.04% | 52 | 55.6 | 4.7% |
-| D. Monthly AI, risk-off filter working (40%) [2y] | +24.2% | -2.3% | 11.48% | 0.77 | -16.83% | 102 | 55.6 | 8.8% |
-| H. Monthly AI, no risk-off filter (always 100%) [2y] | +43.9% | -2.3% | 20.03% | 1.0 | -22.03% | 93 | 62.9 | 10.3% |
-| I. Monthly AI, risk-off 70% [2y] | +43.5% | -2.3% | 19.88% | 1.05 | -20.49% | 100 | 64.7 | 9.5% |
-| D. Monthly AI, risk-off filter working (40%) [4y] | +172.2% | +29.6% | 28.45% | 1.44 | -20.28% | 220 | 64.6 | 25.8% |
-| H. Monthly AI, no risk-off filter (always 100%) [4y] | +171.7% | +29.6% | 28.39% | 1.31 | -20.9% | 208 | 63.3 | 28.1% |
-| I. Monthly AI, risk-off 70% [4y] | +160.0% | +29.6% | 26.99% | 1.31 | -22.04% | 221 | 62.5 | 27.3% |
+| D. Monthly AI, risk-off filter working (40%) [1y] | +2.8% | -7.6% | 2.83% | 0.24 | -20.4% | 53 | 55.0 | 4.5% |
+| H. Monthly AI, no risk-off filter (always 100%) [1y] | +0.2% | -7.6% | 0.17% | 0.11 | -20.04% | 50 | 55.6 | 4.7% |
+| I. Monthly AI, risk-off 70% [1y] | +5.9% | -7.6% | 5.87% | 0.38 | -20.01% | 52 | 55.6 | 4.5% |
+| D. Monthly AI, risk-off filter working (40%) [2y] | +21.5% | -0.8% | 10.25% | 0.63 | -16.47% | 92 | 60.6 | 8.1% |
+| H. Monthly AI, no risk-off filter (always 100%) [2y] | +31.3% | -0.8% | 14.62% | 0.75 | -19.56% | 83 | 66.7 | 8.6% |
+| I. Monthly AI, risk-off 70% [2y] | +22.9% | -0.8% | 10.88% | 0.64 | -17.45% | 84 | 60.0 | 8.0% |
+| D. Monthly AI, risk-off filter working (40%) [4y] | +87.7% | +31.9% | 17.04% | 0.85 | -20.15% | 203 | 63.0 | 21.1% |
+| H. Monthly AI, no risk-off filter (always 100%) [4y] | +81.9% | +31.9% | 16.14% | 0.77 | -21.22% | 193 | 61.1 | 22.0% |
+| I. Monthly AI, risk-off 70% [4y] | +81.3% | +31.9% | 16.04% | 0.79 | -21.21% | 200 | 62.0 | 21.2% |

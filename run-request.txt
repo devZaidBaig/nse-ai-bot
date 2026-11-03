@@ -1,4 +1,4 @@
 decide
 
 # Edit the first word and push to start a run now: decide | watch | test-message
-# Requested 2026-11-03 15:12 IST by Claude scheduled task
+# Requested 2026-11-03 15:12 IST (manual safety run)

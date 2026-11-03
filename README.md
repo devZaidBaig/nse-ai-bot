@@ -24,6 +24,26 @@ NSE holidays are detected automatically.
 4. **Risk:** only 40% of the money is invested when NIFTY is below its 200-day average. There is no trailing stop (see results below).
 5. **Realistic costs:** STT, exchange fees and GST, stamp duty, slippage, and the ₹15.34 DP charge on every sell.
 
+## How the bot learns (weekly, automatic)
+
+**Signals it can use**
+- **Price:** momentum, trend, volatility, volume, rank against peers.
+- **World markets:** the rupee, crude oil, US 10-year yield, S&P 500, India VIX, gold and the dollar. The bot also uses each stock's measured sensitivity to them, for example how an IT stock tends to react when the rupee weakens.
+- **Sector:** sector momentum and the stock's strength within its sector.
+- **Company news:** daily tone and attention from **GDELT** (2018 → today), including sudden shocks compared with the company's own normal level. GDELT is a free database of global news.
+- **World/India news mood:** coverage of the economy, RBI, Fed, oil, recession, tariffs and conflict.
+- **Live headlines:** FinBERT scores on today's headlines, used only as a small nudge until enough history exists to test them.
+
+**Training rules** (`bot/train.py`, results in `state/training_report.md`)
+1. Every signal is tested for whether it predicts next month's returns (monthly rank correlation, t-statistics).
+2. Groups of signals and model settings are compared **walk-forward**: the model is retrained every quarter using only data available at that point.
+3. The best candidates run full ₹10,000 portfolio simulations with real costs.
+4. **The most recent 12 months are a holdout.** They are never used to choose anything, only to judge. A new model replaces the live one only if it is at least as good on that unseen year.
+5. A "sell on sudden bad company news" rule switches on only if the history shows such news really predicts underperformance and the holdout agrees.
+
+**Schedule:** Claude starts the bot 3× each weekday (10:12 news check, 1:12 price check, 3:12 decision) and retrains it every Sunday at 10:41, then sends a summary.
+You can also start runs by editing `run-request.txt` (morning / watch / decide), `lab-request.txt` (train) or `backfill-request.txt` (news downloads) and pushing.
+
 ## How the strategy was chosen (real NSE data, ₹10,000 dummy money)
 
 Several versions were tested on the same data (`python -m bot.research --set main`; results in `state/research.md`).

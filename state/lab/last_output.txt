@@ -1,44 +1,91 @@
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 44s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 11s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 22s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 33s
-[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry in 44s
-{
- "2017-01-01\u21922017-03-31": {
-  "days": 90,
-  "first": "2017-01-01",
-  "last": "2017-03-31",
-  "mean_tone": -0.005,
-  "secs": 129.3
- },
- "2019-06-01\u21922019-06-30": {
-  "days": 30,
-  "first": "2019-06-01",
-  "last": "2019-06-30",
-  "mean_tone": -0.799,
-  "secs": 73.9
- },
- "2023-01-01\u21922024-12-31": {
-  "days": 0,
-  "first": null,
-  "last": null,
-  "mean_tone": null,
-  "secs": 153.6
- },
- "2026-10-01\u21922026-11-03": {
-  "days": 0,
-  "first": null,
-  "last": null,
-  "mean_tone": null,
-  "secs": 149.9
- }
-}
-exit=0 cmd=probe at 2026-11-03 15:25
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 7/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 7/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 8/8 in 180s
+[gdelt] ADANIENT: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] ADANIPORTS: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] APOLLOHOSP: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] ASIANPAINT: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] AXISBANK: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] BAJAJ-AUTO: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] BAJFINANCE: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] BAJAJFINSV: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 7/8 in 180s
+[gdelt] BEL: 3183 days (2018-01-01 → 2026-10-27)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 7/8 in 180s
+[gdelt] BHARTIARTL: 3184 days (2018-01-01 → 2026-11-03)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] CIPLA: 3184 days (2018-01-01 → 2026-11-03)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] COALINDIA: 3184 days (2018-01-01 → 2026-11-03)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] DRREDDY: 3184 days (2018-01-01 → 2026-11-03)
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 1/8 in 30s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 2/8 in 60s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 3/8 in 90s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 4/8 in 120s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 5/8 in 150s
+[gdelt] HTTPError (HTTP Error 429: Too Many Requests); retry 6/8 in 180s
+[gdelt] EICHERMOT: 3184 days (2018-01-01 → 2026-11-03)
+[gdelt] time budget reached; remaining keys next run
+exit=0 cmd=gdelt 135 at 2026-11-03 17:45

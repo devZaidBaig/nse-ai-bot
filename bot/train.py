@@ -99,10 +99,14 @@ def backtest(panel, close, bench, cfg, start, end):
 
 
 def event_study(panel, mask_dates, z=-2.0, attn=0.5):
+    """Next-month excess return after sudden news-tone shocks. attn=None → tone shock alone."""
     d = panel.index.get_level_values("date")
     sub = panel[d.isin(mask_dates)]
-    neg = sub[(sub["n_tone_shock"] <= z) & (sub["n_attn"] >= attn)]["fwd_excess"].dropna()
-    pos = sub[(sub["n_tone_shock"] >= -z) & (sub["n_attn"] >= attn)]["fwd_excess"].dropna()
+    a_ok = (sub["n_attn"] >= attn) if attn is not None else True
+    # one event per stock per month (avoid counting the same news burst on 21 consecutive days)
+    sub = sub[sub.index.get_level_values("date").isin(mask_dates[::config.HORIZON_DAYS])] if attn is None else sub
+    neg = sub[(sub["n_tone_shock"] <= z) & a_ok]["fwd_excess"].dropna()
+    pos = sub[(sub["n_tone_shock"] >= -z) & a_ok]["fwd_excess"].dropna()
     res = {}
     for name, s in [("bad_news", neg), ("good_news", pos)]:
         res[name] = dict(n=int(len(s)), mean_excess_pct=round(100 * s.mean(), 2) if len(s) else None,
@@ -206,12 +210,17 @@ def main(argv=None):
 
     # 4. news-exit event study ------------------------------------------------------
     d_all = panel.index.get_level_values("date").unique()
-    ev_train = event_study(panel, d_all[(d_all >= eval_start) & (d_all <= train_label_end)])
-    ev_hold = event_study(panel, d_all[d_all >= holdout_start])
-    bt = ev_train["bad_news"]
-    news_rule = None
-    if bt["n"] >= 30 and bt["t"] is not None and bt["t"] <= -2 and (ev_hold["bad_news"]["mean_excess_pct"] or 0) < 0:
-        trial = {**winner, "news_exit": {"z": -2.0, "attn": 0.5}}
+    tr_d, ho_d = d_all[(d_all >= eval_start) & (d_all <= train_label_end)], d_all[d_all >= holdout_start]
+    ev_train, ev_hold = event_study(panel, tr_d), event_study(panel, ho_d)
+    evz_train, evz_hold = event_study(panel, tr_d, attn=None), event_study(panel, ho_d, attn=None)
+    news_rule, rule_cfg = None, None
+    for et, eh, rc in [(ev_train, ev_hold, {"z": -2.0, "attn": 0.5}), (evz_train, evz_hold, {"z": -2.0})]:
+        bt = et["bad_news"]
+        if bt["n"] >= 30 and bt["t"] is not None and bt["t"] <= -2 and (eh["bad_news"]["mean_excess_pct"] or 0) < 0:
+            rule_cfg = rc
+            break
+    if rule_cfg:
+        trial = {**winner, "news_exit": rule_cfg}
         with_rule = backtest(panel, close, bench, trial, holdout_start, end)
         if with_rule["sharpe"] >= winner["bt_hold"]["sharpe"]:
             news_rule = trial["news_exit"]
@@ -230,7 +239,7 @@ def main(argv=None):
              "oos_ic": round(float(np.nan_to_num(winner["oos_ic"])), 4)}
     config.MODEL_CONFIG.write_text(json.dumps(final, indent=1))
     _write_report(final, promote, champ, best, cand, finalists, ic_train, ic_hold, ev_train, ev_hold, ws,
-                  all_dates, eval_start, holdout_start, end, have)
+                  all_dates, eval_start, holdout_start, end, have, evz_train, evz_hold)
     row = pd.DataFrame([{"date": str(end.date()), "model": final["name"], "promoted": promote,
                          "oos_ic": final["oos_ic"], **{f"holdout_{k}": v for k, v in final["holdout"].items()},
                          "news_exit": bool(news_rule)}])
@@ -245,7 +254,7 @@ def main(argv=None):
 
 
 def _write_report(final, promote, champ, best, cand, finalists, ic_train, ic_hold, ev_train, ev_hold, ws,
-                  all_dates, eval_start, holdout_start, end, have):
+                  all_dates, eval_start, holdout_start, end, have, evz_train=None, evz_hold=None):
     L = [f"# Training report — {str(pd.Timestamp.now(tz='Asia/Kolkata'))[:16]} IST", "",
          f"Data {all_dates[0].date()} → {end.date()}. Training/evaluation years {eval_start.date()} → {holdout_start.date()}; "
          f"**holdout (never used for choices) {holdout_start.date()} → {end.date()}**.", "",
@@ -275,7 +284,10 @@ def _write_report(final, promote, champ, best, cand, finalists, ic_train, ic_hol
         L.append(f"| {c} | {grp.get(c, '')} | {r['ic']:.4f} | {r['t']:.2f} | {100 * r['hit']:.0f}% | {h:.4f} |")
     L += ["", "## News event study (sudden very negative / positive company news with an attention spike)", "",
           "| Period | Bad-news events | Their next-month excess return | t | Good-news events | Excess | t |", "|---|---|---|---|---|---|---|"]
-    for name, ev in [("Training", ev_train), ("Holdout", ev_hold)]:
+    for name, ev in [("Training (tone shock + attention spike)", ev_train), ("Holdout (tone shock + attention spike)", ev_hold),
+                     ("Training (tone shock alone, monthly)", evz_train), ("Holdout (tone shock alone, monthly)", evz_hold)]:
+        if ev is None:
+            continue
         b, g = ev["bad_news"], ev["good_news"]
         L.append(f"| {name} | {b['n']} | {b['mean_excess_pct']}% | {b['t']} | {g['n']} | {g['mean_excess_pct']}% | {g['t']} |")
     L += ["", "## World/India news mood vs NIFTY's next month", ""]

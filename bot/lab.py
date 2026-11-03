@@ -24,6 +24,14 @@ def main(argv=None):
         mine = todo[i::n]
         print(f"[lab] part {i}/{n}: {len(mine)} series: {', '.join(mine)}")
         gdelt.update(keys=mine, max_minutes=float(argv[3]) if len(argv) > 3 else 130)
+    elif cmd == "gdelt-vol-part":  # gdelt-vol-part <i> <n>: re-download attention for every i-th series
+        from . import gdelt
+        i, n = int(argv[1]), int(argv[2])
+        allk = list(gdelt.COMPANY_QUERIES) + list(gdelt.WORLD_QUERIES)
+        gdelt.redownload_vol(allk[i::n])
+        missing = [k for k in allk[i::n] if not (gdelt.CACHE / f"{k.replace('&', 'and')}.csv").exists()]
+        if missing:
+            gdelt.update(keys=missing, max_minutes=60)
     elif cmd == "train":
         from . import train
         train.main(argv[1:])

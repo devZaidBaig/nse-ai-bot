@@ -3,7 +3,7 @@ name: News backfill (parallel)
 on:
   push:
     branches: [main]
-    paths: ["backfill-request.txt"]
+    paths: ["backfill-request.txt"]   # first word: gdelt-part or gdelt-vol-part
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Download news history (part ${{ matrix.part }} of 6)
-        run: python -m bot.lab gdelt-part ${{ matrix.part }} 6 130 2>&1 | tee part.log
+        run: python -m bot.lab $(head -1 backfill-request.txt | awk '{print $1}') ${{ matrix.part }} 6 130 2>&1 | tee part.log
       - name: Save
         if: always()
         run: |
@@ -37,3 +37,23 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "news backfill part ${{ matrix.part }} $(TZ=Asia/Kolkata date '+%F %H:%M')"
           for i in 1 2 3 4 5; do git pull --rebase --autostash && git push && break; sleep $((RANDOM % 20 + 5)); done
+
+  retrain:
+    needs: part
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Start training on the refreshed news data
+        run: |
+          git config user.name "nse-ai-bot"
+          git config user.email "nse-ai-bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash
+            echo train > lab-request.txt
+            git add lab-request.txt
+            git commit -m "Lab request: train (after news backfill)" || true
+            git push && break; sleep 10
+          done

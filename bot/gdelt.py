@@ -82,6 +82,10 @@ def _timeline(query, mode, start: pd.Timestamp, end: pd.Timestamp) -> pd.Series:
     df = pd.read_csv(io.StringIO(txt))
     # CSV columns: Date, Series, Value
     df["Date"] = pd.to_datetime(df["Date"].astype(str).str[:10], errors="coerce")
+    if "Series" in df.columns and df["Series"].nunique() > 1:
+        # timelinevolraw returns two series: matching "Article Count" and "Total Monitored Articles"
+        keep = [x for x in df["Series"].unique() if "count" in str(x).lower() and "total" not in str(x).lower()]
+        df = df[df["Series"] == (keep[0] if keep else df["Series"].iloc[0])]
     s = df.dropna(subset=["Date"]).groupby("Date")["Value"].mean()
     return s
 
@@ -172,3 +176,21 @@ def probe():
                                       "secs": round(time.time() - t, 1)}
     print(json.dumps(rep, indent=1))
     return rep
+
+
+def redownload_vol(keys, start="2018-01-01"):
+    """Re-fetch only the attention (article count) history for the given series."""
+    allq = {**COMPANY_QUERIES, **WORLD_QUERIES}
+    today = pd.Timestamp.now(tz="Asia/Kolkata").normalize().tz_localize(None)
+    for key in keys:
+        f = CACHE / f"{key.replace('&', 'and')}.csv"
+        if not f.exists():
+            continue
+        old = pd.read_csv(f, parse_dates=["date"], index_col="date")
+        v = _timeline(allq[key], "timelinevolraw", pd.Timestamp(start), today)
+        if len(v):
+            old["vol"] = v.reindex(old.index)
+            old.round(4).to_csv(f)
+            print(f"[gdelt] {key}: attention re-downloaded ({v.notna().sum()} days, median {v.median():.0f} articles/day)")
+        else:
+            print(f"[gdelt] {key}: attention download failed")

@@ -1,4 +1,4 @@
-watch
+decide
 
 # Edit the first word and push to start a run now: morning | watch | decide | test-message
-# Requested 2026-11-05 13:13 IST by Claude scheduled task
+# Requested 2026-11-05 15:13 IST by Claude scheduled task

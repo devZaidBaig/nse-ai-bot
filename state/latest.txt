@@ -1,12 +1,12 @@
-📈 *NSE AI bot* — 2026-11-04
-Value ₹10,155  (today +1.11%, total +1.55% vs NIFTY +2.22%)
+📈 *NSE AI bot* — 2026-11-05
+Value ₹10,274  (today +1.18%, total +2.74% vs NIFTY +4.69%)
 Cash ₹5,806
 No trades today.
 Holding:
- • TMPV ×5  +2.2%
- • JIOFIN ×7  +4.2%
- • ITC ×5  +5.1%
+ • TMPV ×5  +7.7%
+ • JIOFIN ×7  +7.6%
+ • ITC ×5  +4.6%
 Next review of picks: around 27 Nov
-📰 TMPV news +0.53: Tata Motors Passenger Vehicles sales rise 23% to 75,426 units in October
-📰 JIOFIN news +0.14: Jio Financial Services stock faces profit pressure as lending expands
-📰 ITC news -0.09: ITC Q2 preview: Cigarette biz may drag PAT down up to 28%, say analysts
+📰 TMPV news +0.27: Auto stocks rally: Ashok Leyland jumps 9%, Maruti, Tata Motors PV, M&M lead gains as Nifty
+📰 JIOFIN news +0.35: Jio Financial Stock Down By 35% | Should You Buy Or Not? | Sanjay Kathuria Lindy Ruff (hIL
+📰 ITC news -0.06: ITC Q2 Results: PAT falls 20% to Rs 4,137 crore, beats estimates

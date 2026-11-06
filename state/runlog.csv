@@ -14,3 +14,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-05 23:08,schedule,decide,0,"[decide] already ran for 2026-11-05. Skipping."
 2026-11-05 23:13,schedule,decide,0,"[decide] already ran for 2026-11-05. Skipping."
 2026-11-05 23:48,schedule,decide,0,"[decide] already ran for 2026-11-05. Skipping."
+2026-11-06 15:14,push,decide,0,"🗓️ *Weekly recap*: +2.91% this week; 5 trades. All-time: 0 closed trades; 0% winners; fees ₹7."

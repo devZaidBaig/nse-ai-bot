@@ -1,5 +1,5 @@
 {
- "name": "default (price factors only)",
+ "name": "price+world \u00b7 P2",
  "features": [
   "ret_5",
   "ret_10",
@@ -19,24 +19,29 @@
   "rank_mom_12_1",
   "rank_vol_21",
   "mkt_ret_21",
-  "mkt_above_sma200"
+  "mkt_above_sma200",
+  "w_india_econ_z",
+  "w_rbi_z",
+  "w_india_mkt_z",
+  "w_fed_z",
+  "w_oil_z",
+  "w_tariff_z",
+  "w_conflict_z",
+  "w_mood"
  ],
  "params": {
-  "max_depth": 4,
-  "learning_rate": 0.05,
-  "min_samples_leaf": 200,
-  "max_iter": 200,
-  "l2": 1.0,
-  "C": 0.1,
-  "w_gbm": 0.6
+  "max_depth": 3,
+  "learning_rate": 0.03,
+  "min_samples_leaf": 400,
+  "max_iter": 300
  },
  "news_exit": null,
- "trained_at": "2026-11-03 21:51",
+ "trained_at": "2026-11-08 10:51",
  "holdout": {
-  "total_return_pct": 5.26,
-  "nifty_return_pct": -7.58,
-  "sharpe": 0.4,
-  "max_drawdown_pct": -16.04
+  "total_return_pct": -0.74,
+  "nifty_return_pct": -1.88,
+  "sharpe": 0.03,
+  "max_drawdown_pct": -13.58
  },
- "oos_ic": 0.0389
+ "oos_ic": 0.0544
 }

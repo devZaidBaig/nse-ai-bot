@@ -19,3 +19,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-06 22:29,schedule,decide,0,"[decide] already ran for 2026-11-06. Skipping."
 2026-11-06 23:12,schedule,decide,0,"[decide] already ran for 2026-11-06. Skipping."
 2026-11-09 15:14,push,decide,0,"📰 ITC news +0.40: Angel One flags Nifty hurdle at 25;150; bullish on ITC; SBI; Force Motors"
+2026-11-10 01:32,schedule,decide,0,"[decide] latest data is 2026-11-09 — NSE closed today (holiday). Skipping."

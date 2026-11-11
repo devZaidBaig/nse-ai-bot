@@ -26,3 +26,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-10 22:47,schedule,decide,0,"[decide] latest data is 2026-11-09 — NSE closed today (holiday). Skipping."
 2026-11-10 22:51,schedule,decide,0,"[decide] latest data is 2026-11-09 — NSE closed today (holiday). Skipping."
 2026-11-10 23:46,schedule,decide,0,"[decide] latest data is 2026-11-09 — NSE closed today (holiday). Skipping."
+2026-11-11 15:14,push,decide,0,"📰 ITC news +0.37: Competition for Britannia; Parle; ITC? Reliance Consumer Products expands with 'Independen"

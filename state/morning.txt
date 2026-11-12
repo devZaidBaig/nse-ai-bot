@@ -1,2 +1,2 @@
-🌅 *NSE AI bot* — morning news check 11 Nov
-World/India news mood: -0.1σ vs the past year
+🌅 *NSE AI bot* — morning news check 12 Nov
+World/India news mood: +0.3σ vs the past year

@@ -36,3 +36,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-13 00:06,schedule,decide,0,"[decide] latest data is 2026-11-12 — NSE closed today (holiday). Skipping."
 2026-11-13 15:14,push,decide,0,"🗓️ *Weekly recap*: -0.26% this week; 0 trades. All-time: 0 closed trades; 0% winners; fees ₹7."
 2026-11-13 22:53,schedule,decide,0,"[decide] already ran for 2026-11-13. Skipping."
+2026-11-13 22:55,schedule,decide,0,"[decide] already ran for 2026-11-13. Skipping."

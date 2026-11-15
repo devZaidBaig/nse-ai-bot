@@ -1,29 +1,28 @@
 [train      0s] loading prices, world markets and news history
 [data] TMPV: 40% jump on 2025-10-14 (likely corporate action) — using data after it
 [data] TRENT: 33% jump on 2026-01-01 (likely corporate action) — using data after it
-[train      4s] data 2018-11-06 → 2026-11-06; train months 52, holdout months 11; usable factors: base=19, macro=15, sector=4, news=6, world=8, finbert=0
+[train      4s] data 2018-11-13 → 2026-11-13; train months 52, holdout months 11; usable factors: base=19, macro=15, sector=4, news=6, world=8, finbert=0
 [train      6s] factor ICs done (35 factors)
-[train     19s] OOS price · P1: IC 0.0435 (t 1.84), top-3 excess 1.46%/month
-[train     37s] OOS price+macro · P1: IC 0.0453 (t 2.10), top-3 excess 1.21%/month
-[train     51s] OOS price+sector · P1: IC 0.0288 (t 1.21), top-3 excess 0.88%/month
-[train     67s] OOS price+news · P1: IC 0.0457 (t 1.77), top-3 excess 1.21%/month
-[train     83s] OOS price+world · P1: IC 0.0578 (t 2.40), top-3 excess 0.83%/month
-[train    103s] OOS price+macro+sector · P1: IC 0.0462 (t 2.03), top-3 excess 1.16%/month
-[train    124s] OOS price+macro+sector+news · P1: IC 0.0414 (t 1.74), top-3 excess 0.74%/month
-[train    147s] OOS everything · P1: IC 0.0446 (t 1.98), top-3 excess 0.71%/month
-[train    153s] OOS IC-selected (|t|≥2) · P1: IC 0.0411 (t 1.78), top-3 excess 1.47%/month
-[train    171s] OOS price+world · P2: IC 0.0544 (t 2.23)
-[train    188s] OOS price+world · P3: IC 0.0412 (t 1.61)
-[train    210s] OOS price+macro+sector · P2: IC 0.0496 (t 2.04)
-[train    231s] OOS price+macro+sector · P3: IC 0.0386 (t 1.65)
-[train    249s] OOS price+news · P2: IC 0.0494 (t 1.84)
-[train    266s] OOS price+news · P3: IC 0.0469 (t 2.02)
-[train    330s] backtest champion: default (price factors only): train +123.3% (Sharpe 0.86), holdout -12.8% (Sharpe -0.89) vs NIFTY -1.9%
-[train    391s] backtest price+world · P1: train +179.1% (Sharpe 1.03), holdout +1.9% (Sharpe 0.2) vs NIFTY -1.9%
-[train    457s] backtest price+world · P2: train +176.3% (Sharpe 1.06), holdout -0.7% (Sharpe 0.03) vs NIFTY -1.9%
-[train    536s] backtest price+macro+sector · P2: train +106.6% (Sharpe 0.85), holdout -11.5% (Sharpe -0.64) vs NIFTY -1.9%
-[train    536s] decision: PROMOTE price+world · P2
-[train    536s] news-exit rule: no significant evidence → not enabled
+[train     19s] OOS price · P1: IC 0.0255 (t 1.12), top-3 excess 0.73%/month
+[train     36s] OOS price+macro · P1: IC 0.0598 (t 2.53), top-3 excess 0.87%/month
+[train     51s] OOS price+sector · P1: IC 0.0275 (t 1.19), top-3 excess 0.69%/month
+[train     67s] OOS price+news · P1: IC 0.0350 (t 1.42), top-3 excess 1.44%/month
+[train     83s] OOS price+world · P1: IC 0.0361 (t 1.71), top-3 excess 1.04%/month
+[train    102s] OOS price+macro+sector · P1: IC 0.0588 (t 2.28), top-3 excess 0.95%/month
+[train    123s] OOS price+macro+sector+news · P1: IC 0.0529 (t 2.04), top-3 excess 0.66%/month
+[train    146s] OOS everything · P1: IC 0.0410 (t 1.65), top-3 excess 0.60%/month
+[train    165s] OOS price+macro · P2: IC 0.0574 (t 2.54)
+[train    185s] OOS price+macro · P3: IC 0.0472 (t 2.06)
+[train    207s] OOS price+macro+sector · P2: IC 0.0579 (t 2.31)
+[train    228s] OOS price+macro+sector · P3: IC 0.0404 (t 1.61)
+[train    250s] OOS price+macro+sector+news · P2: IC 0.0531 (t 2.10)
+[train    273s] OOS price+macro+sector+news · P3: IC 0.0443 (t 1.67)
+[train    358s] backtest champion: price+world · P2: train +198.5% (Sharpe 1.2), holdout +3.4% (Sharpe 0.29) vs NIFTY -2.8%
+[train    427s] backtest price+macro · P1: train +61.1% (Sharpe 0.58), holdout -12.8% (Sharpe -0.95) vs NIFTY -2.8%
+[train    500s] backtest price+macro+sector · P1: train +129.1% (Sharpe 0.95), holdout -14.8% (Sharpe -1.07) vs NIFTY -2.8%
+[train    581s] backtest price+macro+sector · P2: train +183.6% (Sharpe 1.22), holdout -10.1% (Sharpe -0.6) vs NIFTY -2.8%
+[train    581s] decision: keep champion
+[train    581s] news-exit rule: no significant evidence → not enabled
 [notify] sent via: none configured
-[train    536s] done
-exit=0 cmd=train at 2026-11-08 10:51
+[train    581s] done
+exit=0 cmd=train at 2026-11-15 10:52

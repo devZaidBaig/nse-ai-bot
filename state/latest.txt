@@ -1,14 +1,12 @@
-📈 *NSE AI bot* — 2026-11-13
-Value ₹10,265  (today -0.54%, total +2.65% vs NIFTY +7.21%)
+📈 *NSE AI bot* — 2026-11-16
+Value ₹10,173  (today -0.90%, total +1.73% vs NIFTY +7.56%)
 Cash ₹5,806
 No trades today.
 Holding:
- • TMPV ×5  +5.9%
- • JIOFIN ×7  +6.8%
- • ITC ×5  +6.7%
+ • TMPV ×5  -3.9%
+ • JIOFIN ×7  +6.0%
+ • ITC ×5  +10.7%
 Next review of picks: around 27 Nov
-📰 TMPV news +0.13: Q2 Results, Nov 13: Grasim, Eicher Motors, ABB India, Tata Motors PV, Manipal Health, Indo
-📰 JIOFIN news +0.07: SENSEX slides over 600 pts, NIFTY50 opens lower at 25,209 amid weak global cues; IndiGo, J
-📰 ITC news +0.29: ITC shares rise 2% on Gold Flake Premium cigarette price hike
-
-🗓️ *Weekly recap*: -0.26% this week, 0 trades. All-time: 0 closed trades, 0% winners, fees ₹7.
+📰 TMPV news -0.69: Tata Motors PV shares fall over 8% after multiple price target cuts on Q2 loss, JLR guidan
+📰 JIOFIN news +0.39: 32 million customers in 3 years: Jio Financial to accelerate to 100 million target in one 
+📰 ITC news +0.45: Cigarette Stock Jumps: ITC Rallies 4%, Up 11% In November; Here's Why

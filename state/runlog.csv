@@ -50,3 +50,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-18 23:53,schedule,decide,0,"[decide] already ran for 2026-11-18. Skipping."
 2026-11-18 23:57,schedule,decide,0,"[decide] already ran for 2026-11-18. Skipping."
 2026-11-19 00:33,schedule,decide,0,"[decide] latest data is 2026-11-18 — NSE closed today (holiday). Skipping."
+2026-11-19 15:14,push,decide,0,"📰 ITC news +0.37: ITC; HDFC Bank; Vodafone Idea among retail favourites seeing MF buying; Suzlon shares face"

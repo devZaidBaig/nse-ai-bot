@@ -1,12 +1,14 @@
-📈 *NSE AI bot* — 2026-11-19
-Value ₹10,208  (today +0.81%, total +2.08% vs NIFTY +8.79%)
+📈 *NSE AI bot* — 2026-11-20
+Value ₹10,207  (today -0.01%, total +2.07% vs NIFTY +10.00%)
 Cash ₹5,806
 No trades today.
 Holding:
- • TMPV ×5  -3.9%
- • JIOFIN ×7  +6.3%
- • ITC ×5  +13.1%
+ • TMPV ×5  -2.2%
+ • JIOFIN ×7  +5.6%
+ • ITC ×5  +12.0%
 Next review of picks: around 27 Nov
-📰 TMPV news -0.50: Key facts: TMPV Shares Fall 9% on JLR Guidance Cut; Net Debt ₹50,800 Crore
-📰 JIOFIN news +0.04: Jio Financial and BlackRock Infuse Rs 246 Crore into Asset Management Venture
-📰 ITC news +0.37: ITC, HDFC Bank, Vodafone Idea among retail favourites seeing MF buying; Suzlon shares face
+📰 TMPV news +0.24: Tata Motors Passenger Vehicles Posts Record ₹20,000 Crore India Revenue
+📰 JIOFIN news +0.05: Jio Financial and BlackRock Infuse Rs 246 Crore into Asset Management Venture
+📰 ITC news +0.19: India shares lower at close of trade; Nifty 50 down 0.63% By Investing.com
+
+🗓️ *Weekly recap*: -0.57% this week, 0 trades. All-time: 0 closed trades, 0% winners, fees ₹7.

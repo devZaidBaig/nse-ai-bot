@@ -1,28 +1,28 @@
 [train      0s] loading prices, world markets and news history
 [data] TMPV: 40% jump on 2025-10-14 (likely corporate action) — using data after it
 [data] TRENT: 33% jump on 2026-01-01 (likely corporate action) — using data after it
-[train      4s] data 2018-11-13 → 2026-11-13; train months 52, holdout months 11; usable factors: base=19, macro=15, sector=4, news=6, world=8, finbert=0
-[train      6s] factor ICs done (35 factors)
-[train     19s] OOS price · P1: IC 0.0255 (t 1.12), top-3 excess 0.73%/month
-[train     36s] OOS price+macro · P1: IC 0.0598 (t 2.53), top-3 excess 0.87%/month
-[train     51s] OOS price+sector · P1: IC 0.0275 (t 1.19), top-3 excess 0.69%/month
-[train     67s] OOS price+news · P1: IC 0.0350 (t 1.42), top-3 excess 1.44%/month
-[train     83s] OOS price+world · P1: IC 0.0361 (t 1.71), top-3 excess 1.04%/month
-[train    102s] OOS price+macro+sector · P1: IC 0.0588 (t 2.28), top-3 excess 0.95%/month
-[train    123s] OOS price+macro+sector+news · P1: IC 0.0529 (t 2.04), top-3 excess 0.66%/month
-[train    146s] OOS everything · P1: IC 0.0410 (t 1.65), top-3 excess 0.60%/month
-[train    165s] OOS price+macro · P2: IC 0.0574 (t 2.54)
-[train    185s] OOS price+macro · P3: IC 0.0472 (t 2.06)
-[train    207s] OOS price+macro+sector · P2: IC 0.0579 (t 2.31)
-[train    228s] OOS price+macro+sector · P3: IC 0.0404 (t 1.61)
-[train    250s] OOS price+macro+sector+news · P2: IC 0.0531 (t 2.10)
-[train    273s] OOS price+macro+sector+news · P3: IC 0.0443 (t 1.67)
-[train    358s] backtest champion: price+world · P2: train +198.5% (Sharpe 1.2), holdout +3.4% (Sharpe 0.29) vs NIFTY -2.8%
-[train    427s] backtest price+macro · P1: train +61.1% (Sharpe 0.58), holdout -12.8% (Sharpe -0.95) vs NIFTY -2.8%
-[train    500s] backtest price+macro+sector · P1: train +129.1% (Sharpe 0.95), holdout -14.8% (Sharpe -1.07) vs NIFTY -2.8%
-[train    581s] backtest price+macro+sector · P2: train +183.6% (Sharpe 1.22), holdout -10.1% (Sharpe -0.6) vs NIFTY -2.8%
-[train    581s] decision: keep champion
-[train    581s] news-exit rule: no significant evidence → not enabled
+[train      3s] data 2018-11-20 → 2026-11-20; train months 52, holdout months 11; usable factors: base=19, macro=15, sector=4, news=6, world=8, finbert=0
+[train      5s] factor ICs done (35 factors)
+[train     17s] OOS price · P1: IC 0.0205 (t 0.73), top-3 excess 0.87%/month
+[train     33s] OOS price+macro · P1: IC 0.0256 (t 1.04), top-3 excess 0.74%/month
+[train     47s] OOS price+sector · P1: IC 0.0253 (t 0.91), top-3 excess 0.40%/month
+[train     60s] OOS price+news · P1: IC 0.0142 (t 0.51), top-3 excess 0.59%/month
+[train     75s] OOS price+world · P1: IC 0.0212 (t 0.81), top-3 excess 0.32%/month
+[train     92s] OOS price+macro+sector · P1: IC 0.0299 (t 1.22), top-3 excess 0.15%/month
+[train    111s] OOS price+macro+sector+news · P1: IC 0.0227 (t 0.92), top-3 excess 0.83%/month
+[train    132s] OOS everything · P1: IC 0.0309 (t 1.27), top-3 excess 0.85%/month
+[train    155s] OOS everything · P2: IC 0.0462 (t 1.86)
+[train    179s] OOS everything · P3: IC 0.0334 (t 1.39)
+[train    199s] OOS price+macro+sector · P2: IC 0.0363 (t 1.50)
+[train    218s] OOS price+macro+sector · P3: IC 0.0373 (t 1.65)
+[train    236s] OOS price+macro · P2: IC 0.0353 (t 1.44)
+[train    254s] OOS price+macro · P3: IC 0.0176 (t 0.72)
+[train    332s] backtest champion: price+world · P2: train +240.5% (Sharpe 1.36), holdout +9.6% (Sharpe 0.64) vs NIFTY -1.5%
+[train    419s] backtest everything · P2: train +107.9% (Sharpe 0.92), holdout -9.0% (Sharpe -0.54) vs NIFTY -1.5%
+[train    491s] backtest price+macro+sector · P3: train +189.9% (Sharpe 1.28), holdout -8.0% (Sharpe -0.4) vs NIFTY -1.5%
+[train    563s] backtest price+macro+sector · P2: train +199.3% (Sharpe 1.3), holdout -13.0% (Sharpe -0.79) vs NIFTY -1.5%
+[train    563s] decision: keep champion
+[train    563s] news-exit rule: no significant evidence → not enabled
 [notify] sent via: none configured
-[train    581s] done
-exit=0 cmd=train at 2026-11-15 10:52
+[train    563s] done
+exit=0 cmd=train at 2026-11-22 10:52

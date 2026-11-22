@@ -39,12 +39,12 @@
   "w_gbm": 0.6
  },
  "news_exit": null,
- "trained_at": "2026-11-15 10:52",
+ "trained_at": "2026-11-22 10:52",
  "holdout": {
-  "total_return_pct": 3.37,
-  "nifty_return_pct": -2.84,
-  "sharpe": 0.29,
-  "max_drawdown_pct": -14.23
+  "total_return_pct": 9.64,
+  "nifty_return_pct": -1.49,
+  "sharpe": 0.64,
+  "max_drawdown_pct": -17.15
  },
- "oos_ic": 0.0467
+ "oos_ic": 0.0351
 }

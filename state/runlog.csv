@@ -59,3 +59,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-20 23:34,schedule,decide,0,"[decide] already ran for 2026-11-20. Skipping."
 2026-11-21 00:20,schedule,decide,0,"[decide] latest data is 2026-11-20 — NSE closed today (holiday). Skipping."
 2026-11-23 15:14,push,decide,0,"📰 ITC news +0.30: ITC: Highest monthly gain in over two years; strongly overbought on charts; fresh price ta"
+2026-11-24 03:10,schedule,decide,0,"[decide] latest data is 2026-11-23 — NSE closed today (holiday). Skipping."

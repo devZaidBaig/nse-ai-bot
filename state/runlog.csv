@@ -64,3 +64,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-24 03:44,schedule,decide,0,"[decide] latest data is 2026-11-23 — NSE closed today (holiday). Skipping."
 2026-11-24 15:14,push,decide,0,"📰 ITC news +0.32: ITC extends Braille-enabled packaging to Fiama; takes total to 16 SKUs"
 2026-11-25 01:50,schedule,decide,0,"[decide] latest data is 2026-11-23 — NSE closed today (holiday). Skipping."
+2026-11-25 01:55,schedule,decide,0,"[decide] latest data is 2026-11-23 — NSE closed today (holiday). Skipping."

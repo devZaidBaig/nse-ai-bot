@@ -71,3 +71,4 @@ time_ist,trigger,mode,exit_code,last_line
 2026-11-26 01:09,schedule,decide,0,"[decide] latest data is 2026-11-25 — NSE closed today (holiday). Skipping."
 2026-11-26 01:41,schedule,decide,0,"[decide] latest data is 2026-11-25 — NSE closed today (holiday). Skipping."
 2026-11-26 15:14,push,decide,0,"📰 ITC news +0.15: ITC Ltd. Rallies 3.02% and Surpasses All Major Moving Averages — Momentum Gains Strength"
+2026-11-27 00:46,schedule,decide,0,"[decide] latest data is 2026-11-26 — NSE closed today (holiday). Skipping."

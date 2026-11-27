@@ -1,12 +1,20 @@
-📈 *NSE AI bot* — 2026-11-26
-Value ₹10,240  (today +0.13%, total +2.40% vs NIFTY +10.46%)
-Cash ₹5,806
-No trades today.
+📈 *NSE AI bot* — 2026-11-27
+Value ₹10,124  (today -1.13%, total +1.24% vs NIFTY +9.12%)
+Cash ₹853
+Trades:
+ • SELL 7 JIOFIN @ ₹222.44 (dropped by model, P&L ₹47)
+ • SELL 5 ITC @ ₹304.30 (dropped by model, P&L ₹172)
+ • BUY 8 TMPV @ ₹257.75 (model pick)
+ • BUY 3 SHRIRAMFIN @ ₹924.00 (model pick)
+ • BUY 1 ADANIENT @ ₹2,632.70 (model pick)
+ • BUY 2 TMPV @ ₹257.75 (use spare cash)
 Holding:
- • TMPV ×5  -3.8%
- • JIOFIN ×7  +6.5%
- • ITC ×5  +15.1%
-Next review of picks: around 27 Nov
-📰 TMPV news +0.38: Tata Motors Passenger Vehicles to raise car prices by 0.5% in December
-📰 JIOFIN news +0.06: Jio Financial Services Ltd Faces Bearish Momentum Amid Technical Downgrade
-📰 ITC news +0.15: ITC Ltd. Rallies 3.02% and Surpasses All Major Moving Averages — Momentum Gains Strength
+ • TMPV ×15  -1.9%
+ • SHRIRAMFIN ×3  +0.0%
+ • ADANIENT ×1  +0.0%
+Market mood: risk-ON ✅
+📰 TMPV news +0.42: Tata Motors PV to raise vehicle prices by avg 0.5% from December 1
+📰 SHRIRAMFIN news -0.06: Shriram Finance Share Fall 4% over Slow Growth Outlook
+📰 ADANIENT news +0.20: Multibagger stock Diamond Power gains 2% on order wins from Adani group
+
+🗓️ *Weekly recap*: -0.81% this week, 6 trades. All-time: 2 closed trades, 100% winners, fees ₹56.
